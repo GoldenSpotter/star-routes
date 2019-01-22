@@ -9,6 +9,8 @@ File Structure is as follows:
 ICAO
 
 Fixes
+Note: You can have multiple lines of fixes, 
+as long as there as an empty line between them and the routes.
 
 Route 1
 Route 2
