@@ -11,6 +11,9 @@ ICAO
 Fixes
 Note: You can have multiple lines of fixes, 
 as long as there as an empty line between them and the routes.
+It is advised that you only include the names of the fixes that are
+on turning points, rather than many in a straight line,
+in order to reduce clutter on the map.
 
 Route 1
 Route 2
