@@ -1,7 +1,7 @@
 # star-routes
-STAR Routes for ifatc.org.
+STAR/SID Routes for ifatc.org.
 
-Welcome to the ifatc.org STAR Routes Repository.
+Welcome to the ifatc.org STAR/SID Routes Repository.
 
 File Structure is as follows:
 ---
