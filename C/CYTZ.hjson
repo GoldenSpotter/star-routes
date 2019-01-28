@@ -5,7 +5,7 @@
     KEMVI LORKA ILIXU DUSUB UKPAG MURUM VIPRI MIZEN 
     SEKUX BORID RONTO LODRA DAVSI BOMET EMDOS OAKVL EMDOS
     '''
-    ROUTES: [
+    routes: [
         {
             direction: Inbound
             # combination of ILIXU SEVEN and ILS Rwy 8 Approach
