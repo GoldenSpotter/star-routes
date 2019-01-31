@@ -1,0 +1,158 @@
+{
+  airport: SBGL
+  labels:
+    '''
+    DONGI ESORU ILTIT
+    VUSRA
+    '''
+  routes:
+  [
+    {
+      direction: Inbound
+      name: VUSRA
+      runways: 10 15
+      segments:
+      [
+        ESORU EPGIP VUSRA
+        VUDAV ILTIT
+        ROPAS ILTIT
+        ILTIT KABUK KUDSI VUSRA
+        VUSRA DONGI
+      ]
+      labels:
+        '''
+        KUDSI EPGIP VUSRA
+        DONGI ESORU ILTIT
+        '''
+    }
+    {
+        direction: Inbound
+        name: TODAB
+        runways: 10 15
+        segments: 
+        [
+            OGMUK VAKUB GIGSO UTBOM
+            MEBGA KOSRU TODAB UTBOM
+        ]
+        labels: UTBOM TODAB OGMUK
+    }
+    {
+        direction: Inbound
+        name: EPGIP
+        runways: 28 33
+        segments: [
+            ESORU EPGIP IVTAL
+            IVTAL OPSID
+            IVTAL SEDBU
+            ILTIT KABUK EPGIP
+            ROPAS ILTIT
+            VUDAV ILTIT
+        ]
+        labels:
+            '''
+            EPGIP IVTAL OPSID SEDBU
+            ILTIT KABUK
+            '''
+    }
+    {
+        direction: Inbound
+        name: North Arrivals
+        # VAKUB and DIVRO arrivals
+        runways: 28 33
+        segments: [
+            OGMUK VAKUB
+            MEBGA KOSRU VAKUB
+            VAKUB IVTAL
+            MOLSU DIVRO
+            ADA DIVRO
+            DIVRO KETUX OPSID
+        ]
+        labels:
+            '''
+            OGMUK MEBGA VAKUB IVTAL
+            MOLSU ADA DIVRO KETUX
+            '''
+    }
+    {
+	    direction: Outbound
+	    name: 28 33 SIDs
+	    # LIXEP SURKU PUMSO NIBGU
+    	runways: 28 33
+	    segments: [
+	    	EDMAD 2287S/4337W
+		    2287S/4337W SURKU
+		    2287S/4337W UTNOP PUMSO
+	    	PUMSO ADA
+	    	PUMSO TISVA
+	    	SURKU UMBAD
+	    	SURKU KUGOV
+	    	KUGOV NAXOP
+	    	KUGOV BITAK
+	    	ALMOS LIXEP SIDUR
+	    	ALMOS NIBGU
+	    	NIBGU EDNAM
+	    	NIBGU EPKAX
+	    	NIBGU IMBAP
+	    	NIBGU UKENU
+    	]
+    	labels: UTNOP SURKU LIXEP NIBGU 2287S/4337W ALMOS
+        }
+    ]
+    points:
+    [
+        {
+            name: DONGI
+            altitude_required_min: 6300
+        }
+        {
+            name: KABUK
+            altitude_required_max: 23000
+        }
+        {
+            name: KUDSI
+            altitude_required_min: 12000
+        }
+        {
+            name: VAKUB
+            altitude_required_max: 12000
+        }
+        {
+            name: GIGSO
+            altitude_required_min: 7000
+        }
+        {
+            name: UTBOM
+            altitude_required_min: 6300
+        }
+        {
+            name: IVTAL
+            altitude_required_min: 8000
+        }
+        {
+            name: SEDBU
+            altitude_required_min: 5000
+        }
+        {
+            name: OPSID
+            altitude_required_min: 5000
+        }
+        {
+            name: 2287S/4337W
+            altitude_required_min: 6000
+            speed_required_max: 250
+        }
+        {
+            name: UTNOP
+            altitude_required_max: 7000
+        }
+        {
+            name: ALMOS
+            altitude_required_max: 7000
+            speed_required_max: 270
+        }
+        {
+            name: LIXEP
+            altitude_required_min: 11000
+        }
+    ]
+}
