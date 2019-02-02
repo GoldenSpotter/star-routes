@@ -1,0 +1,84 @@
+{
+    airport: TXKF
+    labels:
+        '''
+        WENAN POPOP MOMOM BIDVE TUDIE
+        BORNN SOMRR
+        '''
+    routes: [
+        {
+            direction: Inbound
+            name: GNSS Arrivals
+            runways: 12 30
+            segments: [
+                GBINS MOMOM
+                TEDIY MOMOM
+                UNYON MOMOM
+                MOMOM WENAN
+                MOMOM BIDVE
+                POPOP TUDIE
+                POPOP WENAN
+                KAPPI POPOP
+                DNSTN POPOP
+            ]
+            labels: POPOP MOMOM BIDVE WENAN
+        }
+        {
+            direction: Outbound
+            name: RNAV SIDs
+            runways: 12 30
+            segments: [
+                BORNN CEDRR DRREW EITEE
+                BORNN DUNKY
+                BORNN RRUMM PEETS REIFS SWIZL SHOLL
+                SWIZL LIIMY BIRTY
+                SOMRR TRUEE WAUHO TCKER
+                SOMRR BEEBB TRYEB
+                SOMRR FOXIT
+                SOMRR WAYVS SWIZL LIIMY
+            ]
+            labels:
+                '''
+                BORNN SOMRR SWIZL FOXIT
+                BEEBB TRUEE WAUHO WAYVS
+                CEDRR DRREW RRUMM
+                '''
+        }
+    ]
+    points: [
+        {
+            name: MOMOM
+            altitude_required_min: 12000
+        }
+        {
+            name: BIDVE
+            altitude_required_min: 3000
+            speed: 210
+        }
+        {
+            name: WENAN
+            altitude_required_min: 3000
+            speed: 210
+        }
+        {
+            name: UNYON
+            altitude_required_min: 24000
+        }
+        {
+            name: POPOP
+            altitude_required_min: 12000
+        }
+        {
+            name: KAPPI
+            altitude_required_min: 24000
+        }
+        {
+            name: DNSTN
+            altitude_required_min: 24000
+        }
+        {
+            name: REIFS
+            altitude_required_min: 11000
+        }
+    ]
+}
