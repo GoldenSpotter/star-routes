@@ -1,0 +1,113 @@
+{
+    airport: SKBO
+    labels:
+    '''
+    AMVES ZIP 
+    '''
+    routes: [
+        {
+            direction: Outbound
+            name: 31 SIDs
+            runways: 31L 31R
+            segments: [
+                BO509 BO505 BO438 VASIL
+                BO502 BO504 ZIP OSUSU
+                OSUSU AKROB
+                OSUSU BUV
+                BO505 BO422 DANSA
+                DANSA ANLAV
+                DANSA ZIP
+                BO422 POVSO
+                BO422 LIXAG
+                BO505 VAPOM
+            ]
+            labels: BO505 BO422 BO504 ZIP
+        }
+        {
+            direction: Outbound
+            name: 13 SIDs
+            runways: 13L 13R
+            segments: [
+                SOA VASIL
+                GUXUN ZIP OSUSU
+                OSUSU AKROB
+                OSUSU BUV
+                SOA BO422 DANSA
+                DANSA ANLAV
+                DANSA ZIP
+                BO422 POVSO
+                GUXUN ZIP ANLAV
+                SOA VAPOM
+                BO422 LIXAG
+            ]
+            labels: SOA BO422 GUXUN ZIP
+        }
+        {
+            direction: Inbound
+            name: STARs
+            runways: 13L 13R 31L 31R
+            segments: [
+                ILSEV PAPET
+                BO822 PAPET
+                SIRUG PAPET
+                DORSA AMVES
+                EGEPI VUNEX BO846 GUVIM AMVES
+                GIR IRUPU
+                TOLIM IRUPU
+                TIRTO IRUPU
+                IRUPU GUVIM
+                PAPET DORSA
+                ISVAT MQU DORSA
+                ATANA MQU
+                EDPUL MQU
+            ]
+            labels: DORSA GUVIM AMVES VUNEX
+        }
+        {
+            direction: Inbound
+            name: 31 Approaches
+            runways: 31L 31R
+            segments: [
+            AMVES BO706 BO704 BO751
+            OPLEK BO756 BO752
+            MADLA BO767 BO704
+            ]
+            labels: AMVES BO704 BO756
+        }
+    ]
+    points: [
+        {
+            name: POVSO
+            altitude_required_min: 15000
+        }
+        {
+            name: OSUSU
+            altitude_required_min: 14000
+        }
+        {
+            name: BO422
+            atltitude_required_min: 13000
+        }
+        {
+            name: VUNEX
+            altitude_required_min: 13000
+        }
+        {
+            name: BO756
+            altitude_required_min: 11000
+        }
+        {
+            name: OPLEK
+            altitude_required_min:13000
+        }
+        {
+            name: BO706
+            altitude_required_min: 12000
+            speed_required_max: 180
+        }
+        {
+            name: BO767
+            altitude_required_min: 14000
+        }
+    ]
+}
