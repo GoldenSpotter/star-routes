@@ -1,0 +1,63 @@
+{
+    airport: KBZN
+    labels:
+        '''
+        HEBIV THESE FALIA BZN JOXIT WOMET MODJY KECOT 
+        FIBNY CIVMO JANOK SITRE PESRE TIYOL LAVPE JAPER FIDEP
+        '''
+    routes: [
+        {
+            direction: Inbound
+            # ILS Rwy 12 
+            name: ILS12
+            runways: 12
+            segments: [
+                HEBIV THESE FALIA BZN
+            ]
+            labels: HEBIV THESE FALIA BZN
+        }
+        {
+            direction: INBOUND
+            # RNAV Rwy 30
+            name: RNAV30
+            runways: 30
+            segments: [
+                JOXIT RANEY WOMET MODJY CIVMO JANOK SITRE
+                KECOT FIBNY
+                PESRE TIYOL LAVPE JAPER SITRE
+                FIDEP FIBNY
+            ]
+            labels: PESRE LAVPE SITRE JOXIT WOMET MODJY KECOT FIDEP
+        }
+    ]
+    points: [
+        {
+            name: HEBIV
+            altitude_recommended: 9400
+        }
+        {
+            name: FALIA
+            altitude_recommended: 8000
+        }
+        {
+            name: PESRE
+            altitude_recommended: 9000
+        }
+        {
+            name: LAVPE
+            altitude_recommended: 8300
+        }
+        {
+            name: SITRE
+            altitude_recommended: 5700
+        }
+        {
+            name: WOMET
+            altitude_recommended: 9000
+        }
+        {
+            name: MODJY
+            altitude_recommended: 7400
+        }
+    ]
+}
