@@ -1,0 +1,67 @@
+{
+    airport: LOWI
+    routes:    [
+        {
+            direction: Inbound
+            name: arrival 26
+            runways:  26
+            segments: [
+                SBG WI001 WI610 WI611 WI612 WI613 WI103 WI614
+TULSI WI001
+NANIT WI001
+BRENO WI700 WI001
+XEBIX ELMEM WI001
+MADEB ELMEM
+            ]
+            labels: WI001
+        }
+        {
+            direction: Inbound
+            name: arrival 08
+            runways:  08
+            segments: [
+                SBG WI001 ELMEM WI810 WI811 WI812 WI813 WI814 WI006 WI005 WI528
+TULSI WI001
+NANIT WI001
+BRENO ELMEM
+XEBIX ELMEM
+MADEB ELMEM
+            ]
+            labels: ELMEM
+        }
+        {
+            direction: Outbound
+            name: departure 08
+            runways:  08
+            segments: [
+                WI521 WI522 WI001 OBEDI
+WI001 UNKEN
+WI001 KOGOL
+WI521 LOC11 BRENO
+LOC11 ADILO MOGTI KPT
+            ]
+        }
+        {
+            direction: Outbound
+            name: departure 26
+            runways:  26
+            segments: [
+                WI528 WI529 WI506 WI507 WI802 MOGTI
+WI529 LOC11 BRENO
+LOC11 WI521 WI522 WI001 OBEDI
+WI001 UNKEN
+WI001 KOGOL
+            ]
+             }
+            ]
+points: [
+       {
+            name: ELMEM
+            altitude_required_min: 13000
+        }
+        {
+            name: WI001
+            altitude_required_min: 9000
+        }
+    ]
+}
