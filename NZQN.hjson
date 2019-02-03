@@ -1,0 +1,100 @@
+{
+    airport: NZQN
+    routes:    [
+        {
+            direction: Inbound 
+            #combination of route to IBABU then final
+            name: to IBABU
+            runways:  05
+            segments: [
+                ELRUV EKVOX KASLU MABGA  GOSPA AVGER IBABU
+DOVOT POPON UBDAM LADIP AVGER 
+LIBLA AKBOB DULIG UBDAM
+ADKOS BEVKO IGNET UBDAM
+SUNGU ENKUV GOSPA
+            ]
+            labels: EKVOX UBDAM SUNGU IBABU
+        }
+        {
+            direction: Inbound
+            #final part from IBABU
+            name: final 05
+            runways:  05
+            segments: [
+                IBABU QN577 QN573 QN571 QN569 QN565 QN562 OMUBO
+            ]
+            }
+            {
+            direction: Inbound
+            #combination of route to ATKIL or UGPED and final
+            name: to ADKIL and UGPED
+            runways:  23
+            segments: [
+                ELRUV PAMPU EKVOX ATKIL
+DOVOT POPON UBDAM LADIP GOSPA MABGA UGPED
+LIBLA AKBOB DULIG UBDAM
+ADKOS BEVKO IGNET UBDAM
+SUNGU ENKUV GOSPA
+            ]
+            labels: EKVOX UBDAM SUNGU ATKIL UGPED
+            }
+            {
+            direction: Inbound
+            #final part from ADKIL or UGPED
+            name: final 23
+            runways:  23
+            segments: [
+                UGPED QN779 QN774 ATVUP QN760 QN755 LARAV
+ATKIL QN780 QN775 QN770 ATVUP
+            ]
+            }
+            {
+            direction: Outbound
+            #route to VAPLI or METUX and then same departure 
+            name: departure
+            runways:  05 23
+            segments: [
+                METUX ANPOV AKMAD NONAN 
+ANPOV ATVOR TIMJO
+VAPLI IPNOR ENRAT ADKOS 
+IPNOR BIKOS LIBLA
+            ]
+            labels: METUX VAPLI
+            }
+            {
+            direction: Outbound
+            name: initial departure 05
+            runways:  05
+            segments: [
+                QN843 QN846 QN849 QN852 LEMAK QN861 METUX
+LEMAK QN862 QN864 QN866 QN872 VAPLI
+            ]
+            }
+        {
+            direction: Outbound
+            name: initial departure 23
+            runways:  23
+            segments: [
+                QN727 KABAP NOLUV QN732 RUXAK QN737 BUGSA DUGAK QN817 ENKUV METUX
+BUGSA DUGAK VAPLI
+            ]
+            }
+            ]
+points: [
+       {
+            name: EKVOX
+            altitude_required_min: 8000
+            speed_required_max: 230
+        }
+        {
+            name: UBDAM
+            altitude_required_min: 11000
+            speed_required_max: 230
+        }
+        {
+            name: SUNGU
+            altitude_required_min: 8000
+           speed_required_max: 230
+      }
+    ]
+}
