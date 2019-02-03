@@ -1,0 +1,32 @@
+{
+    airport: VNKT
+     routes:    [
+        {
+            direction: Inbound
+            name: arrival 02
+            runways:  02
+            segments: [
+                ROMEO RATAN GURAS KT532 KT530 KT528 DOVAN KT524 KT522 KT520
+2710N/8459E RATAN
+            ]
+            labels: RATAN DOVAN KT522
+        }
+        {
+            direction: Outbound
+            #can be used for runway 20 with a 270 degree turn
+            name: departure 02
+            runways:  02
+            segments: [
+                2743N/8522E 2746N/8519E 2747N/8512E DARKE 2737N/8456E 
+            ] 
+             }
+            ]
+points: [
+       {
+            name: RATAN
+            altitude_required_max: 19000
+            altitude_required_min: 10000
+            speed_required_max: 230
+        }
+    ]
+}
