@@ -1,0 +1,38 @@
+{
+    airport: KASE
+    routes:    [
+        {
+            direction: Outbound
+            #departing runway is always 33
+            name: departure 33
+            runways:  33
+            segments: [
+                ADINY BOYET LINDZ GLENO SLOLM PACES JNC
+SLOLM RIL EKR 
+LINDZ  IDENE SXW JESIE RLG
+            ]
+            labels: LINDZ IDENE GLENO
+        }
+        {
+            direction: Inbound
+            #arriving runway is always 15. This route is adapted for IF purposes 
+            name: final 15
+            runways:  15
+            segments: [
+                LOYYD JIGOM SOCKY LIFTT RIKOC
+MORYU OLOWI INGRR LASCH TALIA AWUDE UYRIG SOCKY
+            ]
+            labels: LIFTT
+            }
+            ]
+points: [
+       {
+            name: GLENO
+            altitude_required_min: 14000
+        }
+        {
+            name: IDENE 
+            altitude_required_min: 14000
+         }
+    ]
+}

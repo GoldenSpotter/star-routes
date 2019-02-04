@@ -1,0 +1,36 @@
+{
+    airport: LSGS
+    routes:    [
+        {
+            direction: Inbound
+            #combination to GRANA and final
+            name: approach 25
+            runways:  25
+            segments: [
+                VADAR SOSAL GRANA GS615 GS616 GS608 GS607 GS606 GS605 GS604 GS617
+VALOR GRANA
+            ]
+            labels: GRANA
+        }
+        {
+            direction: Outbound
+            name: departure 25
+            runways:  25
+            segments: [
+                SIO BERAR ROCCA
+ BERAR SPR
+SIO GS611 SPR29 GS621 SIO SANET FRI
+ BERAR GOLEB PAS
+  GOLEB GVA
+            ]
+             }
+            ]
+points: [
+       {
+            name: GRANA
+            altitude_required_max: 24000
+            altitude_required_min: 17000
+            speed_required_max: 220
+        }
+    ]
+}
