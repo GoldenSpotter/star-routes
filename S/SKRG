@@ -1,0 +1,130 @@
+{
+    airport: SKRG
+    labels: MRN RNG ISPAS AKSER
+    routes: [
+        {
+            direction: Outbound
+            name: 1 SID
+            runways: 1
+            segments: [
+                KOXEV MRN R1511
+                R1511 OPMEL
+                R1511 NENES
+                R1511 DABID
+                MRN ISVAT
+                MRN MUGOP
+                KOXEV KORBA
+                KOXEV XONUD BIVIG
+                XONUD OTU
+                KOXEV ANDAP KOTIN
+            ]
+            labels: XONUD ANDAP KOXEV R1511
+        }
+        {
+            direction: Outbound
+            name: 19 SID
+            runways: 19
+            segments: [
+                MRN LATIS
+                MRN BIVIG
+                MRN DIPRA
+                UMGAX SAPMA DABID
+                SAPMA VULRI
+                SAPMA ISVON
+            ]
+            labels: MRN SAPMA
+        }
+        {
+            direction: Inbound
+            name: 1 RNAV Star
+            runways: 1
+            segments: [
+                TEDON ISPAS
+                LATIS ISPAS
+                OPMEL ISPAS DONTU
+                ARTUX DONTU
+                LATIS AKSER VUKUL
+                BIVIG AKSER
+                DIPRA AKSER
+                NIRSO OGMES
+                ISVON OGMES
+            ]
+            labels: DONTU VUKUL AKSER ISPAS OGMES
+        }
+        {
+            direction: Inbound
+            name: 1 STAR
+            #MRN7A, NIRS2A, MATR3A, RENO1A
+            runways: 1
+            segments: [
+                MRN RNG RNG07 D183E
+                DABID MRN
+                LATIS MRN BIVIG MRN
+                OTU MRN
+                DIPRA MRN
+                MUGOP MRN
+                NIRSO D183E
+                MATRO D183E
+                RENOS D183E
+            ]
+            labels: MRN RNG D183E RNG07
+        }
+        {
+            direction: Inbound
+            name: 19 Approaches
+            runways: 19
+            segments: [
+                ATIXU BUVET DOBNO
+                LOMUP BUVET
+                MRN ILKOT BUVET
+            ]
+            labels: BUVET DOBNO MRN
+        }
+    ]
+    points: [
+        {
+            name: LATIS
+            altitude_required_min: 12000
+        }
+        {
+            name: KORBA
+            altitude_required_min: 12000
+        }
+        {
+            name: ISVAT
+            altitude_required_min: 12000
+        }
+        {
+            name: BIVIG
+            altitude_required_min: 11000
+        }
+        {
+            name: OTU
+            altitude_required_min: 11000
+        }
+        {
+            name: DIPRA
+            altitude_required_min: 11000
+        }
+        {
+            name: MUGOP
+            altitude_required_min: 11000
+        }
+        {
+            name: OPMEL
+            altitude_required_min: 14000
+        }
+        {
+            name: DABID
+            altitude_required_min: 14000
+        }
+        {
+            name: NIRSO
+            altitude_required_min: 14000
+        }
+        {
+            name: KOTIN
+            altitude_required_min: 16000
+        }
+    ]
+}
