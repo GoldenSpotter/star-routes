@@ -1,0 +1,434 @@
+{
+    airport: KBOS
+    labels:
+        '''
+        LOBBY
+        '''
+    routes: [
+        {
+            direction: Inbound
+            name: GARDNER FOUR
+            runways: 22L 22R 15R 33L 32 4R 4L
+            segments: [
+                ALB WIKID GDM BRONC LOBBY REVER BOS
+            ]
+            labels: GDM LOBBY
+        }
+        {
+            direction: Inbound
+            # Combination of JFUND2 & runway transtions
+            name: JFUND TWO
+            runways: 22L 22R 15R 33L 32 4R 4L
+            segments: [
+                PONCT STOLI MNSTA SEETS DUBLE BASEZ JFUND
+                WHATE ONDEC JFUND
+                BADCA WACHU SSAAM AADMS
+                AUTUM WINTA HRRIS ISLAY LWLND
+                AUTUM WINTA HRRIS SPYSD REVER SEHAG
+                AUTUM WINTA HRRIS SPYSD BRODI BECHH SCITU
+                AUTUM WINTA HRRIS SPYSD GRIFI GGABE JOBEE
+            ]
+            labels: JFUND HRRIS SPYSD 
+        }
+        {
+            direction: Inbound
+            name: NORWICH SEVEN
+            runways: 22L 22R 15R 33L 32 4R 4L
+            segments: [
+                JFK GPOLE NEWES BAWLL RAALF ORW OUTTT PVD KRANN 
+                CCC ORW OUTTT PVD KRANN 
+                HTO PVD KRANN
+            ]
+            labels: ORW PVD 
+        }
+        {
+            direction: Inbound
+            # Combination of OOSHN5 & runway transtions
+            name: OOSHN FIVE 
+            runways: 22L 22R 15R 33L 32 4R 4L
+            segments: [
+               AJJAY SUFFI NIKKO EURRO
+               ENE NIKKO
+               MERIT FOSTY IYANA KLEBB SOBAH LONEY RODEE EURRO OOSHN
+               FEXXX FOSTY IYANA KLEBB SOBAH LONEY RODEE EURRO OOSHN
+               PROVI IYANA KLEBB SOBAH LONEY RODEE EURRO OOSHN
+               RIFLE KYSKY CUTOX CUJKE FERNZ LONEY RODEE EURRO OOSHN
+               GRGIO BRGIT HNOVR RDHOK TKMAN
+               GRGIO BRGIT ADDDA LEEZI
+               PUDJJ AYBEE KLANE
+               TTERI WAATR PLGRM BECHH SCITU
+               TTERI WAATR FLUTI GRIFI GGABE JOBEE
+            ]
+            labels: NIKKO EURRO OOSHN BRGIT WAATR
+        }
+        {
+            direction: Inbound
+            # Combination of ROBUC3 & runway transtions
+            name: ROBUC THREE
+            runways: 22L 22R 15R 33L 32 4R 4L
+            segments: [
+                MERIT RUIZE AWLIN BANKI ROBUC PROVI JOODY
+                JFK NEWES FEXXX RUIZE AWLIN BANKI ROBUC PROVI JOODY
+                ORW JEWIT FOSTY HEFTY WOONS 
+                JAYNA BOXRS CHERS RDHOK TKMAN
+                KRANN CRADL KLEBB ETHYN  PTRIK TAALE
+                KRANN CRADL KLEBB HOKDU
+                JAYNA ANSLY BEREI BBOGG
+                SOFEE ERNEI GOSHI
+                SOFEE ERNEI NUNZO
+            ]
+            labels: RUIZE ROBUC JOODY
+        }
+        {
+            direction: Inbound
+            name: WOONS TWO
+            runways: 22L 22R 15R 33L 32 4R 4L
+            segments: [
+                ORW JEWIT FOSTY HEFTY WOONS
+            ]
+            labels: ORW JEWIT WOONS
+        }
+    ]
+    points: [
+        {
+            name: LOBBY
+            altitude_required_min: 11000
+            altitude_required_max: 11000
+            altitude_required_min: 8000
+            altitude_required_max: 8000
+        }
+        {
+            name: MNSTA
+            altitude_required_min: 24000
+        }
+        {
+            name: SEETS
+            altitude_required_min: 21000
+            speed: 280
+        }
+        {
+            name: DUBLE
+            altitude_required_min: 17000
+        }
+        {
+            name: BASEZ
+            altitude_required_min: 14000
+        }
+        {
+            name: ONDEC
+            altitude_required_min: 11000
+        }
+        {
+            name: BADCA
+            altitude_required_min: 9000
+            
+        }
+        {
+            name: WACHU
+            altitude_required_min: 7000
+            altitude_required_max: 7000
+            speed: 210
+            
+        }
+        {
+            name: AUTUM
+            altitude_required_min: 11000
+            altitude_required_max: 12000
+            speed: 270
+            
+        }
+        {
+            name: WINTA
+            altitude_required_min: 8000
+            altitude_required_max: 10000
+            speed: 250   
+        }
+        {
+            name: ISLAY
+            altitude_required_min: 6000
+            altitude_required_max: 6000
+            speed: 220
+        }
+        {
+            name: LWLND
+            altitude_required_min: 6000
+            altitude_required_max: 6000
+            speed: 210    
+        }
+        {
+            name: SPYSD
+            altitude_required_min: 7000
+            altitude_required_max: 7000
+            speed: 220    
+        }
+        {
+            name: GGABE
+            altitude_required_min: 6000
+            altitude_required_max: 6000
+            speed: 220    
+        }
+        {
+            name: JOBEE
+            altitude_required_min: 6000
+            altitude_required_max: 6000
+            speed: 210    
+        }
+        {
+            name: SEHAG
+            altitude_required_min: 6000
+            altitude_required_max: 6000
+            speed: 210    
+        }
+        {
+            name: BRODI
+            altitude_required_max: 6000   
+        }
+        {
+            name: BECHH
+            altitude_required_min: 5000
+            altitude_required_max: 5000
+            speed: 220  
+        }
+        {
+            name: SCITU
+            altitude_required_min: 5000
+            altitude_required_max: 5000
+            speed: 210  
+        }
+        {
+            name: GPOLE
+            altitude_required_max: 27000  
+        }
+        {
+            name: BAWLL
+            altitude_required_min: 23000    
+            altitude_required_max: 23000
+            speed: 220  
+        }
+        {
+            name: PVD
+            altitude_required_min: 11000
+            altitude_required_max: 11000
+            speed: 250  
+        }
+        {
+            name: ENE
+            altitude_required_min: 24000 
+        }
+        {
+            name: SOBAH
+            altitude_required_min: 15000 
+        }
+        {
+            name: LONEY
+            altitude_required_min: 11000
+        }
+        {
+            name: NIKKO
+            altitude_required_min: 11000 
+        }
+        {
+            name: EURRO
+            altitude_required_min: 10000 
+        }
+        {
+            name: OOSHN
+            altitude_required_max: 14000 
+            altitude_required_min: 9000 
+            speed: 250
+        }
+        {
+            name: TTERI 
+            altitude_required_min: 9000 
+            speed: 250
+        }
+        {
+            name: GRGIO 
+            altitude_required_max: 9000
+        }
+        {
+            name: AYBEE 
+            altitude_required_min: 6000 
+            altitude_required_max: 6000 
+            speed: 210
+        }
+        {
+            name: BRGIT 
+            altitude_required_min: 7000 
+            altitude_required_max: 7000 
+        }
+        {
+            name: ADDDA 
+            altitude_required_min: 6000 
+            altitude_required_max: 6000 
+            speed: 220
+        }
+        {
+            name: LEEZI 
+            altitude_required_min: 6000 
+            altitude_required_max: 6000
+            speed: 210
+        }
+        {
+            name: HNOVR 
+            altitude_required_min: 5000 
+            altitude_required_max: 5000 
+            speed: 220
+        }
+        {
+            name: RDHOK 
+            altitude_required_min: 5000 
+            altitude_required_max: 5000 
+            speed: 210
+        }
+        {
+            name: TKMAN 
+            altitude_required_min: 5000 
+            altitude_required_max: 5000 
+            speed: 210
+        }
+        {
+            name: FLUTI 
+            altitude_required_min: 9000 
+        }
+        {
+            name: FEXXX 
+            altitude_required_min: 23000 
+            altitude_required_max: 23000 
+        }
+        {
+            name: RUIZE 
+            altitude_required_max: 23000 
+            altitude_required_min: 21000 
+        }
+        {
+            name: AWLIN 
+            altitude_required_min: 17000 
+        }
+        {
+            name: BANKI 
+            altitude_required_min: 16000 
+        }
+        {
+            name: ROBUC 
+            altitude_required_max: 19000 
+            altitude_required_min: 12000 
+            speed: 260
+        }
+        {
+            name: PROVI 
+            altitude_required_min: 11000 
+        }
+        {
+            name: SOFEE 
+            altitude_required_max: 8000 
+            altitude_required_min: 7000 
+        }
+        {
+            name: NUNZO 
+            altitude_required_max: 6000 
+            altitude_required_min: 6000 
+            speed: 210
+        }
+        {
+            name: GOSHI 
+            altitude_required_max: 6000 
+            altitude_required_min: 6000 
+            speed: 210
+        }
+        {
+            name: JAYNA 
+            altitude_required_max: 11000 
+            altitude_required_min: 11000 
+            speed: 250
+        }
+        {
+            name: BOXRS 
+            altitude_required_max: 8000 
+            altitude_required_min: 8000 
+            speed: 250
+        }
+        {
+            name: CHERS 
+            altitude_required_max: 6000 
+            altitude_required_min: 6000 
+            speed: 220
+        }
+        {
+            name: ANSLY 
+            altitude_required_max: 8000 
+            altitude_required_min: 8000 
+            speed: 240
+        }
+        {
+            name: ERNEI 
+            altitude_required_max: 19000 
+            altitude_required_min: 12000 
+            speed: 260
+        }
+        {
+            name: KRANN
+            altitude_required_min: 11000
+            altitude_required_max: 12000
+            speed: 250 
+        }
+        {
+            name: BEREI 
+            altitude_required_max: 7000 
+            altitude_required_min: 6000 
+            speed: 220
+        }
+        {
+            name: BBOGG 
+            altitude_required_max: 6000 
+            altitude_required_min: 6000 
+            speed: 210
+        }
+        {
+            name: CRADL 
+            altitude_required_max: 10000 
+            altitude_required_min: 8000
+        }
+        {
+            name: KLEBB 
+            altitude_required_max: 8000 
+            altitude_required_min: 8000 
+            speed: 250
+        }
+        {
+            name: HOKDU 
+            altitude_required_max: 5000 
+            altitude_required_min: 5000 
+            speed: 210
+        }
+        {
+            name: ETHYN 
+            altitude_required_max: 5000 
+            altitude_required_min: 5000 
+            speed: 250
+        }
+        {
+            name: PTRIK 
+            altitude_required_max: 5000 
+            altitude_required_min: 5000 
+            speed: 220
+        }
+        {
+            name: TAALE 
+            altitude_required_max: 5000 
+            altitude_required_min: 5000 
+            speed: 210
+        }
+        {
+            name: JEWIT 
+            altitude_required_max: 11000 
+            altitude_required_min: 11000 
+            speed_required_max: 250
+        }
+        {
+            name: WOONS 
+            altitude_required_max: 7000 
+            altitude_required_min: 7000
+        }
+    ]
+}
