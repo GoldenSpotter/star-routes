@@ -1,0 +1,182 @@
+{
+    airport: KSAN
+    labels: VYDDA ISEMN D074M
+    routes: [
+        {
+            direction: Inbound
+            name: COMIX TWO
+            description: Combination of COMIX TWO and RNAV Z Rwy 27 Approach 
+            runways: 27
+            segments: [
+                HUULK DECEA JOEKR GAMBT
+                LAX MRVEL SPYDE GAMBT
+                GAMBT LEJEN
+                SXC SLAER LEJEN
+                '''
+                LEJEN COMIX FLSHH LNTRN XMANS KLOMN AJADE
+                CATDG CRSNR SAYAE
+                '''
+            ]
+            labels: HUULK LAX GAMBT SXC LEJEN LNTRN XMANS CATDG CRSNR
+        }
+        {
+            direction: Inbound
+            name: SHAMU ONE
+            runways: 9
+            segments: [
+                LAX EIREE SHAMU
+                MZB SHAMU
+                SHAMU SARGS
+                OCN SARGS
+            ]
+            labels: LAX SHAMU MZB SARGS OCN
+        }
+        {
+            direction: Inbound
+            name: BARET FIVE (Rwy 27)
+            runways: 27
+            segments: [
+            	TNP MOMAR
+            	EED SHADI
+            	PKE SHADI
+            	SHADI MOMAR SALTN
+            	TRM SALTN
+            	SALTN JLI CARUL 
+            	CARUL BARET IFHEJ VYDDA
+            	IPL KUMBA PILLO BARET
+				
+            ]
+            labels: 
+            '''
+            TNP EED SHADI MOMAR TRM SALTN JLI IPL BARET VYDDA
+        	IFHEJ PKE
+            '''
+        }
+        {
+            direction: Inbound
+            name: BARET FIVE (Rwy 09)
+            runways: 09
+            segments: [
+            	TNP MOMAR
+            	EED SHADI
+            	PKE SHADI
+            	SHADI MOMAR SALTN
+            	TRM SALTN
+            	SALTN JLI CARUL BARET
+            	BARET IFHEJ PGY IFSOX SARGS
+            	BARET MZB SARGS
+            	IPL KUMBA PILLO BARET
+            	OCN SARGS
+				
+            ]
+            labels: 
+            '''
+            TNP EED PGY SHADI MOMAR TRM SALTN JLI CARUL IPL BARET
+            PGY SARGS OCN PKE IFSOX
+            '''
+        }
+        {
+            direction: Inbound
+            name: HUBRD ONE
+            description: Combination of HUBRD ONE and RNAV (GPS) Rwy 9 Approach 
+            runways: 09 27
+            segments: [
+                LAX OTISS HUBRD
+                SXC HUBRD
+                HUBRD CARDI TORIE
+                MZB TORIE
+            ]
+            labels: LAX SXC HUBRD CARDI MZB
+        }
+        {
+            direction: Outbound
+            name: BORDER SEVEN
+            runways: 09 27
+            segments: [
+                MZB BROWS
+                PGY BROWS
+                BROWS JLI
+                BROWS IPL
+                # 4814N/11330W
+                3150N/11800W
+            ]
+            labels: JLI IPL BROWS PGY MZB
+        }
+    ]
+    points: [
+        {
+            name: SALTN
+            altitude_required_max: 24000
+            altitude_required_min: 24000
+        }
+        {
+            name: CARUL
+            altitude_required_max: 12000
+            altitude_required_min: 12000
+        }
+        {
+            name: PILLO
+            altitude_required_max: 10000
+            altitude_required_min: 10000
+        }
+        {
+            name: DECEA
+            altitude_recommended: 15000
+        }
+        {
+            name: LEJEN
+            altitude_required_max: 19000
+            altitude_required_min: 15000
+        }
+        {
+            name: COMIX
+            altitude_required_max: 15000
+            altitude_required_min: 12000
+            altitude_recommended: 12000
+        }
+        {
+            name: LNTRN
+            altitude_required_min: 9000
+            speed_required_max: 230
+            speed_required_min: 230
+        }
+        {
+            name: XMANS
+            altitude_required_min: 7000
+        }
+        {
+            name: KLOMN
+            altitude_required_max: 6000
+            altitude_required_min: 6000
+            speed_required_max: 210
+            speed_required_min: 210
+        }
+        {
+            name: AJADE
+            altitude_recommended: 5200
+        }
+        {
+            name: CRSNR
+            altitude_recommended: 3700
+        }
+        {
+            name: SAYAE
+            altitude_recommended: 3200
+        }
+        {
+            name: LAX
+            altitude_required_max: 27000
+        }
+        {
+            name: SHAMU
+            altitude_required_max: 15000
+            altitude_required_min: 15000
+            speed_required_max: 250
+            speed_required_min: 250
+        }
+        {
+            name: CARDI
+            altitude_required_max: 15000
+        }
+    ]
+}
