@@ -1,0 +1,73 @@
+{
+    airport: MROC
+    labels: DALGO PARAI TABAR CLARA
+    routes: [
+        {
+            direction: Inbound
+            name: STAR
+            runways: 07 25
+            segments: [
+                CLARA PARAI TABAR UM07
+                COLOR CLARA
+                LIO CLARA
+                ISEBA PARAI
+                OC318 PARAI
+                PIRAS OC506 DALGO
+                ULAPO OC509 DALGO
+                LIB OC511 DALGO
+                DALGO TABAR
+            ]
+            labels:
+            '''
+            OC509 OC506 OC511 DALGO
+            TABAR CLARA PARAI
+            '''
+        }
+        {
+            direction: Outbound
+            name: Departures
+            runways: 07 25
+            segments: [
+                TIO BURGO TEREL DOTAS
+                TEREL PARRI
+                DOTAS ISEBA
+                TIO CACAO ULAPO
+                CACAO JANES COLOR
+                JANES RADON
+            ]
+            labels:
+            '''
+            TIO DOTAS BURGO
+            TEREL CACAO JANES
+            '''
+        }
+        {
+            direction: Outbound
+            name: 25 Approaches
+            runways: 25
+            segments: [
+                PARAI OC224 OC256 OC067
+                OC265 OC259 OC256 OC067
+            ]
+            labels:
+            '''
+            PARAI OC224 OC067
+            OC259 OC256 OC265
+            '''
+        }
+    ]
+    points: [
+        {
+            name: OC265
+            altitude: 6000
+        }
+        {
+            name: PARAI
+            altitude_required_min: 7000
+        }
+        {
+            name: TABAR
+            altitude: 8000
+        }
+    ]
+}
