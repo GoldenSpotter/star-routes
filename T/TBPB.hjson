@@ -1,0 +1,29 @@
+{
+    airport: TBPB
+    labels: BENUK INABA LERUM DUTAL
+    routes: [
+        {
+            direction: Inbound
+            name: STARs
+            # 09 and 27 arrivals
+            runways: 09 27
+            segments: [
+                BENUK OLIDO ELIXA
+                INABA OLIDO
+                LERUM ALOKI NOPOR
+                DUTAL ALOKI
+            ]
+            labels: OLIDO ALOKI
+        }
+    ]
+    points: [
+        {
+            name: ALOKI
+            altitude: 2500
+        }
+        {
+            name: OLIDO
+            altitude: 2500
+        }
+    ]
+}
