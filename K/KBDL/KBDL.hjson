@@ -1,0 +1,70 @@
+ {
+    airport: KBDL
+    routes: [
+        {
+            direction: Inbound
+            name: DEER PARK THREE
+            runways: 19 6 24 33 15
+            segments: [
+                DPK BELTT MAD BRISS
+                SARDI CCC MAD BRISS
+                HTO MAD BRISS
+            ]
+            labels: DPK MAD
+        }
+        {
+            direction: Inbound
+            name: STELA ONE
+            runways: 19 6 24 33 15
+            segments: [
+                PAUDIL RKA SWEDE CANAN SHIGY STELA MOLDS TOMES
+                WILET AUDIL RKA SWEDE CANAN SHIGY STELA MOLDS TOMES	
+                HNK SWEDE CANAN SHIGY STELA MOLDS TOMES
+                ALB CANAN SHIGY STELA MOLDS TOMES
+                CAM CANAN SHIGY STELA MOLDS TOMES
+            ]
+            labels: RKA SWEDE CANAN ALB STELA CAM
+        }
+        {
+            direction: Outbound
+            name: COASTAL SIX
+            runways: 1 6 24 33 15
+            segments: [
+                HFD THUMB YODER CCC SHERL
+                HFD THUMB YODER CCC GEDIC
+            ]
+            labels: HFD CCC 
+        }
+    ]
+    points: [
+        {
+            name: DPK
+            altitude_required_min: 19000
+            altitude_required_max: 19000
+        }
+        {
+            name: MAD
+            altitude_required_min: 11000
+            altitude_required_max: 11000
+        }
+        {
+            name: SWEDE
+            altitude_required_max: 23000
+        }
+        { 
+            name: ALB
+            altitude_required_min: 15000
+            altitude_required_max: 15000
+        }
+        { 
+            name: CAM
+            altitude_required_min: 17000
+            altitude_required_max: 17000
+        }
+        { 
+            name: STELA
+            altitude_required_min: 11000
+            altitude_required_max: 11000
+        }
+    ]
+}
