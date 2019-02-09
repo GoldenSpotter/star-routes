@@ -1,10 +1,14 @@
  {
     airport: KBDL
+    labels:
+        '''
+        RKA SWEDE CANAN ALB STELA CAM HFD CCC DPK MAD
+        '''
     routes: [
         {
             direction: Inbound
             name: DEER PARK THREE
-            runways: 19 6 24 33 15
+            runways: 19 06 24 33 15
             segments: [
                 DPK BELTT MAD BRISS
                 SARDI CCC MAD BRISS
@@ -15,9 +19,9 @@
         {
             direction: Inbound
             name: STELA ONE
-            runways: 19 6 24 33 15
+            runways: 19 06 24 33 15
             segments: [
-                PAUDIL RKA SWEDE CANAN SHIGY STELA MOLDS TOMES
+                AUDIL RKA SWEDE CANAN SHIGY STELA MOLDS TOMES
                 WILET AUDIL RKA SWEDE CANAN SHIGY STELA MOLDS TOMES	
                 HNK SWEDE CANAN SHIGY STELA MOLDS TOMES
                 ALB CANAN SHIGY STELA MOLDS TOMES
@@ -28,7 +32,7 @@
         {
             direction: Outbound
             name: COASTAL SIX
-            runways: 1 6 24 33 15
+            runways: 01 06 24 33 15
             segments: [
                 HFD THUMB YODER CCC SHERL
                 HFD THUMB YODER CCC GEDIC
