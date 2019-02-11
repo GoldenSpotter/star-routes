@@ -1,5 +1,6 @@
 {
     airport: TKPK
+    options: no-points
     labels: GABAR ANASU TIKAL BOMET
     routes: [
         {
