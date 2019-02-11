@@ -1,5 +1,6 @@
 {
     airport: LOWI
+    options: no-global-labels
     routes:    [
         {
             direction: Inbound
@@ -7,13 +8,13 @@
             runways:  26
             segments: [
                 SBG WI001 WI610 WI611 WI612 WI613 WI103 WI614
-TULSI WI001
-NANIT WI001
-BRENO WI700 WI001
-XEBIX ELMEM WI001
-MADEB ELMEM
+                TULSI WI001
+                NANIT WI001
+                BRENO WI700 WI001
+                XEBIX ELMEM WI001
+                MADEB ELMEM
             ]
-            labels: WI001
+            labels: WI001 SBG TULSI NANIT XEBIX MADEB ELMEM BRENO
         }
         {
             direction: Inbound
@@ -21,13 +22,13 @@ MADEB ELMEM
             runways:  08
             segments: [
                 SBG WI001 ELMEM WI810 WI811 WI812 WI813 WI814 WI006 WI005 WI528
-TULSI WI001
-NANIT WI001
-BRENO ELMEM
-XEBIX ELMEM
-MADEB ELMEM
+                TULSI WI001
+                NANIT WI001
+                BRENO ELMEM
+                XEBIX ELMEM
+                MADEB ELMEM
             ]
-            labels: ELMEM
+            labels: ELMEM BRENO XEBIX MADEB WI006 SBG TULSI NANIT
         }
         {
             direction: Outbound
@@ -35,26 +36,28 @@ MADEB ELMEM
             runways:  08
             segments: [
                 WI521 WI522 WI001 OBEDI
-WI001 UNKEN
-WI001 KOGOL
-WI521 LOC11 BRENO
-LOC11 ADILO MOGTI KPT
+                WI001 UNKEN
+                WI001 KOGOL
+                WI521 LOC11 BRENO
+                LOC11 ADILO MOGTI KPT
             ]
+            labels: OBEDI UNKEN KOGOL BRENO KPT WI001 MOGTI
         }
         {
             direction: Outbound
             name: departure 26
+            labels: MOGTI BRENO OBEDI UNKEN KOGOL WI802 WI001 WI507
             runways:  26
             segments: [
                 WI528 WI529 WI506 WI507 WI802 MOGTI
-WI529 LOC11 BRENO
-LOC11 WI521 WI522 WI001 OBEDI
-WI001 UNKEN
-WI001 KOGOL
+                WI529 LOC11 BRENO
+                LOC11 WI521 WI522 WI001 OBEDI
+                WI001 UNKEN
+                WI001 KOGOL
             ]
-             }
-            ]
-points: [
+        }
+    ]
+    points: [
        {
             name: ELMEM
             altitude_required_min: 13000
