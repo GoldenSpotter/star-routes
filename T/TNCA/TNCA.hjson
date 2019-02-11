@@ -1,5 +1,6 @@
 {
     airport: TNCA
+    options: no-points
     labels: DAVLA MIDVU
     routes: [
         {
@@ -19,6 +20,7 @@
                 '''
                 DATOR NOREX TETUM
                 MOBAM APNUT BOGVU
+                DAVLA
                 '''
         }
         {
@@ -39,6 +41,7 @@
                 '''
                 TETUM MOBAM APNUT
                 ADRIV DATOR ITSEL
+                OKUTO NADAV MIDVU
                 '''
         }
     ]

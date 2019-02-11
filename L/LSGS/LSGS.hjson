@@ -1,5 +1,6 @@
 {
     airport: LSGS
+    options: no-global-labels
     routes:    [
         {
             direction: Inbound
@@ -8,24 +9,25 @@
             runways:  25
             segments: [
                 VADAR SOSAL GRANA GS615 GS616 GS608 GS607 GS606 GS605 GS604 GS617
-VALOR GRANA
+                VALOR GRANA
             ]
-            labels: GRANA
+            labels: GRANA VADAR GS615 GS616 VALOR
         }
         {
             direction: Outbound
             name: departure 25
             runways:  25
+            labels: FRI PAS GVA BERAR ROCCA SPR GS611 SIO
             segments: [
                 SIO BERAR ROCCA
- BERAR SPR
-SIO GS611 SPR29 GS621 SIO SANET FRI
- BERAR GOLEB PAS
-  GOLEB GVA
+                BERAR SPR
+                SIO GS611 SPR29 GS621 SIO SANET FRI
+                BERAR GOLEB PAS
+                GOLEB GVA
             ]
              }
             ]
-points: [
+    points: [
        {
             name: GRANA
             altitude_required_max: 24000

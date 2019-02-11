@@ -1,16 +1,13 @@
 {
     airport: CYTZ
-    labels: 
-    '''
-    KEMVI LORKA ILIXU DUSUB UKPAG MURUM VIPRI MIZEN 
-    SEKUX BORID RONTO LODRA DAVSI BOMET EMDOS OAKVL EMDOS
-    '''
+    options: no-global-labels
     routes: [
         {
             direction: Inbound
             # combination of ILIXU SEVEN and ILS Rwy 8 Approach
             name: ILIXU SEVEN
             runways: 08 26
+            labels: KEMVI ILIXU MURUM MIZEN SEKUX UKPAG VIPRI DUSUB
             segments: [
                 KEMVI LORKA ILIXU DUSUB UKPAG MURUM VIPRI
                 MURUM MIZEN SEKUX BORID RONTO
@@ -20,6 +17,7 @@
             direction: Outbound
             name: BOMET SEVEN
             runways: 08 26
+            labels: BOMET DAVSI EMDOS
             segments: [
                 CYTZ EMDOS
                 CYTZ LODRA DAVSI BOMET
@@ -29,6 +27,7 @@
             direction: Outbound
             name: OAKVL TWO
             runways: 08 26
+            labels: EMDOS OAKVL
             segments: [
                 CYTZ EMDOS OAKVL
             ]

@@ -1,18 +1,19 @@
 {
     airport: LSZH
+    options: no-global-labels
     routes:    [
         {
             direction: Inbound
             #to GIPOL
             name: GIPOL
             runways:  14 16 28 34
+            labels: GIPOL KELIP DOPIL BERSU BLM ERMUS
             segments: [
                 KELIP MOSIT ZH628 ZH627 KLO GIPOL
-DOPIL NOLKA ERMUS GIPOL
-BERSU TADOB ERMUS 
-BLM ZH677 GIPOL
+                DOPIL NOLKA ERMUS GIPOL
+                BERSU TADOB ERMUS 
+                BLM ZH677 GIPOL
             ]
-            labels: GIPOL
         }
         {
             direction: Inbound
@@ -21,10 +22,10 @@ BLM ZH677 GIPOL
             runways:  14 16 28 34
             segments: [
                 NATOR RILAX
- SUL IBINI RILAX
-TEDGO SOLGO  EMKIL RILAX
+                SUL IBINI RILAX
+                TEDGO SOLGO EMKIL RILAX
             ]
-            labels: RILAX
+            labels: RILAX NATOR SUL TEDGO
         }
         {
             direction: Inbound
@@ -33,9 +34,9 @@ TEDGO SOLGO  EMKIL RILAX
             runways:  14 16 28 34
             segments: [
                 RILAX  LAMAX AMIKI
-RAVED ETOXU NEGRA MATIV AMIKI
+                RAVED ETOXU NEGRA MATIV AMIKI
             ]
-            labels: AMIKI
+            labels: AMIKI RILAX RAVED
         }
         {
             direction: Inbound
@@ -44,10 +45,10 @@ RAVED ETOXU NEGRA MATIV AMIKI
             runways:  14
             segments: [
                 GIPOL D242F R2278
-RILAX EDUMI ZH109 D242F
-AMIKI ZUE ZH701 ZH109
+                RILAX EDUMI ZH109 D242F
+                AMIKI ZUE ZH701 ZH109
             ]
-            labels: D242F
+            labels: D242F RILAX ZH109 GIPOL AMIKI
         }
         {
             direction: Inbound
@@ -56,10 +57,10 @@ AMIKI ZUE ZH701 ZH109
             runways:  16
             segments: [
                 GIPOL ZH775 D335O R7918
-RILAX EDUMI ZH109 D335O
-AMIKI ZUE ZH702 ZH109
+                RILAX EDUMI ZH109 D335O
+                AMIKI ZUE ZH702 ZH109
             ]
-            labels: D335O
+            labels: D335O GIPOL RILAX AMIKI
         }
         {
             direction: Inbound
@@ -68,10 +69,10 @@ AMIKI ZUE ZH702 ZH109
             runways:  28
             segments: [
                 GIPOL ZH203 ZH204 ZH205 ZH206 ZH207 ZH208 ZH209 ZH210 ZH280 ZH281 RAMEM R7919
-RILAX ZH264 ZH265 ZH266 EKRIT ZH268 ZH269 ZH270 ZH280
-AMIKI SONGI ZH266
+                RILAX ZH264 ZH265 ZH266 EKRIT ZH268 ZH269 ZH270 ZH280
+                AMIKI SONGI ZH266
             ]
-            labels: RAMEM
+            labels: RAMEM GIPOL ZH205 ZH210 ZH280 ZH270 ZH268 EKRIT SONGI AMIKI RILAX
         }
         {
             direction: Inbound
@@ -80,10 +81,10 @@ AMIKI SONGI ZH266
             runways:  34
             segments: [
                 GIPOL ZH305 ZH306 ZH307 ZH308 ZH309 ZH310 ZH340 UTIXO MILNI D147A
-RILAX ZH363 ZH364 ZH365 ZH366 ZH367 ZH368 ZH369 ZH370 ZH340
-AMIKI SONGI ZH365
+                RILAX ZH363 ZH364 ZH365 ZH366 ZH367 ZH368 ZH369 ZH370 ZH340
+                AMIKI SONGI ZH365
             ]
-            labels: MILNI
+            labels: MILNI ZH310 GIPOL ZH305 ZH310 ZH365 ZH370 AMIKI RILAX
         }
         {
             direction: Inbound
@@ -92,9 +93,9 @@ AMIKI SONGI ZH365
             runways:  14 16 28 34
             segments: [
                 OMASI VENAT LAMUR GUDAX DOPIL
-MOBLO LAMUR 
+                MOBLO LAMUR 
             ]
-            labels: DOPIL
+            labels: DOPIL OMASI MOBLO LAMUR
         }
         {
             direction: Inbound
@@ -103,48 +104,51 @@ MOBLO LAMUR
             runways:  14 16 28 34
             segments: [
                 MOBLO LAMUR KORED KONOL BERSU
-SOSAL TELNO KORED 
-OMASI VENAT LAMUR KORED
+                SOSAL TELNO KORED 
+                OMASI VENAT LAMUR KORED
             ]
-            labels: BERSU
+            labels: BERSU MOBLO SOSAL OMASI LAMUR KORED
         }
         {
             direction: Outbound
             name: departure 16
             runways:  16
+            labels: D286D BREGO VEBIT GERSA DEGES
             segments: [
                 KLO D286D ZH502 KOLUL ZH504 ZH525 DEGES
-KLO D286D BREGO 
-BREGO ZH554 ZH558 VEBIT
-BREGO ZH556 ZH557 AFOLT ARTAG GERSA
+                KLO D286D BREGO 
+                BREGO ZH554 ZH558 VEBIT
+                BREGO ZH556 ZH557 AFOLT ARTAG GERSA
             ]
         }
         {
             direction: Outbound
             name: departure 32/34
             runways:  32 34
+            labels: VEBIT GERSA ZH503 SONGI DEGES KOLUL BREGO
             segments: [
                 R2278 ZH573 BREGO ZH554 ZH558 VEBIT
-BREGO ZH556 ZH557 AFOLT ARTAG GERSA
-ZH573 ZH503 SONGI
-ZH503 ZH506 KOLUL ZH504 ZH525 DEGES
-BREGO MOMOL KOLUL
+                BREGO ZH556 ZH557 AFOLT ARTAG GERSA
+                ZH573 ZH503 SONGI
+                ZH503 ZH506 KOLUL ZH504 ZH525 DEGES
+                BREGO MOMOL KOLUL
             ]
         }
         {
             direction: Outbound
             name: departure 10
             runways:  10
+            labels: BREGO ARTAG VEBIT GERSA DEGES KOLUL
             segments: [
                 R7919 ZH368 ZH502 KOLUL ZH504 ZH525 DEGES
-ZH368 D214E BREGO ZH556 ZH557 AFOLT ARTAG GERSA
-ZH502 KOLUL ARTAG
-BREGO ZH554 ZH558 VEBIT
+                ZH368 D214E BREGO ZH556 ZH557 AFOLT ARTAG GERSA
+                ZH502 KOLUL ARTAG
+                BREGO ZH554 ZH558 VEBIT
             ]
              }
             ]
-points: [
-    {
+    points: [
+        {
             name: GIPOL
             altitude_required_max: 24000
             altitude_required_min: 7000

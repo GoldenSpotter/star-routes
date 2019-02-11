@@ -1,5 +1,6 @@
 {
     airport: KASE
+    options: no-global-labels
     routes:    [
         {
             direction: Outbound

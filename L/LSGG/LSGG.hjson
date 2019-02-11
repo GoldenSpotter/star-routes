@@ -1,5 +1,6 @@
 {
     airport: LSGG
+    options: no-global-labels
     routes:    [
         {
             direction: Inbound
@@ -7,37 +8,42 @@
             runways:  04
             segments: [
                 DJL GG517 LIRKO DINIG SOVAD KERAD GG503 INDIS PAS GVA
-LUSAR SAUNI LIRKO
-GG518 BOLGI LIRKO
-BENOT NEMOS GG514 SOVAD KERAD
-ULMES ESEVA VADAR GG514
-BENOT NEMOS VADAR GG512 BIVLO PITOM GG502 INDIS
-ULMES ESEVA VADAR
-BANKO GG520 GOLEB VALBU SUVEL BIVLO
-KINES GG519 ROCCA GOLEB VALBU SUVEL BIVLO 
-BELUS RILTI CBY INDIS
+                LUSAR SAUNI LIRKO
+                GG518 BOLGI LIRKO
+                BENOT NEMOS GG514 SOVAD KERAD
+                ULMES ESEVA VADAR GG514
+                BENOT NEMOS VADAR GG512 BIVLO PITOM GG502 INDIS
+                ULMES ESEVA VADAR
+                BANKO GG520 GOLEB VALBU SUVEL BIVLO
+                KINES GG519 ROCCA GOLEB VALBU SUVEL BIVLO 
+                BELUS RILTI CBY INDIS
            ]
-           labels: DINIG VADAR NEMOS CBY GOLEB INDIS
+           labels: 
+           '''
+            ROCCA VADAR NEMOS CBY GOLEB INDIS BELUS 
+            DJL LUSAR GG518 BENOT ULMES BANKO KINES BELUS
+           '''
         }
         {
             direction: Outbound
             name: departure 04
             runways:  04
+            labels: DEPUL BELUS BALSI MEDAM ROCCA BALIR KORED SIROD ARBOS SPR
             segments: [
                 GVA PETAL MOLUS
-GVA SPR KOVIM SIROD
-SPR LEGVO ARBOS
-GVA PETAL GG604 GG605 ODIKI ROCCA
-GG605 ESAPI VANAS MEDAM
-GVA D044B DEREM SOVAD PAS ARGIS DEPUL
-PAS CBY BELUS
-PAS RUMIL  LINNA BEVEN BALSI
-PAS ESAPI VANAS MEDAM
-PAS GG605 ODIKI ROCCA
-GG604 CBY BELUS
-SPR KONIL LORBU FLORY DEKAM BALIR
-KONIL SOSAL TELNO KORED
-PETAL MOLUS SOSAL TELNO KORED
+                GVA SPR KOVIM SIROD
+                SPR LEGVO ARBOS
+                GVA PETAL GG604 GG605 ODIKI ROCCA
+                GG605 ESAPI VANAS MEDAM
+                GVA D044B DEREM SOVAD PAS ARGIS DEPUL
+                PAS CBY BELUS
+                PAS RUMIL  LINNA BEVEN BALSI
+                PAS ESAPI VANAS MEDAM
+                PAS GG605 ODIKI ROCCA
+                GG604 CBY BELUS
+                SPR KONIL LORBU FLORY DEKAM BALIR
+                KONIL SOSAL TELNO KORED
+                PETAL MOLUS SOSAL TELNO KORED
             ]
         }
         {
@@ -46,37 +52,42 @@ PETAL MOLUS SOSAL TELNO KORED
             runways:  22
             segments: [
                 BANKO GG520 GOLEB VALBU SUVEL BIVLO GG525 GG512 SPR GVA
-KINES GG519 ROCCA GOLEB
-BELUS RILTI CBY GG502 PITOM BIVLO
-LUSAR SAUNI LIRKO DINIG SOVAD GG507 GG514 SPR
-DJL GG517 LIRKO
-AKITO GG518 BOLGI LIRKO
-BENOT NEMOS VEROX SPR 
-BENOT NEMOS VADAR SPR
-ULMES ESEVA VADAR
+                KINES GG519 ROCCA GOLEB
+                BELUS RILTI CBY GG502 PITOM BIVLO
+                LUSAR SAUNI LIRKO DINIG SOVAD GG507 GG514 SPR
+                DJL GG517 LIRKO
+                AKITO GG518 BOLGI LIRKO
+                BENOT NEMOS VEROX SPR 
+                BENOT NEMOS VADAR SPR
+                ULMES ESEVA VADAR
             ]
-            labels: GOLEB CBY SPR DINIG VADAR NEMOS
+            labels:
+            '''
+            GOLEB CBY SPR LIRKO VADAR NEMOS LUSAR BIVLO GG514
+            DJL AKITO BENOT ULMES KINES BANKO BELUS SOVAD
+            '''
         }
         {
             direction: Outbound
             name: departure 22
             runways:  22
+            labels: DEPUL BELUS BALSI MEDAM ROCCA KORED BALIR MOLUS DIPIR GG602
             segments: [
-                GVA PAS GG602 TINAM  MOLUS
-PAS GG603 DEREM KONIL
-PAS KELUK DIPIR
-PAS ARGIS DEPUL 
-PAS CBY BELUS 
-PAS RUMIL BEVEN BALSI
-PAS ESAPI VANAS MEDAM
-PAS ODIKI ROCCA
-DEREM NAMEL TINAM MOLUS SOSAL TELNO KORED
-DEREM SPR KONIL LORBU FLORY DEKAM BALIR
-KONIL SOSAL TELNO KORED
+                GVA PAS GG602 TINAM MOLUS
+                PAS GG603 DEREM KONIL
+                PAS KELUK DIPIR
+                PAS ARGIS DEPUL 
+                PAS CBY BELUS 
+                PAS RUMIL BEVEN BALSI
+                PAS ESAPI VANAS MEDAM
+                PAS ODIKI ROCCA
+                DEREM NAMEL TINAM MOLUS SOSAL TELNO KORED
+                DEREM SPR KONIL LORBU FLORY DEKAM BALIR
+                KONIL SOSAL TELNO KORED
             ]
              }
             ]
-points: [
+    points: [
        {
             name: DINIG
             altitude_required_max: 24000
