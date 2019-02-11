@@ -1,0 +1,92 @@
+{
+    airport: MMMX
+    labels:
+    '''
+    SLM SMO MEX
+    D140H D233F D053T
+    '''
+    routes: [
+        {
+            direction: Inbound
+            name: North Inbounds
+            runways: 05L 05R 23L 23R
+            segments: [
+                DATUL SLM
+                AVSAR SLM
+                SASUT SLM
+                QET SLM SMO
+                SLM D140H
+            ]
+            labels: SLM SMO D140H
+        }
+        {
+            direction: Inbound
+            name: South & Northeast 23 Arrivals
+            runways: 23L 23R
+            segments: [
+                MEX D321W PTJ31 D303J SLM D140H
+                PCA ALKOM
+                SLM ALKOM D053T
+            ]
+            labels: MEX D321W SLM D140H ALKOM D053T
+        }
+        {
+            direction: Inbound
+            name: South 05 Arrivals
+            runways: 05L 05R
+            segments: [
+                MEX D321W D295L MEX05
+            ]
+            labels: MEX D321W D295L MEX05
+        }
+        {
+            direction: Outbound
+            name: 05 Departures
+            runways: 05L 05R
+            segments: [
+                SEBED OMPUT
+                SEBED APN
+                APN OMPUT
+                SEBED D102J TLC23
+                TLC23 TLC
+                TLC23 PTJ
+                D102J CUA
+                APN19 PBC
+            ]
+            labels:
+            '''
+            SEBED APN19 D102J TLC23 OMPUT
+            TLC PTJ PBC APN CUA
+            '''
+        }
+        {
+            direction: Outbound
+            name: 23 Departures
+            runways: 23L 23R
+            segments: [
+                D233F URTOV OTMOS CUA
+                URTOV D239Q PBC
+                D239Q APN
+                D233F SMO PTJ
+                SMO TLC
+            ]
+            labels: URTOV D239Q OTMOS PBC SMO
+        }
+    ]
+    points: [
+        {
+            name: SLM
+            altitude_required_min: 13000
+            altitude_required_max: 16000
+            speed: 220
+        }
+        {
+            name: D140H
+            speed: 200
+        }
+        {
+            name: D321W
+            altitude: 18000
+        }
+    ]
+}
