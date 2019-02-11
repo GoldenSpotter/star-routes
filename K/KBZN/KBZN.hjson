@@ -1,10 +1,6 @@
 {
     airport: KBZN
-    labels:
-        '''
-        HEBIV THESE FALIA BZN JOXIT WOMET MODJY KECOT 
-        FIBNY CIVMO JANOK SITRE PESRE TIYOL LAVPE JAPER FIDEP
-        '''
+    options: no-global-labels
     routes: [
         {
             direction: Inbound
