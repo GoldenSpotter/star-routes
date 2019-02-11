@@ -38,7 +38,7 @@
                 ADKOS BEVKO IGNET UBDAM
                 SUNGU ENKUV GOSPA
             ]
-            labels: EKVOX UBDAM SUNGU ATKIL UGPED ADKOS LIBLA ELRUV DOVOT GOSPA
+            labels: UBDAM SUNGU ATKIL UGPED ADKOS LIBLA ELRUV DOVOT GOSPA
             }
             {
             direction: Inbound
@@ -68,7 +68,7 @@
             direction: Outbound
             name: initial departure 05
             runways:  05
-            labels: QN846 QN852 QN861 METUX LEMAK QN866 VAPLI
+            labels: QN846 QN852 QN861 METUX LEMAK QN866 VAPLI QN872
             segments: [
                 QN843 QN846 QN849 QN852 LEMAK QN861 METUX
                 LEMAK QN862 QN864 QN866 QN872 VAPLI
