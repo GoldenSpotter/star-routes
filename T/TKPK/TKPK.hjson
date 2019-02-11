@@ -13,7 +13,7 @@
                 ANASU IKNIG 1719N/6291W
                 BOMET IKNIG
             ]
-            labels: 1719N/6291W OMONO IKNIG
+            labels: OMONO IKNIG GABAR TIKAL ANASU BOMET
         }
         {
             direction: Inbound
@@ -25,7 +25,7 @@
                 TIKAL NOVAR
                 GABAR NOVAR UDGEL
             ]
-            labels: NOVAR MAXVU UDGEL
+            labels: NOVAR MAXVU UDGEL ANASU BOMET TIKAL GABAR
         }
         {
             direction: Outbound
@@ -38,7 +38,7 @@
                 NOVAR ELOPO
                 KASAM TIKAL
             ]
-            labels: KIPUR UDGEL MAXVU NOVAR GABAR
+            labels: KIPUR UDGEL MAXVU NOVAR GABAR BOMET ANASU ELOPO TIKAL KASAM
         }
         {
             direction: Outbound
@@ -50,7 +50,7 @@
                 DUSUL EPVOS ANU
                 EPVOS ANASU
             ]
-            labels: DUSUL OMONO EPVOS
+            labels: DUSUL OMONO EPVOS TIKAL GABAR ANASU ANU
         }
     ]
 }
