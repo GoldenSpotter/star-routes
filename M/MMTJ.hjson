@@ -12,6 +12,14 @@
                 TOVES KREPE TUBUS
                 TUBUS TJ402 TJ414
             ]
+            restrictions:
+            {
+                TANRI: >20000
+                ULDUD: >11000
+                TOVES: >20000
+                KREPE: >12000
+                TUBUS: >4000
+            }
             labels: TUBUS TOVES TJ402 TJ414
         }
         {
@@ -23,6 +31,13 @@
                 TANRI ULDUD TJ557 TJ410
                 TOVES KREPE TJ556 TJ557
             ]
+            restrictions:
+            {
+                TOVES: >20000
+                KREPE: >8000
+                TANRI: >20000
+                ULDUD: >8000
+            }
             labels: TJ556 TJ557
         }
         {
@@ -34,51 +49,19 @@
                 TJ502 OASIS KOBAM
                 OASIS TUMAP
                 OASIS TEVIR
-                TJ567 OASIS
+                TJ567 TJ561 OASIS
             ]
-            labels: TJ502 OASIS KOBAM TUMAP TEVIR TJ567
+            restrictions:
+            {
+                TJ561: >8000
+                KOBAM: >20000
+                TUMAP: >20000
+                TEVIR: >20000
+            }
+            labels: TJ502 OASIS KOBAM TUMAP TEVIR TJ567 TJ561
         }
     ]
-    points: [
-        {
-            name: TUBUS
-            altitute_required_min: 4000
-        }
-        {
-            name: ULDUD
-            altitute_required_min: 8000
-        }
-        {
-            name: KREPE
-            altitute_required_min: 8000
-        }
-        {
-            name: TANRI
-            altitute_required_min: 20000
-        }
-        {
-            name: TOVES
-            altitute_required_min: 20000
-        }
-        {
-            name: KOBAM
-            altitute_required_min: 20000
-        }
-        {
-            name: TEVIR
-            altitute_required_min: 20000
-        }
-        {
-            name: TUMAP
-            altitute_required_min: 20000
-        }
-        {
-            name:  TJ557
-            altitude: 5500
-        }
-        {
-            name: TJ410
-            altitude: 3500
-        }
-    ]    
+    options: no-points
 }
+
+
