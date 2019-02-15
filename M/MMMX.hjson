@@ -17,6 +17,11 @@
                 QET SLM SMO
                 SLM D140H
             ]
+            restrictions:
+            {
+                SLM: >13000 <16000 <220
+                D140H: <200
+            }
             labels: SLM SMO D140H
         }
         {
@@ -28,6 +33,10 @@
                 PCA ALKOM
                 SLM ALKOM D053T
             ]
+            restrictions:
+            {
+                SLM: >13000 <16000 <220
+            }
             labels: MEX D321W SLM D140H ALKOM D053T
         }
         {
@@ -73,20 +82,5 @@
             labels: URTOV D239Q OTMOS PBC SMO
         }
     ]
-    points: [
-        {
-            name: SLM
-            altitude_required_min: 13000
-            altitude_required_max: 16000
-            speed: 220
-        }
-        {
-            name: D140H
-            speed: 200
-        }
-        {
-            name: D321W
-            altitude: 18000
-        }
-    ]
+    options: no-points
 }
