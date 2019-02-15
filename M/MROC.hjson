@@ -17,6 +17,11 @@
                 LIB OC511 DALGO
                 DALGO TABAR
             ]
+            restrictions:
+            {
+                PARAI: >7000
+                TABAR: >8000
+            }
             labels:
             '''
             OC509 OC506 OC511 DALGO
@@ -49,6 +54,11 @@
                 PARAI OC224 OC256 OC067
                 OC265 OC259 OC256 OC067
             ]
+            restrictions:
+            {
+                PARAI: >7000
+                OC265: >6000
+            }
             labels:
             '''
             PARAI OC224 OC067
@@ -56,18 +66,5 @@
             '''
         }
     ]
-    points: [
-        {
-            name: OC265
-            altitude: 6000
-        }
-        {
-            name: PARAI
-            altitude_required_min: 7000
-        }
-        {
-            name: TABAR
-            altitude: 8000
-        }
-    ]
+    options: no-points
 }
