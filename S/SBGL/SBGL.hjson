@@ -19,6 +19,13 @@
         ILTIT KABUK KUDSI VUSRA
         VUSRA DONGI
       ]
+      restrictions:
+      {
+          KABUK: <23000
+          KUDSI: >12000
+          DONGI: >6000
+          VUSRA: ~9000
+      }
       labels:
         '''
         KUDSI EPGIP VUSRA
@@ -29,11 +36,17 @@
         direction: Inbound
         name: TODAB
         runways: 10 15
-        segments: 
+        segments:
         [
             OGMUK VAKUB GIGSO UTBOM
             MEBGA KOSRU TODAB UTBOM
         ]
+        restrictions:
+        {
+            UTBOM: >6000
+            VAKUB: <12000
+            GIGSO: >7000
+        }
         labels: UTBOM TODAB OGMUK
     }
     {
@@ -48,6 +61,13 @@
             ROPAS ILTIT
             VUDAV ILTIT
         ]
+        restrictions:
+        {
+            KABUK: <23000
+            IVTAL: >8000
+            SEDBU: >5000
+            OPSID: >5000
+        }
         labels:
             '''
             EPGIP IVTAL OPSID SEDBU
@@ -67,6 +87,13 @@
             ADA DIVRO
             DIVRO KETUX OPSID
         ]
+        restrictions:
+        {
+            IVTAL: >8000
+            SEDBU: >5000
+            OPSID: >5000
+            KETUX: >5000
+        }
         labels:
             '''
             OGMUK MEBGA VAKUB IVTAL
@@ -74,85 +101,52 @@
             '''
     }
     {
-	    direction: Outbound
-	    name: 28 33 SIDs
-	    # LIXEP SURKU PUMSO NIBGU
-    	runways: 28 33
-	    segments: [
-	    	EDMAD 2287S/4337W
-		    2287S/4337W SURKU
-		    2287S/4337W UTNOP PUMSO
-	    	PUMSO ADA
-	    	PUMSO TISVA
-	    	SURKU UMBAD
-	    	SURKU KUGOV
-	    	KUGOV NAXOP
-	    	KUGOV BITAK
-	    	ALMOS LIXEP SIDUR
-	    	ALMOS NIBGU
-	    	NIBGU EDNAM
-	    	NIBGU EPKAX
-	    	NIBGU IMBAP
-	    	NIBGU UKENU
-    	]
-    	labels: UTNOP SURKU LIXEP NIBGU 2287S/4337W ALMOS
+        direction: Outbound
+        name: 28/33 SIDs
+        # LIXEP SURKU PUMSO NIBGU
+        runways: 28 33
+        segments: [
+            EDMAD 2287S/4337W
+            2287S/4337W SURKU
+            2287S/4337W UTNOP PUMSO
+            PUMSO ADA
+            PUMSO TISVA
+            SURKU UMBAD
+            SURKU KUGOV
+            KUGOV NAXOP
+            KUGOV BITAK
+            ALMOS LIXEP SIDUR
+            ALMOS NIBGU
+            NIBGU EDNAM
+            NIBGU EPKAX
+            NIBGU IMBAP
+            NIBGU UKENU
+        ]
+        labels: UTNOP SURKU LIXEP NIBGU 2287S/4337W ALMOS
+    }
+    {
+        direction: Outbound
+        name: 10/15 SIDs
+        runways: 10 15
+        segments: [
+            UTMIP PCX ISRIN IMBAP
+            PCX ADA
+            UTMIP ISVUL TIVRO NAXOP
+            VURUK NUXIS EVRAD ENSOD EPKAX
+            EVRAD UGROK LIXEP SIDUR
+            PCX TISVA
+            EVKOX UMBAD
+        ]
+        restrictions:
+        {
+            ISVUL: >6000
         }
+        labels:
+        '''
+        PCX ISRIN ADA ISVUL TIVRO EVRAD
+        ENSOD UGROK LIXEP TISVA EVKOX
+        '''
+    }
     ]
-    points:
-    [
-        {
-            name: DONGI
-            altitude_required_min: 6300
-        }
-        {
-            name: KABUK
-            altitude_required_max: 23000
-        }
-        {
-            name: KUDSI
-            altitude_required_min: 12000
-        }
-        {
-            name: VAKUB
-            altitude_required_max: 12000
-        }
-        {
-            name: GIGSO
-            altitude_required_min: 7000
-        }
-        {
-            name: UTBOM
-            altitude_required_min: 6300
-        }
-        {
-            name: IVTAL
-            altitude_required_min: 8000
-        }
-        {
-            name: SEDBU
-            altitude_required_min: 5000
-        }
-        {
-            name: OPSID
-            altitude_required_min: 5000
-        }
-        {
-            name: 2287S/4337W
-            altitude_required_min: 6000
-            speed_required_max: 250
-        }
-        {
-            name: UTNOP
-            altitude_required_max: 7000
-        }
-        {
-            name: ALMOS
-            altitude_required_max: 7000
-            speed_required_max: 270
-        }
-        {
-            name: LIXEP
-            altitude_required_min: 11000
-        }
-    ]
+    options: no-points
 }
