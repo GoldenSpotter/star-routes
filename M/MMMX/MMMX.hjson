@@ -1,67 +1,58 @@
 {
     airport: MMMX
-    labels:
-    '''
-    SLM SMO MEX
-    D140H D233F D053T
-    '''
+    labels: SLM SMO MEX D140H D233F D053T
     routes: [
         {
             direction: Inbound
-            name: North Inbounds
-            runways: 05L 05R 23L 23R
-            segments: [
-                DATUL SLM
-                AVSAR SLM
-                SASUT SLM
-                QET SLM SMO
-                SLM D140H
-            ]
-            labels: SLM SMO D140H
-        }
-        {
-            direction: Inbound
-            name: South & Northeast 23 Arrivals
+            name: 23L 23R STARs
             runways: 23L 23R
             segments: [
-                MEX D321W PTJ31 D303J SLM D140H
-                PCA ALKOM
                 SLM ALKOM D053T
+                PCA ALKOM
+                QET TIKEB SLM D140H
+                SASUT SLM
+                AVSAR SLM
+                DATUL SLM
+                MEX D321W PTJ31 D303J SLM D140H
             ]
-            labels: MEX D321W SLM D140H ALKOM D053T
+            restrictions:
+            {
+                SLM: >13000 <16000 =220
+                D140H: =12000 =200
+                MEX: =24000 =250
+                D321W: =18000
+            }
+            labels:
+            '''
+            SLM D053T D140H SASUT AVSAR
+            DATUL ALKOM QET PCA MEX D321W
+            '''
         }
         {
             direction: Inbound
-            name: South 05 Arrivals
+            name: 05L 05R
             runways: 05L 05R
             segments: [
-                MEX D321W D295L MEX05
+                QET TIKEB SLM SMO
+                SASUT SLM
+                AVSAR SLM
+                DATUL SLM
+                TEQ DUXOP MEX SMO
             ]
-            labels: MEX D321W D295L MEX05
-        }
-        {
-            direction: Outbound
-            name: 05 Departures
-            runways: 05L 05R
-            segments: [
-                SEBED OMPUT
-                SEBED APN
-                APN OMPUT
-                SEBED D102J TLC23
-                TLC23 TLC
-                TLC23 PTJ
-                D102J CUA
-                APN19 PBC
-            ]
+            restrictions:
+            {
+                MEX: =12000
+                SLM: >13000 <16000 =220
+            }
             labels:
             '''
-            SEBED APN19 D102J TLC23 OMPUT
-            TLC PTJ PBC APN CUA
+            QET SLM SMO SASUT AVSAR
+            DATUL TEQ MEX
             '''
         }
         {
             direction: Outbound
-            name: 23 Departures
+            name: 23L/23R SIDs
             runways: 23L 23R
             segments: [
                 D233F URTOV OTMOS CUA
@@ -70,23 +61,39 @@
                 D233F SMO PTJ
                 SMO TLC
             ]
-            labels: URTOV D239Q OTMOS PBC SMO
+            restrictions:
+            {
+                OTMOS: <23000
+            }
+            labels:
+            '''
+            D233F OTMOS CUA URTOV D239Q
+            PBC APN D233F SMO PTJ TLC
+            '''
+        }
+        {
+            direction: Outbound
+            name: 05L/05R SIDs
+            runways: 05L 05R
+            segments: [
+                SEBED OMPUT
+                SEBED APN OMPUT
+                SEBED D102J TLC23
+                TLC23 TLC
+                TLC23 PTJ
+                D102J CUA
+                APN19 PBC
+            ]
+            restrictions:
+            {
+                TLC: <23000
+            }
+            labels:
+            '''
+            SEBED APN19 D102J TLC23
+            OMPUT TLC PTJ PBC APN CUA
+            '''
         }
     ]
-    points: [
-        {
-            name: SLM
-            altitude_required_min: 13000
-            altitude_required_max: 16000
-            speed: 220
-        }
-        {
-            name: D140H
-            speed: 200
-        }
-        {
-            name: D321W
-            altitude: 18000
-        }
-    ]
+    options: no-points
 }
