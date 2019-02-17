@@ -2,7 +2,7 @@
     airport: SKBO
     labels:
     '''
-    AMVES ZIP 
+    AMVES ZIP
     '''
     routes: [
         {
@@ -21,6 +21,12 @@
                 BO422 LIXAG
                 BO505 VAPOM
             ]
+            restrictions:
+            {
+                POVSO: >15000
+                OSUSU: >14000
+                BO422: >13000
+            }
             labels: BO505 BO422 BO504 ZIP
         }
         {
@@ -40,6 +46,11 @@
                 SOA VAPOM
                 BO422 LIXAG
             ]
+            restrictions:
+            {
+                OSUSU: >14000
+                BO422: >13000
+            }
             labels: SOA BO422 GUXUN ZIP
         }
         {
@@ -61,6 +72,10 @@
                 ATANA MQU
                 EDPUL MQU
             ]
+            restrictions:
+            {
+                VUNEX: >13000
+            }
             labels: DORSA GUVIM AMVES VUNEX
         }
         {
@@ -72,42 +87,16 @@
             OPLEK BO756 BO752
             MADLA BO767 BO704
             ]
+            restrictions:
+            {
+                BO767: >14000
+                OPLEK: >13000
+                BO756: >11000
+                BO706: >12000 <180
+            }
             labels: AMVES BO704 BO756
         }
     ]
-    points: [
-        {
-            name: POVSO
-            altitude_required_min: 15000
-        }
-        {
-            name: OSUSU
-            altitude_required_min: 14000
-        }
-        {
-            name: BO422
-            atltitude_required_min: 13000
-        }
-        {
-            name: VUNEX
-            altitude_required_min: 13000
-        }
-        {
-            name: BO756
-            altitude_required_min: 11000
-        }
-        {
-            name: OPLEK
-            altitude_required_min:13000
-        }
-        {
-            name: BO706
-            altitude_required_min: 12000
-            speed_required_max: 180
-        }
-        {
-            name: BO767
-            altitude_required_min: 14000
-        }
-    ]
+    options: no-points
 }
+

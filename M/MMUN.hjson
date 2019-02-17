@@ -1,0 +1,142 @@
+{
+    airport: MMUN
+    labels:
+    '''
+    LOPKA OTSOL SESLI EPNEL BUBUN
+    VIKSI KAROR RIDUG EBMIS
+    '''
+    routes: [
+        {
+            direction: Inbound
+            name: 12L/12R RNAV Arrivals
+            runways: 12L 12R
+            segments: [
+                BUBUN SCAHA KAROR
+                EPNEL ODLAR VIKSI
+                PAULE CZM UN518 UN511
+                SIGMA OVGED HURIN UN523
+                DANUL URVEN UN524 UN523
+                UN523 UN511 UN519 UN514 ELINO EBMIS
+                NOSAT HACHO LETIS APMUS UN500
+                UN500 UN522 UN515 ERDAM RIDUG
+            ]
+            restrictions:
+            {
+                UN514: >4000
+                ELINO: =2000 <200
+                EBMIS: =2000
+                SIGMA: >20000 <22000
+                HURIN: >16000
+                UN523: >12000
+                URVEN: >20000 <24000
+                UN524: >16000
+                HACHO: >18000 <20000
+                APMUS: <14000
+                UN500: >8000 <220
+                UN522: >6000
+                UN515: >5000
+                ERDAM: =3000 <200
+                REDUG: =3000
+                BUBUN: >8000
+                SCAHA: =3000 <220
+                KAROR: =3000
+                EPNEL: >11000
+                VISKI: =4000 <220
+                PAULE: >24000 <26000
+                UN518: >12000
+                UN511: >9000 <220
+                UN519: >6000
+            }
+            labels:
+            '''
+            BUBUN KAROR EPNEL VIKSI CZM
+            UN511 HURIN URVEN UN523 HACHO
+            EBMIS RIDUG UN500
+            '''
+        }
+        {
+            direction: Inbound
+            name: 30L/30R RNAV Arrivals
+            runways: 30L 30R
+            segments: [
+                PAULE UN610 CZM UN611 UN612 LOPKA
+                BUBUN SCAHA UN605 UN608 DEPVA LOPKA
+                SIGMA BALCH UN617 QUADY
+                DANUL ALRIP QUADY SESLI
+                EPNEL ODLAR UN606 UN500 PUREG OTSOL
+                NOSAT HACHO LETIS UN500
+            ]
+            restrictions:
+            {
+                HACHO: >18000 <20000
+                UN608: >4000
+                UN500: >5000 <220
+                PEPVA: =2000 <200
+                LOPKA: =2000
+                UN611: >6000
+                UN605: >6000 <220
+                BUBUN: >18000 <20000
+                SCAHA: >11000 <14000
+                EPNEL: >18000 <20000
+                PAULE: >21000 <23000
+                UN610: <10000
+                UN612: >6000
+                BALCH: >18000
+                UN617: >9000
+                SESLI: =3000 <220
+                ALRIP: >12000 <15000
+                ODLAR: >12000 <15000
+                UN606: >7000 <220
+                PUREG: =3000 <200
+                OTSOL: =3000
+                
+            }
+            labels:
+            '''
+            OTSOL LOPKA HACHO EPNEL
+            BUBUN UN610 BALCH ALRIP UN500
+            '''
+        }
+        {
+            direction: Outbound
+            name: 12L/12R RNAV Departures
+            runways: 12L 12R
+            segments: [
+                UN418 UN409 UN419 UDGUV
+                UN402 UN408 CZM
+                UN402 UN410 UN416 UN400
+                UN400 ALYRE TAKUX
+                UN400 HECAT
+                UN415 UN413 SEVKA NUDAL
+                UN413 ULBOX NUKAN
+                UN412 UN414 UN407 ROTGI
+                UN417 UN406 NOSUG
+            ]
+            labels:
+            '''
+            UN409 UDGUV UN402  CZM
+            UN400 UN415 UN413 UN412
+            UN407 UN406 UN408
+            '''
+        }
+        {
+            direction: Outbound
+            name: 30L/30R RNAV Departures
+            runways: 30L 30R
+            segments: [
+                UN712 UN703 UN706 CZM UN713 AVSEB
+                UN710 UN704 UN711 UDGUV
+                UN705 UN709 UN701 NOSUG
+                UN702 UN707 ROTGI
+                UN708 UN700 ULBOX NUKAN
+                UN700 SEVKA NUDAL
+            ]
+            labels:
+            '''
+            UN704 UN703 UN701 UN707
+            UN700 UN706 UN713
+            '''
+        }
+    ]
+    options: no-points
+}
