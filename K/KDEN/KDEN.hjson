@@ -1,0 +1,385 @@
+{
+    airport: KDEN
+    routes: [
+        {
+            direction: Inbound
+            # ANCHR 4 RNAV ARRIVAL
+            name: ANCHR 4
+            runways: 34L 34R 35L 35R
+            segments: [
+                ANCHR LANDR FLAIL FULLA FFFAT DOGGG BARRK
+            ]
+            restrictions:
+            {
+                ANCHR: >17000
+                LANDR: >17000 <22000 =250
+                FLAIL: >15000 <17000
+                FULLA: >13000 <15000 =250
+                DOGGG: =11000 =210
+            }
+            labels: ANCHR LANDR FLAIL FULLA DOGGG BARRK
+        }
+        {
+            direction: Inbound
+            # BOSSS2 RNAV ARRIVAL
+            name: BOSSS 2
+            runways: 34L 34R 35L 35R
+            segments: [
+                ASYLM ZPLYN IDOLL NIIXX QUAIL BSTON BOSSS
+            ]
+            restrictions:
+            {
+                ZPLYN: >30000
+                IDOLL: >26000
+                NIIXX: >19000
+                QUAIL: >17000 <19000 =250
+                BSTON: =14000 =210
+                BOSSS: =12000 =210
+            }
+            labels: ZPLYN IDOLL NIIXX QUAIL BSTON BOSSS
+        }
+        {
+            direction: Inbound
+            # CREDE 3 RNAV ARRIVAL
+            name: CREDE 3
+            runways: 17R 17L 16R 16L
+            segments: [
+                CREDE POWDR TLRID MOGLS LONGS CLFFF HIMAY
+            ]
+            restrictions:
+            {
+                CREDE: >17000
+                POWDR: >17000 <22000 =250
+                TLRID: >15000 <17000
+                MOGLS: >13000 =250
+                LONGS: >13000 <15000
+                CLFFF: =11000 =210
+            }
+            labels: CREDE POWDR TLRID MOGLS LONGS CLFFF HIMAY
+        }
+        {
+            direction: Inbound
+            # FRNCH 3 RNAV ARRIVAL
+            name: FRNCH 3
+            runways: 34L 34R 35L 35R
+            segments: [
+                GWEDO FRNCH
+                CHE FRNCH
+                EKR FRNCH SKARF TOMSN DORKE ARCHY BABAA HIMOM WASKL
+            ]
+            restrictions:
+            {
+                FRNCH: >21000
+                SKARF: >17000
+                TOMSN: >17000 <22000 =250
+                DORKE: >15000 <17000
+                ARCHY: >13000 =250
+                BABAA: >12000 <14000
+                HIMOM: =11000 =210
+            }
+            labels: EKR CHE GWEDO FRNCH BABAA WASKL
+        }
+        {
+            direction: Inbound
+            # JAGGR 3 RNAV ARRIVAL
+            name: JAGGR 3
+            runways: 17R 17L 16R 16L
+            segments: [
+                BOWEE JAGGR LYNKN CLPTN DANDD HASHE HARUM JAAAM OPREE QWIKE ROOOL SISEE
+            ]
+            restrictions:
+            {
+                JAGGR: >30000
+                LYNKN: >26000
+                CLPTN: >19000
+                DANDD: >17000 <22000 =250
+                HASHE: >15000 <17000
+                HARUM: >13000 =250
+                JAAAM: >13000 <14000
+                OPREE: >11000 <12000
+                QWIKE: =11000 =210
+            }
+            labels: JAGGR DANDD JAAAM SISEE
+        }
+        {
+            direction: Inbound
+            # KAILE 2 RNAV ARRIVAL
+            name: KAILE 2
+            runways: 17R 17L 16R 16L
+            segments: [
+                GWEDO FRNCH
+                CHE FRNCH
+                EKR FRNCH SKARF TOMSN BEOND SWAYN KAILE
+            ]
+            restrictions:
+            {
+                FRNCH: >21000
+                SKARF: >17000
+                TOMSN: >17000 <19000 =250
+                BEOND: =13000 =210
+                SWAYN: >12000
+                KAILE: =11000 =210
+            }
+            labels: EKR CHE GWEDO FRNCH KAILE
+        }
+        {
+            direction: Inbound
+            # KIPPR 5 RNAV ARRIVAL
+            name: KIPPR 5
+            runways: 17R 17L 16R 16L
+            segments: [
+                CTFSH DORSL LIBIE ANCHR LANDR HIGUN KIPPR
+                BFF SUSHE LIBIE
+            ]
+            restrictions:
+            {
+                SUSHE: >30000
+                ANCHR: >17000
+                LANDR: >17000 <19000 =250
+                HIGUN: =14000 =210
+                KIPPR: =12000 =210
+            }
+            labels: CTFSH BFF SUSHE LIBIE KIPPR
+        }
+        {
+            direction: Inbound
+            # KOHOE 3 RNAV ARRIVAL
+            name: KOHOE 3
+            runways: 34L 34R 35L 35R
+            segments: [
+                MNNOW KOHOE SLMON SAYGE MOKME DHATT FFFAT DOGGG BARRK
+            ]
+            restrictions:
+            {
+                SLMON: >17000
+                SAYGE: >17000 <22000 =250
+                MOKME: >15000 <17000
+                DHATT: >13000 <15000 =250
+                DOGGG: =11000 =210
+            }
+            labels: MNNOW KOHOE SAYGE FFFAT BARRK
+        }
+        {
+            direction: Inbound
+            # LDORA 2 RNAV ARRIVAL
+            name: LDORA 2
+            runways: 34L 34R 35L 35R
+            segments: [
+                FREZE PEEKK LARKS BDIVN SKKII LDORA
+            ]
+            restrictions:
+            {
+                FREZE: >20000
+                PEEKK: >17000
+                LARKS: >17000 <19000 =250
+                BDIVN: <16000
+                SKKII: =14000 =210
+                LDORA: =13000 =210
+            }
+            labels: FREZE LARKS LDORA
+        }
+        {
+            direction: Inbound
+            # MOLTN 3 RNAV ARRIVAL
+            name: MOLTN 3
+            runways: 34L 34R 35L 35R
+            segments: [
+                SOYAR MOLTN WOOKY RAMMS TOTTT BAACK BABAA HIMOM WASKL
+            ]
+            restrictions:
+            {
+                SOYAR: >23000
+                MOLTN: >19000
+                WOOKY: >17000
+                RAMMS: >17000 <22000 =250
+                TOTTT: >15000 <17000
+                BAACK: >13000 =250
+                BABAA: >12000 <14000
+                HIMOM: =11000 =210
+            }
+            labels: SOYAR MOLTN RAMMS BABAA WASKL
+        }
+        {
+            direction: Inbound
+            # PEEKK 3 RNAV ARRIVAL
+            name: PEEKK 3
+            runways: 17R 17L 16R 16L
+            segments: [
+                FREZE PEEKK LARKS EOLUS LOOOK LONGS CLFFF HIMAY
+            ]
+            restrictions:
+            {
+                FREZE: >17000
+                PEEKK: >17000
+                LARKS: >17000 <22000 =250
+                EOLUS: >15000 <17000
+                LOOOK: >13000 =250
+                LONGS: >13000 <15000
+                CLFFF: =11000 =210
+            }
+            labels: FREZE PEEKK LONGS HIMAY
+        }
+        {
+            direction: Inbound
+            # PURRL 2 RNAV ARRIVAL
+            name: PURRL 2
+            runways: 34L 34R 35L 35R
+            segments: [
+                JAGGR LYNKN CLPTN DANDD RECRD TWNSN PNBAL ROCCS PURRL
+            ]
+            restrictions:
+            {
+                JAGGR: >30000
+                LYNKN: >26000
+                CLPTN: >19000
+                DANDD: >17000 <19000 =250
+                RECRD: >13000 =250
+                TWNSN: >12000 <13000 =210
+                PNBAL: >11000 =210
+                ROCCS: >10000
+                PURRL: =9000 =210
+            }
+            labels: JAGGR DANDD PURRL
+        }
+        {
+            direction: Inbound
+            # TELLR 2 RNAV ARRIVAL
+            name: TELLR 2
+            runways: 34L 34R 35L 35R
+            segments: [
+                TUCKK CREDE POWDR CRAGG NARLE TELLR
+                JNETT CRSTE CREDE
+            ]
+            restrictions:
+            {
+                TUCKK: >22000
+                JNETT: >26000
+                CREDE: >17000
+                POWDR: >17000 <19000 =250
+                CRAGG: =13000 =210
+                NARLE: >12000
+                TELLR: =11000 =210
+            }
+            labels: TUCKK JNETT CRSTE CREDE POWDR TELLR
+        }
+        {
+            direction: Inbound
+            # TSHNR 3 RNAV ARRIVAL
+            name: TSHNR 3
+            runways: 17R 17L 16R 16L
+            segments: [
+                SOYAR MOLTN WOOKY RAMMS BSAFE BDUNN TSHNR
+            ]
+            restrictions:
+            {
+                SOYAR: >23000
+                MOLTN: >19000
+                WOOKY: >17000
+                RAMMS: >17000 <19000 =250
+                BSAFE: <160000
+                BDUNN: >14000 <15000 =210
+                TSHNR: =13000 =210
+            }
+            labels: SOYAR RAMMS TSHNR
+        }
+        {
+            direction: Inbound
+            # WAHUU 2 RNAV ARRIVAL
+            name: WAHUU 2
+            runways: 17R 17L 16R 16L
+            segments: [
+                MNNOW SLMON SAYGE GRRUB KOKOO LIPKE WAHUU
+            ]
+            restrictions:
+            {
+                SLMON: >17000
+                SAYGE: >17000 <19000 =250
+                GRRUB: >12000 <13000
+                KOKOO: >11000 =210
+                LIPKE: >10000
+                WAHUU: =9000 =210
+            }
+            labels: MNNOW SAYGE WAHUU
+        }
+        {
+            direction: Inbound
+            # ZPLYN 3 RNAV ARRIVAL
+            name: ZPLYN 3
+            runways: 17R 17L 16R 16L
+            segments: [
+                ZPLYN IDOLL NIIXX QUAIL JPAGE BOOON JAAAM OPREE QWIKE SISEE
+            ]
+            restrictions:
+            {
+                ZPLYN: >30000
+                IDOLL: >26000
+                NIIXX: >19000
+                QUAIL: >17000 <22000 =250
+                JPAGE: >15000 <17000
+                BOOON: >13000 =250
+                JAAAM: >13000 <14000
+                OPREE: >11000 <12000
+                QWIKE: =11000 =210
+            }
+            labels: ZPLYN QUAIL JAAAM SISEE
+        }
+        {
+            direction: Outbound
+            # YELLOWSTONE 2 DEPARTURE
+            name: YELLO 2
+            runways: 17R 17L 16R 16L 34L 34R 35L 35R
+            segments: [
+                DEN YAMMI LAR NATTI
+                YAMMI MBW
+                DEN YALES CYS
+                DEN GLL RAP
+                DEN YOKES COPLA BFF
+                COPLA HANKI
+            ]
+            restrictions:
+            {
+                YAMMI: >12000
+            }
+            labels: LAR NATTI YAMMI MBW CYS RAP COPLA BFF HANKI DEN
+        }
+        {
+            direction: Outbound
+            # PIKES 1 DEPARTURE
+            name: PIKES 1
+            runways: 17R 17L 16R 16L 34L 34R 35L 35R
+            segments: [
+                DEN SOLAR TEHEV BINKE ALS
+                DEN ADANE DRAKE PUB
+            ]
+            labels: DEN TEHEV ALS ADANE PUB
+        }
+        {
+            direction: Outbound
+            # PLAINS 9 DEPARTURE
+            name: PLAINS 9
+            runways: 17R 17L 16R 16L 34L 34R 35L 35R
+            segments: [
+                DEN EEONS AKO HCT
+                DEN EMMYS TEKMY MCK
+                DEN EXTAN TXC CABET
+                TXC GLD
+                DEN WEEDS GCK
+            ]
+            labels: DEN AKO HCT MCK TXC CABET GLD WEEDS GCK
+        }
+        {
+            direction: Outbound
+            # ROCKIES 4 DEPARTURE
+            name: ROCKI 4
+            runways: 17R 17L 16R 16L 34L 34R 35L 35R
+            segments: [
+                DEN ZIMMR RLG EKR
+                DEN CONNR DBL
+                DEN BOBBA TEHRU DVC
+                BOBBA HBU
+            ]
+            labels: DEN ZIMMR RLG EKR DBL BOBBA DVC HBU
+        }
+    ]
+    options: no-points no-global-labels
+}
