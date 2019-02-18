@@ -1,0 +1,168 @@
+{
+    airport: CYQB
+    routes: [
+        {
+            direction: Inbound
+            # KAROT 5 ARRIVAL
+            name: KAROT 5
+            runways: 06 12 24 30
+            segments: [
+                TADES KAROT NOREK AXANU LERET NOSIL RAGUP
+                KAROT ITRIB RIDUT XOSPO
+                KAROT IKDEB
+                KAROT ROLPO AVEGO EPLOB
+            ]
+            restrictions:
+            {
+                KAROT: <16000
+                AXANU: =5000 <210
+                NOSIL: <210
+                RIDUT: =5000 <210
+                IKDEB: >4000 <180
+                ROLPO: =5000
+                AVEGO: <210
+            }
+            labels: TADES KAROT
+        }
+        {
+            direction: Inbound
+            # OLAVO 4 ARRIVAL
+            name: OLAVO 4
+            runways: 06 12 24 30
+            segments: [
+                OLAVO RETIP IKBUS RAGUP VITEN
+                RETIP IMOVA
+                RETIP LOMSO PIKVO BIVTI
+                LOMSO VEVGI KENLO
+            ]
+            restrictions:
+            {
+                RETIP: <12000
+                IKBUS: =5000 <230
+                RAGUP: <210
+                IMOVA: >3500 <210
+                PIKVO: =5000 <210
+                BIVTI: <210
+                VEVGI: =5000 <210
+                KENLO: <210
+            }
+            labels: OLAVO
+        }
+        {
+            direction: Inbound
+            # OMVAR 1 ARRIVAL 
+            name: OMVAR 1
+            runways: 06 12 24 30
+            segments: [
+                OMVAR DUTIL DEDGO USBUR XUDLU
+                DUTIL RIDUT XOSPO
+                DUTIL SKALA BODPO
+                DUTIL NAGEK KENLO AMARA
+            ]
+            restrictions:
+            {
+                DUTIL: <12000
+                DEDGO: =5000
+                USBUR: <210
+                RIDUT: =5000 <210
+                MAGEK: =5000 <210
+                KENLO: <210
+                SKALA: =5000 <210
+                BODPO: <210
+            }
+            labels: OMVAR DUTIL
+        }
+        {
+            direction: Inbound
+            # PESAC 4 ARRIVAL 
+            name: PESAC 4
+            runways: 06 12 24 30
+            segments: [
+                PESAC GONUM PIBNI OMADU
+                GONUM LOMSO PIKVO BIVTI
+                GONUM KAVAT
+                LOMSO VEVGI KENLO
+            ]
+            restrictions:
+            {
+                GONUM: <16000
+                PIBNI: <210
+                OMADU: =5000
+                KAVAT: >3000 <200
+                VEVGI: =5000 <210
+                KENLO: <210
+                PIKVO: =5000 <210
+                BIVTI: <210
+            }
+            labels: PESAC GONUM LOMSO
+        }
+        {
+            direction: Inbound
+            # SIMTO 4 ARRIVAL 
+            name: SIMTO 4
+            runways: 06 12 24 30
+            segments: [
+                SIMTO IKDEB
+                SIMTO AXANU LERET NOSIL RAGUP
+                SIMTO LISLA AVEGO EPLOB
+                SIMTO ITRIB RIDUT XOSPO
+            ]
+            restrictions:
+            {
+                SIMTO: <16000
+                IKDEB: >4000 <180
+                AXANU: =5000 <210
+                NOSIL: <210
+                LISLA: =5000
+                AVEGO: <210
+                RIDUT: =5000 <210
+            }
+            labels: SIMTO
+        }
+        {
+            direction: Outbound
+            # GOXEV 1 DEPARTURE
+            name: GOXEV 1
+            runways: 24
+            segments: [
+                CYQB GOXEV OLAVO
+                GOXEV IKMIK
+                GOXEV VIXUV FLEUR
+            ]
+            labels: GOXEV OLAVO IKMIK FLEUR
+        }
+        {
+            direction: Outbound
+            # SEBIP 1 DEPARTURE
+            name: SEBIP 1
+            runways: 06
+            segments: [
+                CYQB SEBIP APGEV
+                SEBIP FLEUR
+                SEBIP OBRIR IKMIK
+            ]
+            restrictions:
+            {
+                OBRIR: <230
+            }
+            labels: SEBIP APGEV FLEUR IKMIK
+        }
+        {
+            direction: Outbound
+            # TILAC 1 DEPARTURE
+            name: TILAC 1
+            runways: 30
+            segments: [
+                CYQB TILAC XUBUN OLAVO
+                XUBUN IKMIK
+                XUBUN UKPOB VIXUV FLEUR
+            ]
+            restrictions:
+            {
+                XUBUN: <220
+            }
+            labels: XUBUN OLAVO IKMIK FLEUR
+        }
+    ]
+    options: no-points no-global-labels
+}
