@@ -1,0 +1,51 @@
+{
+    airport: XXXX
+    routes: [
+        {
+            direction: <direction>
+            # description 
+            name: <name>
+            runways: <runways>
+            segments: [
+                <segment>
+                <segment>
+            ]
+            restrictions:
+            {
+                XXX: >10000 <12000 =220
+            }
+            labels: XXXXX
+        }
+        {
+            direction: <direction>
+            # description 
+            name: <name>
+            runways: <runways>
+            segments: [
+                <segment>
+                <segment>
+            ]
+            restrictions:
+            {
+                XXX: >10000 <12000 =220
+            }
+            labels: XXXXX
+        }
+        {
+            direction: <direction>
+            # description 
+            name: <name>
+            runways: <runways>
+            segments: [
+                <segment>
+                <segment>
+            ]
+            restrictions:
+            {
+                XXX: >10000 <12000 =220
+            }
+            labels: XXXXX
+        }
+    ]
+    options: no-points no-global-labels
+}
