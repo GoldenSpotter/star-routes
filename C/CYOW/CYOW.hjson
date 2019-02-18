@@ -1,0 +1,137 @@
+{
+    airport: CYOW
+    routes: [
+        {
+            direction: Inbound
+            # CAPITAL 4 ARRIVAL
+            name: CAPTL 4
+            runways: 07 14 25 32
+            segments: [
+                KANIK LANRK VISOL SEBEG MEGNO OMTUN
+                VISOL ULAGU BOREG ADVOS KAREB
+                ULAGU DEMKO VOLAG DUKTI
+            ]
+            restrictions:
+            {
+                KANIK: <23000
+                LANRK: <16000
+                VISOL: >3000 <210
+                SEBEG: =5000
+                MEGNO: >3500
+                BOREG: =5000 <230
+                ADVOS: >3000 <210
+                DEMKO: =5000 <210
+                VOLAG: >3000
+            }
+            labels: KANIK LANRK VISOL
+        }
+        {
+            direction: Inbound
+            # DEANS 8 ARRIVAL
+            name: DEANS 8
+            runways: 07 14 25 32
+            segments: [
+                ART CYRIL
+                BUGSY SAVAL TAPVO CYRIL
+                CYRIL CAVUR AMAGI NOVUX TILOG EBNAP
+                CAVUR LITRI APMUP MERKO ILOGI PETLU
+                CYRIL TEXEN ADVOS KAREB
+            ]
+            restrictions:
+            {
+                SAVAL: >5000
+                TAPVO: >4000 <18000
+                CYRIL: <12000
+                CAVUR: >7500 <230
+                AMAGI: >5000 <210
+                NOVUX: =5000
+                TILOG: >3000
+                APMUP: =5000 <210
+                ILOGI: >3500
+                TEXEN: <5000 <230
+                ADVOS: >3000 <210
+            }
+            labels: BUGSY CYRIL ART
+        }
+        {
+            direction: Inbound
+            # LEAMY 3 ARRIVAL 
+            name: LEAMY 3
+            runways: 07 14 25 32
+            segments: [
+                BEMOG ALIDO DUNUM GABEV KEMLU SENNZ MODON VINRA
+                DUNUM RAFNO
+                DUNUM MERKO REVAL XOLTI IGTAD
+                MERKO ILUBO WATTO TIDUL
+            ]
+            restrictions:
+            {
+                BEMOG: <21000
+                ALIDO: <16000
+                DUNUM: <13000
+                RAFNO: >3000
+                KAMLU: =5000 <210
+                MODON: >3000
+                REVAL: =5000 <210
+                XOLTI: >3000
+                ILUBO: =5000 <210
+                WATTO: >3000
+            }
+            labels: BEMOG DUNUM
+        }
+        {
+            direction: Inbound
+            # MEECH 1 ARRIVAL 
+            name: MEECH 1
+            runways: 07 14 25 32
+            segments: [
+                SMARE TOXIP ONDOB GABEV MERKO REVAL XOLTI IGTAD
+                MERKO ILUBO WATTO TIDUL
+                GABEV KEMLU SENNZ MODON VINRA
+                ONDOB RAFNO
+            ]
+            restrictions:
+            {
+                TOXIP: >21000
+                ONDOB: <20000
+                GABEV: <13000
+                REVAL: =5000 <210
+                XOLTI: >3000
+                ILUBO: =5000 <210
+                WATTO: >3000
+                RAFNO: >3000
+                KEMLU: =5000 <210
+                MODON: >3000
+            }
+            labels: SMARE ONDOB
+        }
+        {
+            direction: Inbound
+            # RIVER 3 ARRIVAL 
+            name: RIVER 3
+            runways: 07 14 25 32
+            segments: [
+                YUL ALSET THURO XOLTI ONBAB ILOGI PETLU
+                THURO TEFLY
+                THURO URLAG ADVOS NOVUX TILOG EBNAP
+                ADVOS WATTO TIDUL
+            ]
+            restrictions:
+            {
+                YUL: <28000
+                THURO: <16000
+                XOLTI: >5000 <230
+                ONBAB: =5000
+                ILOGI: >3500 <210
+                TEFLY: >3000
+                URLAG: >5000 <230
+                ADVOS: <13000
+                WATTO: >3000 <210
+                NOVUX: =5000 <210
+                TILOG: >3000
+            }
+            labels: YUL THURO
+        }
+    ]
+    options: no-points no-global-labels
+}
