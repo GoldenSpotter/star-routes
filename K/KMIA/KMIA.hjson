@@ -1,0 +1,198 @@
+{
+    airport: KMIA
+    routes: [
+        {
+            direction: Inbound
+            # CURSO 5 RNAV ARRIVAL
+            name: CURSO 5
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                EADEN DVALL
+                GUSHY DVALL CURSO MNNDY BEETR LECIT
+            ]
+            restrictions:
+            {
+                CURSO: <14000 <280
+            }
+            labels: EADEN GUSHY LECIT
+        }
+        {
+            direction: Inbound
+            # FLIPR 6 RNAV ARRIVAL
+            name: FLIPR 6
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                ZQA TINKY LUCSS FOWEE
+                HODGY TINKY
+                URSUS FOWEE FLIPR LUVLY LECIT JODPO
+                FLIPR ZUMGO HENDN
+            ]
+            restrictions:
+            {
+                FLIPR: <12000 <280
+            }
+            labels: URSUS HODGY ZQA FOWEE
+        }
+        {
+            direction: Inbound
+            # HILEY 5 RNAV ARRIVAL 
+            name: HILEY 5
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                OMN MLB TRV SMUGS PBI BTOGA HILEY
+                JORAY OSOGY AMZAR STAPL MILSY BOYUR HILEY
+                HILEY KAINS CIMBA JESSS RUBOE
+                ZFP STAPL
+            ]
+            restrictions:
+            {
+                BTOGA: <13000 <280
+                MILSY: <16000 <280
+            }
+            labels: OMN HILEY JORAY ZFP PBI STAPL
+        }
+        {
+            direction: Inbound
+            # SSCOT 5 RNAV ARRIVAL 
+            name: SSCOT 5
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                JUULI BAARY
+                BAGGS BAARY CYY DEEDS SSCOT RUBOE WALIP LECIT
+            ]
+            restrictions:
+            {
+                SSCOT: <16000 <280
+            }
+            labels: JUULI BAGGS CYY
+        }
+        {
+            direction: Outbound
+            # BSTER 2 RNAV DEPARTURE
+            name: BSTER 2
+            runways: 26L 26R 27 30
+            segments: [
+                KMIA BSTER SCATE WINCO
+                SCATE SHUTE VVMAX HEDLY
+                SCATE SKORE SHALW
+            ]
+            labels: SCATE WINCO HEDLY SHALW
+        }
+        {
+            direction: Outbound
+            # DEEEP 2 RNAV DEPARTURE
+            name: DEEEP 2
+            runways: 26L 26R 27 30
+            segments: [
+                KMIA BSTER DRIVM DEEEP CRABI SKIPS
+                DEEEP SHULA EONNS
+                DEEEP MNATE
+            ]
+            labels: DEEEP MNATE EONNS SKIPS
+        }
+        {
+            direction: Outbound
+            # EONNS 2 RNAV DEPARTURE
+            name: EONNS 2
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                KMIA GRITT CULBY SHULA EONNS
+                KMIA VKZ DICKI SHULA
+                KMIA SABRA DICKI
+            ]
+            labels: EONNS
+        }
+        {
+            direction: Outbound
+            # HEDLY 2 RNAV DEPARTURE
+            name: HEDLY 2
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                KMIA METTS BRBRA VVMAX HEDLY
+                KMIA SENOY CIMBA FORKK VVMAX
+            ]
+            labels: VVMAX HEDLY
+        }
+        {
+            direction: Outbound
+            # HITAG 2 RNAV DEPARTURE
+            name: HITAG 2
+            runways: 08L 08R 09 12
+            segments: [
+                KMIA POTTR HITAG KAINS FORKK HOSFU VVMAX HEDLY
+                HOSFU BORLE WINCO
+                HITAG SHALW
+            ]
+            labels: HITAG HEDLY WINCO SHALW
+        }
+        {
+            direction: Outbound
+            # JONZI 2 RNAV DEPARTURE
+            name: JONZI 2
+            runways: 08L 08R 09 12
+            segments: [
+                KMIA JONZI VKZ SKIPS
+                VKZ LUVLY NREQZ MNATE
+                LUVLY MANNN EONNS
+            ]
+            labels: JONZI MNATE EONNS SKIPS
+        }
+        {
+            direction: Outbound
+            # MNATE 2 RNAV DEPARTURE
+            name: MNATE 2
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                KMIA GRITT CULBY FENIR MNATE
+                KMIA VKZ BLUNE FENIR
+                KMIA SABRA BLUNE
+            ]
+            labels: MNATE
+        }
+        {
+            direction: Outbound
+            # PADUS 2 RNAV DEPARTURE
+            name: PADUS 2
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                KMIA METTS HAUSR FORKK SHALW JANUS PADUS
+                KMIA VAPOR SHALW
+            ]
+            labels: SHALW PADUS
+        }
+        {
+            direction: Outbound
+            # SKIPS 2 RNAV DEPARTURE
+            name: SKIPS 2
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                KMIA GRITT CULBY DICKI CRABI SKIPS
+                KMIA IBISS CRABI
+            ]
+            labels: SKIPS
+        }
+        {
+            direction: Outbound
+            # VALLY 2 RNAV DEPARTURE
+            name: VALLY 2
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                KMIA METTS HAUSR FORKK SHALW VALLY
+                KMIA VAPOR SHALW
+            ]
+            labels: SHALW VALLY
+        }
+        {
+            direction: Outbound
+            # WINCO 2 RNAV DEPARTURE
+            name: WINCO 2
+            runways: 08L 08R 09 12 26L 26R 27 30
+            segments: [
+                KMIA OHOFO BORLE WINCO
+                KMIA SENOY CIMBA FORKK BORLE
+            ]
+            labels: BORLE WINCO
+        }
+    ]
+    options: no-points no-global-labels
+}
