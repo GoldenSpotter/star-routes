@@ -1,0 +1,338 @@
+{
+    airport: KSFO
+    routes: [
+        {
+            direction: Inbound
+            # ALWYS 2 RNAV ARRIVAL
+            name: ALWYS 2
+            runways: 19L 19R
+            segments: [
+                INYOE DYAMD
+                RUSME DYAMD LAANE ALWYS HEFLY ARRTU ADDMM COGGR BERKS
+            ]
+            restrictions:
+            {
+                DYAMD: >27000 =270
+                LAANE: >22000 <26000 =260
+                HEFLY: >14000 <19000 =250
+                ARRTU: =10000 =240
+                ADDMM: =9000 =240
+                COGGR: >7000 <9000 =210
+                BERKS: >5000 =210
+            }
+            labels: INYOE RUSME ALWYS BERKS
+        }
+        {
+            direction: Inbound
+            # BDEGA 3 RNAV ARRIVAL
+            name: BDEGA 3
+            runways: 28L 28R
+            segments: [
+                PEENO DEEAN LOZIT
+                AMAKR QUINN BGGLO
+                MLBEC JONNE BGGLO
+                MRRLO MSCAT BGGLO
+                LEGGS PYLLE BGGLO
+                BGGLO LOZIT BDEGA CORKK BRIXX
+            ]
+            restrictions:
+            {
+                PEENO: >29000
+                DEEAN: >24000 <28000 =280
+                LOZIT: <16000 =280
+                QUINN: >24000 <28000 =280
+                BGGLO: >19000 <23000 =280
+                MLBEC: >29000
+                JONNE: >24000 <28000 =280
+                MRRLO: >29000
+                MSCAT: >24000 <28000 =280
+                PYLLE: >24000 <28000 =280
+                CORKK: =11000 =250
+                BRIXX: =11000
+            }
+            labels: PEENO AMAKR MLBEC MRRLO LEGGS BGGLO
+        }
+        {
+            direction: Inbound
+            # DYAMD 5 RNAV ARRIVAL
+            name: DYAMD 5
+            runways: 28L 28R
+            segments: [
+                INYOE DYAMD
+                RUSME DYAMD LAANE ALWYS FLOWZ CEDES FRELY ARCHI
+            ]
+            restrictions:
+            {
+                DYAMD: >27000 <290
+                LAANE: >22000 <16000 =280
+                FLOWZ: >14000 <19000 =280
+                CEDES: >10000 <12000 =250
+                FRELY: >8000 =230
+                ARCHI: =7000
+            }
+            labels: INYOE RUSME DYAMD ARCHI
+        }
+        {
+            direction: Inbound
+            # RISTI 1 RNAV ARRIVAL
+            name: RISTI 1
+            runways: 28L 28R
+            segments: [
+                ORRCA HAIRE BYRON TRACY MOVDD RISTI CEDES
+                TIPRE OOWEN MOVDD
+            ]
+            restrictions:
+            {
+                CEDES: =9000
+            }
+            labels: ORRCA TIPRE CEDES
+        }
+        {
+            direction: Inbound
+            # SERFR 3 RNAV ARRIVAL
+            name: SERFR 3
+            runways: 28L 28R
+            segments: [
+                SERFR NRRLI WWAVS EPICK NARWL EDDYY
+            ]
+            restrictions:
+            {
+                NRRLI: >20000 =280
+                WWAVS: >15000 <19000 =280
+                EPICK: >10000 <15000 =280
+                NARWL: >8000 =240
+                EDDYY: =6000 =240
+            }
+            labels: SERFR EDDYY
+        }
+        {
+            direction: Inbound
+            # STLER 3 RNAV ARRIVAL
+            name: STLER 3
+            runways: 19L 19R
+            segments: [
+                PEENO DEEAN LOZIT
+                AMAKR QUINN BGGLO
+                MLBEC JONNE BGGLO
+                MRRLO MSCAT BGGLO
+                LEGGS PYLLE BGGLO
+                BGGLO LOZIT STLER WESLA MVRKK
+            ]
+            restrictions:
+            {
+                PEENO: >28000
+                DEEAN: >24000 <27000 =280
+                LOZIT: <11000 =250
+                QUINN: >24000 <17000 =280
+                BGGLO: >15000 <19000 =280
+                MLBEC: >28000
+                JONNE: >24000 <27000
+                MRRLO: >28000
+                MSCAT: >24000 <27000 =280 
+                PYLLE: >24000 <27000
+                STLER: >8000
+                MVRKK: =7000 =210
+            }
+            labels: PEENO AMAKR MLBEC MRRLO LEGGS BGGLO MVRKK
+        }
+        {
+            direction: Inbound
+            # WWAVS 1 RNAV ARRIVAL
+            name: WWAVS 1
+            runways: 19L 19R
+            segments: [
+                SERFR NRRLI WWAVS WPOUT THEEZ WESLA MVRKK
+            ]
+            restrictions:
+            {
+                NRRLI: >20000 =280
+                WWAVS: >15000 <19000 =280
+                WPOUT: =11000 =250
+                THEEZ: >8000 =240
+                WESLA: =6000 =210
+            }
+            labels: SERFR MVRKK
+        }
+        {
+            direction: Inbound
+            # YOSEM 3 RNAV ARRIVAL
+            name: YOSEM 3
+            runways: 28L 28R
+            segments: [
+                YOSEM SNORA ZOMER FRIGG SOOIE FAITH
+            ]
+            restrictions:
+            {
+                ZOMER: >27000 =280
+                FRIGG: <19000
+                SOOIE: >11000 <13000 =250
+                FAITH: =8000
+            }
+            labels: YOSEM FAITH
+        }
+        {
+            direction: Outbound
+            # AFIVA 1 RNAV DEPARTURE
+            name: AFIVA 1
+            runways: 01L 01R 28L 28R
+            segments: [
+                KSFO AFIVA JAYKK GRTFL
+                JAYKK DEDHD
+            ]
+            restrictions:
+            {
+                AFIVA: >4000
+            }
+            labels: JAYKK GRTFL DEDHD
+        }
+        {
+            direction: Outbound
+            # CIITY 3 RNAV DEPARTURE
+            name: CIITY 3
+            runways: 10L 10R 19L 19R
+            segments: [
+                KSFO CIITY BCEEE GRTFL
+                BCEEE DEDHD
+                BCEEE ORRCA
+                BCEEE MOGEE
+                BCEEE TIPRE
+                CIITY LLVII SYRAH
+            ]
+            restrictions:
+            {
+                CIITY: >5000
+                BCEEE: >11000
+                LLVII: >12000
+            }
+            labels: BCEEE GRTFL DEDHD ORRCA MOGEE TIPRE SYRAH
+        }
+        {
+            direction: Outbound
+            # GNNRR 2 RNAV DEPARTURE
+            name: GNNRR 2
+            runways: 28L 28R
+            segments: [
+                KSFO GNNRR STINS AMAKR
+                GNNRR ALCOA
+                GNNRR ALLBE
+                GNNRR BAART
+                GNNRR ALANN
+            ]
+            labels: AMAKR ALCOA ALLBE BAART ALANN
+        }
+        {
+            direction: Outbound
+            # NIITE 3 RNAV DEPARTURE
+            name: NIITE 3
+            runways: 01L 01R 28L 28R
+            segments: [
+                KSFO GALOO NIITE GOBBS
+                NIITE REBAS GRTFL
+                REBAS DEDHD
+                REBAS ORRCA
+                REBAS MOGEE
+                REBAS TIPRE
+                REBAS TAMMM SYRAH
+            ]
+            restrictions:
+            {
+                REBAS: >8000
+            }
+            labels: GOBBS GRTFL DEDHD ORRCA MOGEE TIPRE SYRAH
+        }
+        {
+            direction: Outbound
+            # SAHEY 3 RNAV DEPARTURE
+            name: SAHEY 3
+            runways: 10L 10R 19L 19R
+            segments: [
+                KSFO SAHEY CIITY HOPII NTELL
+                SAHEY MAAYS MCOVY
+                MCOVY KAYEX LOSHN
+                MCOVY SUSEY EBAYE
+                MCOVY KTINA CISKO
+
+            ]
+            restrictions:
+            {
+                MAAYS: >6000
+                MCOVY: >9000
+                CIITY: >5000
+                HOPII: >13000
+            }
+            labels: NTELL LOSHN EBAYE CISKO
+        }
+        {
+            direction: Outbound
+            # SNTNA 2 RNAV DEPARTURE
+            name: SNTNA 2
+            runways: 28L 28R
+            segments: [
+                KSFO KYNNG KRLOS SNTNA GRTFL
+                SNTNA DEDHD
+                SNTNA ORRCA
+                SNTNA MOGEE
+                SNTNA TIPRE
+                SNTNA SYRAH
+            ]
+            labels: SNTNA GRTFL DEDHD ORRCA MOGEE TIPRE SYRAH
+        }
+        {
+            direction: Outbound
+            # SSTIK 4 RNAV DEPARTURE
+            name: SSTIK 4
+            runways: 01L 01R
+            segments: [
+                KSFO SSTIK PORTE UTOOB NTELL
+                PORTE KAYEX LOSHN
+                PORTE SUSEY EBAYE
+                PORTE KTINA CISKO
+                PORTE FFOIL LIBBO YYUNG
+            ]
+            restrictions:
+            {
+                SSTIK: <210
+                PORTE: <10000
+            }
+            labels: PORTE NTELL LOSHN EBAYE CISKO YYUNG
+        }
+        {
+            direction: Outbound
+            # TRUKN 2 RNAV DEPARTURE
+            name: TRUKN 2
+            runways: 01L 01R 28L 28R
+            segments: [
+                KSFO TYDYE TRUKN GRTFL
+                TRUKN DEDHD
+                TRUKN HYPEE ORRCA
+                HYPEE MOGEE
+                TRUKN COSMC TIPRE
+                COSMC SYRAH
+            ]
+            restrictions:
+            {
+                TYDYE: >3000
+            }
+            labels: GRTFL DEDHD ORRCA MOGEE TIPRE SYRAH
+        }
+        {
+            direction: Outbound
+            # WESLA 4 RNAV DEPARTURE
+            name: WESLA 4
+            runways: 28L 28R
+            segments: [
+                KSFO WESLA PORTE UTOOB NTELL
+                PORTE KAYEX LOSHN
+                PORTE SUSEY EBAYE
+                PORTE KTINA CISKO
+                PORTE FFOIL LIBBO YYUNG
+            ]
+            restrictions:
+            {
+                WESLA: >2000 <230
+            }
+            labels: PORTE NTELL LOSHN EBAYE CISKO YYUNG
+        }
+    ]
+    options: no-points no-global-labels
+}
