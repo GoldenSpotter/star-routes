@@ -1,0 +1,161 @@
+{
+    airport: KBUR
+    routes: [
+        {
+            direction: Inbound
+            # JANNY 5 RNAV ARRIVAL
+            name: JANNY 5
+            runways: 08 15 33
+            segments: [
+                JOEES DNUTT JOHHN BASAL DYVER CHKNZ KOPLE
+                KOPLE PMD JANNY PUCCK ELMRR WABBT
+                WNCHL SNTRA KOPLE
+                NIPIY KREME DNUTT
+            ]
+            restrictions:
+            {
+                KREME: =24000
+                JOEES: =24000
+                DNUTT: =23000
+                JOHHN: =22000
+                DYVER: <19000
+                SNTRA: <19000
+                KOPLE: =14000
+                PMD: <13000
+                JANNY: =8000
+                PUCKK: =8000
+                ELMRR: =7000
+                WABBT: =6000
+            }
+            labels: JOEES NIPIY WNCHL JANNY KOPLE WABBT
+        }
+        {
+            direction: Inbound
+            # ROKKR 2 RNAV ARRIVAL
+            name: ROKKR 2
+            runways: 08 15 33
+            segments: [
+                REBRG MMTLY CRUUE EEAZY HIHWY MAIDD PEPRZ HEVVY ROKKR
+                RDHOT HONZK PRPLE XXELL YUTOO TRAVV ROKKR
+                ROKKR ZEPPE IVINS MAURK
+                IVINS MIKEI EHUNT
+            ]
+            restrictions:
+            {
+                CRUUE: >29000 =280
+                EEAZY: >24000 <29000 =280
+                HIHWY: >20000 <22000 =280
+                MAIDD: >17000 <19000
+                PEPRZ: >14000 <16000 =270
+                ROKKR: >11000 <12000 =250
+                HONZK: >24000
+                PRPLE: >20000 <22000 =280
+                XXELL: >17000 <19000
+                YUTOO: >14000 <16000 =270
+                ZEPPE: >9000 <10000
+                IVINS: >8000
+                MAURK: =6000
+                MIKEI: =7000
+                EHUNT: =6000
+            }
+            labels: REBRG RDHOT ROKKR MAURK EHUNT
+        }
+        {
+            direction: Inbound
+            # THRNE 3 RNAV ARRIVAL
+            name: THRNE 3
+            runways: 08 15 26 33
+            segments: [
+                PHRED QUTIP DROGO DEWWW DNERY ARRYA YATZE IRONN THRNE BFOON CRCUS NNEDD
+            ]
+            restrictions:
+            {
+                QUTIP: <29000
+                DROGO: >24000
+                DEWWW: >21000
+                DNERY: <20000
+                ARRYA: =16000
+                YATZE: >14000 <15000
+                IRONN: =13000
+                THRNE: <11000
+                BFOON: =10000
+                CRCUS: =10000
+                NNEDD: =8000
+            }
+            labels: PHRED THRNE NNEDD
+        }
+        {
+            direction: Inbound
+            # WEESL 1 RNAV ARRIVAL
+            name: WEESL 1
+            runways: 08 15 26 33
+            segments: [
+                NINTY WEESL
+                EHF AMANY WEESL
+                WRING AMANY
+                WEESL GRRIT SWIIM LYNXX
+            ]
+            restrictions:
+            {
+                SWIIM: =9000
+                LYNXX: =9000
+            }
+            labels: NINTY EHF WRING WEESL LYNXX
+        }
+        {
+            direction: Outbound
+            # OROSZ 2 RNAV DEPARTURE
+            name: OROSZ 2
+            runways: 08 15 26 33
+            segments: [
+                KBUR TILLR OROSZ BRRKK MDWAY COREZ
+                OROSZ HEYJO CSTRO
+            ]
+            restrictions:
+            {
+                TILLR: >8000
+                OROSZ: >9000
+            }
+            labels: OROSZ COREZ CSTRO
+        }
+        {
+            direction: Outbound
+            # SLAPP 1 RNAV DEPARTURE
+            name: SLAPP 1
+            runways: 08 15 26 33
+            segments: [
+                KBUR RAYVE SLAPP YAAPY JETHK AERRO DECAS BLH
+                JETHK BBITE ANTLP GUNNR HAILO
+                ANTLP NNAVY BLAZN LAS
+                NNAVY MISEN
+                ANTLP HEC
+            ]
+            restrictions:
+            {
+                RAYVE: >7000
+                SLAPP: >13000
+                YAAPY: >15000
+                JETHK: <19000
+                BBITE: >20000
+            }
+            labels: SLAPP ANTLP HAILO LAS MISEN HEC BLH
+        }
+        {
+            direction: Outbound
+            # VVERA 2 RNAV DEPARTURE
+            name: VVERA 2
+            runways: 08 15 26 33
+            segments: [
+                KBUR CCHUM KIMMO SLAPP JARZO VVERA SSETH DAG
+                SSETH HEC
+            ]
+            restrictions:
+            {
+                CCHUM: >6800
+                KIMMO: >7000
+            }
+            labels: CCHUM VVERA DAG HEC
+        }
+    ]
+    options: no-points no-global-labels
+}
