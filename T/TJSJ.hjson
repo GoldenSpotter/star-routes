@@ -1,0 +1,119 @@
+{
+    airport: TJSJ
+    labels: VARNA WESEN TNNER MAELO
+    routes:
+    [
+        {
+            direction: Inbound
+            name: 26 & 28 STARs
+            runways: 26 28
+            segments:
+            [
+                SHMUU BEANO MAELO
+                KATOK BEANO
+                JOSHE PAPPO MAELO
+                MELLA JOSHE
+                GABYY JOSHE
+                KYAAK JOSHE
+                ZNDER JOSHE
+                WEXET SAALR PAPPO
+                MAVIE TROCO YUNKE
+            ]
+            restrictions:
+            {
+                BEANO: =11000
+                JOSHE: >7000
+                SAALR: =11000
+                MAVIE: =11000
+                YUNKE: >6000
+            }
+            labels:
+            '''
+            PAPPO JOSHE BEANO YUNKE
+            MAVIE MAELO SAALR
+            '''
+        }
+        {
+            direction: Inbound
+            name: 10 STARs
+            runways: 10
+            segments:
+            [
+                SHMUU BEANO MYLET TNNER
+                KATOK BEANO
+                JUICE CHAKA REKUA GARCY TNNER
+                MELLA JOSHE TNNER
+                GABYY JOSHE
+                KYAAK JOSHE
+                ZNDER JOSHE
+                WEXET SAALR FLABO TNNER
+                TROCO REKUA
+            ]
+            restrictions:
+            {
+                BEANO: =11000
+                MYLET: >6000
+                JOSHE: >7000
+            }
+            labels:
+            '''
+            CHAKA BEANO MYLET JOSHE
+            SAALR FLABO REKUA TROCO
+            '''
+        }
+        {
+            direction: Inbound
+            name: 08 STARs
+            runways: 08
+            segments:
+            [
+                SHMUU BEANO MYLET WESEN
+                KATOK BEANO
+                CHAKA REKUA PLENA WESEN
+                MELLA JOSHE VARNA
+                GABYY JOSHE
+                KYAAK JOSHE
+                ZNDER JOSHE
+                WEXET SAALR FLABO WESEN
+                MAVIE REKUA
+            ]
+            restrictions:
+            {
+                MYLET: >6000
+                BEANO: =11000
+                CHAKA: >6000
+                JOSHE: >7000
+                SAALR: =11000
+                REKUA: >6000
+                MAVIE: =11000
+            }
+            labels:
+            '''
+            BEANO MYLET REKUA CHAKA PLENA
+            JOSHE VARNA FLABO SAALR MAVIE
+            '''
+        }
+        {
+            direction: Outbound
+            name: RNAV SIDs
+            runways: 08 10 26 28
+            segments:
+            [
+                GANBO CLAYO TOREY
+                GLADA MAWLY
+                HAMAR COY
+                HAMAR SLUGO
+                HAMAR JUICE
+                JAAWS UTAHS
+            ]
+            restrictions:
+            {
+                TOREY: >21000
+                GANBO: >6000
+                GLADA: >6000
+                MAWLY: >10000
+            }
+            labels: JAAWS GANBO GLADA HAMAR CLAYO
+        }
+    ]
+}
