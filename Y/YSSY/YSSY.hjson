@@ -1,0 +1,222 @@
+{
+    airport: YSSY
+    labels: BOREE MARLN MEPIL ODALE RIVET
+    routes:
+    [
+        {
+            direction: Inbound
+            name: BOREE 9A STAR
+            runways: 07 16L 25 34L 34R
+            segments:
+            [
+                BOREE BEKLO BEROW OVILS JENTL TESAT
+                OVILS MAJAR DIPPA JAKLN
+                JENTL ZONKA DUDOK NASHO
+            ]
+            restrictions:
+            {
+                BEKLO: >8000
+                BEROW: <9000
+                ZONKA: >6000
+                DIPPA: >6000
+            }
+            labels: BOREE NASHO JAKLN
+        }
+        {
+            direction: Inbound
+            name: BOREE 9P STAR
+            runways: 16R
+            segments:
+            [
+                BOREE BEKLO DALAR DUMOP URDEN
+            ]
+            restrictions:
+            {
+                BEKLO: >8000
+                DALAR: >4000 <5000
+                DUMOP: =3000
+                URDEN: <185
+            }
+            labels: BOREE URDEN
+        }
+        {
+            direction: Inbound
+            name: MARLN 3 STAR
+            runways: 07 16L 16R 25 34L 34R
+            segments:
+            [
+                MARLN BIKUS WHALE PRAWN TESAT
+                PRAWN MANFA JAKLN
+            ]
+            restrictions:
+            {
+                BIKUS: >8000
+                WHALE: <9000
+                PRAWN: >6000
+            }
+            labels: MARLN PRAWN JAKLN
+        }
+        {
+            direction: Inbound
+            name: MEPIL 3 STAR
+            runways: 07 16L 16R 25 34L 34R
+            segments:
+            [
+                SANAD OLTIN YAKKA MEPIL LANOL TESAT
+            ]
+            restrictions:
+            {
+                MEPIL: >8000
+                LANOL: <7000
+            }
+            labels: SANAD MEPIL
+        }
+        {
+            direction: Inbound
+            name: ODALE 7 STAR
+            runways: 07 16L 16R 25 34L 34R
+            segments:
+            [
+                ODALE KABLO MITSA ANKUB TESAT
+            ]
+            restrictions:
+            {
+                KABLO: >8000
+                MITSA: <7000
+            }
+            labels: ODALE
+        }
+        {
+            direction: Inbound
+            name: RIVET 3 STAR
+            runways: 07 16L 16R 25 34L 34R
+            segments:
+            [
+                RIVET BIGEM TAMMI BOOGI TESAT
+                BOOGI DUDOK NASHO
+            ]
+            restrictions:
+            {
+                BIGEM: >8000
+                TAMMI: <9000
+                BOOGI: >6000
+            }
+            labels: RIVET NASHO
+        }
+        {
+            direction: Outbound
+            name: ABBEY 3 SID
+            runways: 16L
+            segments:
+            [
+                YSSY KEVIN JULIA ABBEY WOLSM
+            ]
+            restrictions:
+            {
+                KEVIN: >6000
+                JULIA: >10000
+            }
+            labels: ABBEY 
+        }
+        {
+            direction: Outbound
+            name: ANKUB 1 & CLIFF 4 SIDS
+            runways: 16R 34L
+            segments:
+            [
+                YSSY ANKUB WOL18
+                YSSY CLIFF WOL18
+            ]
+            labels: ANKUB CLIFF
+        }
+        {
+            direction: Outbound
+            name: DEENA 7 SID
+            runways: 16R
+            segments:
+            [
+                YSSY DUNES DEENA KAMPI WOLSM
+                KAMPI ANKUB
+            ]
+            restrictions: 
+            {
+                DEENA: >6000
+            }
+            labels: DEENA WOLSM ANKUB
+        }
+        {
+            direction: Outbound
+            name: ENTRA 5 SID
+            runways: 34R
+            segments:
+            [
+                YSSY HALAS ENTRA
+            ]
+            restrictions:
+            {
+                HALAS: >1000
+            }
+            labels: ENTRA
+        }
+        {
+            direction: Outbound
+            name: FISHA 8 SID
+            runways: 07
+            segments:
+            [
+                YSSY FISHA ENTRA
+                FISHA WOLSM
+            ]
+            restrictions:
+            {
+                FISHA: >1000
+            }
+            labels: FISHA ENTRA WOLSM
+        }
+        {
+            direction: Outbound
+            name: KAMBA 9 SID
+            runways: 07 16L
+            segments:
+            [
+                YSSY ENKAS SHORE KAMBA
+            ]
+            restrictions:
+            {
+                ENKAS: >2000
+            }
+            labels: KAMBA 
+        }
+        {
+            direction: Outbound
+            name: KAMPI 5 SID
+            runways: 16R
+            segments:
+            [
+                YSSY DUNES KAMPI
+            ]
+            labels: KAMPI
+        }
+        {
+            direction: Outbound
+            name: KEVIN 6 SID
+            runways: 16L
+            segments:
+            [
+                YSSY KEVIN ENTRA
+            ]
+            labels: ENTRA
+        }
+        {
+            direction: Outbound
+            name: MARUB 6 SID
+            runways: 34R
+            segments:
+            [
+                YSSY MARUB WOLSM
+            ]
+            labels: WOLSM
+        }
+    ]
+    options: no-points
+}
