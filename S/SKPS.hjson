@@ -1,0 +1,60 @@
+{
+    airport: SKPS
+    labels: MER PS903 PS966 PS964 PS588
+    routes:
+    [
+        {
+            direction: Outbound
+            name: 02 SIDs
+            runways: 02
+            segments:
+            [
+                PS903 MER
+                PS901 PS903 PS906
+                PS906 TITGU
+                PS906 ANKAS
+            ]
+            restrictions:
+            {
+                PS903: >9000
+                MER: >12000
+                PS906: >12000
+            }
+            labels: PS903 MER PS906
+        }
+        {
+            direction: Inbound
+            name: 20 Approaches
+            runways: 20
+            segments:
+            [
+                MER PS720
+                PS588 MER
+            ]
+            restrictions:
+            {
+                PS720: =9000
+                MER: =12000
+            }
+            labels: MER PS720 PS588
+        }
+        {
+            direction: Inbound
+            name: 02 Approaches
+            runways: 02
+            segments:
+            [
+                MER PS966 PS965 PS964 PS963
+                PS588 MER
+            ]
+            restrictions:
+            {
+                MER: >12000 <14000 <230
+                PS966: >10000
+                PS965: =9000 <180
+                PS964: =8500 <150
+            }
+            labels: MER PS964 PS588
+        }
+    ]
+}

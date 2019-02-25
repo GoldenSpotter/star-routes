@@ -1,0 +1,89 @@
+{
+    airport: RCTP
+    labels: FLASH KARAN JAMMY AUGUR OCTAN DECOY
+    routes:
+    [
+        {
+            direction: Inbound
+            name: 05L/05R STARs
+            runways: 05L 05R
+            segments:
+            [
+                BAKER SEPIA FETUS
+                DRAKE SEPIA
+                GRACE SEPIA
+                MEICH BRAVO JAMMY
+                ELBER BRAVO
+                FETUS KARAN
+            ]
+            restrictions:
+            {
+                BAKER: =20000
+                DRAKE: =20000
+                GRACE: =20000
+                KARAN: =4000
+            }
+            labels: SEPIA JAMMY BRAVO FETUS KARAN
+        }
+        {
+            direction: Inbound
+            name: 23L/23R STARs
+            runways: 23L 23R
+            segments:
+            [
+                BAKER SEPIA AUGUR
+                DRAKE SEPIA
+                GRACE SEPIA
+                ELBER BRAVO JUROR
+                MEICH BRAVO
+                AUGUR FLASH
+            ]
+            restrictions:
+            {
+                BAKER: <14000
+                DRAKE: <14000
+                GRACE: <14000
+                FLASH: =4000
+            }
+            labels: AUGUR SEPIA BRAVO FLASH JUROR
+        }
+        {
+            direction: Outbound
+            name: 05L 05R SIDs
+            runways: 05L 05R
+            segments:
+            [
+                NOVAS SUMER AJENT
+                NEPAS KUDOS
+                NEPAS TINHO
+                NEPAS ROBIN
+                OCTAN PIANO
+            ]
+            restrictions:
+            {
+                SUMER: >4000
+                NEPAS: >4500
+            }
+            labels: NOVAS SUMER NEPAS OCTAN
+        }
+        {
+            direction: Outbound
+            name: 23L/23R SIDs
+            runways: 23L 23R
+            segments:
+            [
+                SUMER AJENT
+                DECOY OCTAN ROBIN
+                OCTAN KUDOS
+                OCTAN TINHO
+                OCTAN PIANO
+            ]
+            restrictions:
+            {
+                SUMER: >4000
+                OCTAN: >8000
+            }
+            labels: SUMER DECOY OCTAN
+        }
+    ]
+}

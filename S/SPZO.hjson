@@ -1,0 +1,89 @@
+{
+    airport: SPZO
+    labels: URC KIMOR ZCO TOBUS ZO526
+    routes:
+    [
+        {
+            direction: Inbound
+            name: STARs
+            runways: 10 28
+            segments:
+            [
+                AKREL ZCO
+                MORVI URC
+                LITOT URC
+                ILMOX URC
+                CEMIL ESNOB URC
+            ]
+            restrictions:
+            {
+                MORVI: >21000
+                ESNOB: >22000
+            }
+            labels: ZCO URC AKREL MORVI ESNOB
+        }
+        {
+            direction: Inbound
+            name: 10 Approach
+            runways: 10
+            segments:
+            [
+                TOBUS ZCO
+            ]
+            restrictions:
+            {
+                TOBUS: =17000
+            }
+            labels: TOBUS ZCO
+        }
+        {
+            direction: Inbound
+            name: 28 Approach
+            runways: 28
+            segments:
+            [
+                URC ZO526
+            ]
+            restrictions:
+            {
+                URC: =17000
+            }
+            labels: URC ZO526
+        }
+        {
+            direction: Outbound
+            name: 10 SIDs
+            runways: 10
+            segments:
+            [
+                KIMOR D138S ZCO ZO920
+                KIMOR URC ESNOB CEMIL
+                URC LITOT
+                URC ILMOX
+                KIMOR D273Q MORVI TILPA
+                KIMOR D256Q DONKI ERODI
+            ]
+            restrictions:
+            {
+                KIMOR: >14500
+                ZO612: >16000
+                ZCO: >18000
+                URC: >17500
+                ESNOB: >22000
+                CEMIL: >23000
+                D256Q: >16000
+                DONKI: >21000
+                ERODI: >21000
+                D273Q: >16000
+                MORVI: >21000
+                TILPA: >21000
+            }
+            labels:
+            '''
+            URC D138S ZCO ESNOB KIMOR
+            ZO920 TILPA MORVI D273Q
+            D256Q DONKI ERODI
+            '''
+        }
+    ]
+}
