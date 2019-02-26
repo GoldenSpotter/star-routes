@@ -1,0 +1,53 @@
+{
+    airport: KHPN
+    labels: RYMES BDR NOBBI
+    routes:
+    [
+        {
+            direction: Inbound
+            name: Main STARs
+            runways: 16 34
+            segments:
+            [
+                VEERS IGN VALRE HAARP
+                ATHOS IGN
+                WEETS IGN
+                BOUNO DPK ZAHNN EILEN RYMES
+            ]
+            restrictions:
+            {
+                BOUNO: =17000
+                DPK: =15000 =250
+                EILEN: ~7000
+                VALRE: =6000
+            }
+            labels:
+            '''
+            IGN VALRE HAARP BOUNO DPK
+            ZAHNN EILEN RYMES
+            '''
+        }
+        {
+            direction: Inbound
+            name: Backup STARs
+            runways: 16 34
+            segments:
+            [
+                PETER TRESA NOBBI RYMES
+                WIGAN TRESA
+                DUNEE RICED KEYED BDR RYMES
+            ]
+            restrictions:
+            {
+                PETER: <17000
+                NOBBI: =6000
+                RICED: =9000
+            }
+            labels:
+            '''
+            TRESA RYMES NOBBI
+            DUNEE KEYED RICED
+            '''
+        }
+    ]
+}
