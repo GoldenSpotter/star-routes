@@ -1,0 +1,118 @@
+{
+    airport: YPAD
+    labels: LUNGA SIGUL MORPH KEEFO MOPRI
+    routes:
+    [
+        {
+            direction: Inbound
+            name: 05 STARs
+            runways: 05
+            segments:
+            [
+                DUKES ALEXI RIDMA LUNGA
+                BLACK STANZ LUNGA
+                RIKAB ALDAT SIGUL
+                AGROS ROGUE SALTY SIGUL
+                MARGO SALTY
+                KLAVA VICMA SALTY
+            ]
+            restrictions:
+            {
+                RIDMA: <230
+                STANZ: <230
+                ALDAT: <230
+                VICMA: =9000
+            }
+            labels: RIDMA STANZ ALDAT SALTY VICMA
+        }
+        {
+            direction: Inbound
+            name: 23 STARs
+            runways: 23
+            segments:
+            [
+                BLACK PLEZN KERRS GULLY
+                DRINA COMLY BRAKI OMDIN GULLY
+                KLAVA RAYNA ELIZA GULLY
+                RIKAB SALTY ELIZA
+                AGROS ROGUE SALTY
+                MARGO SALTY
+            ]
+            restrictions:
+            {
+                PLEZN: <9000
+                KERRS: >5000 <230
+                COMLY: <13000
+                BRAKI: <9000
+                OMDIN: <230
+                ELIZA: <230
+            }
+            labels: GULLY ELIZA SALTY BRAKI PLEZN
+        }
+        {
+            direction: Inbound
+            name: 12 STARs
+            runways: 12
+            segments:
+            [
+                ELROX TROUB RUDIE MULDR
+                AGROS PAMMY MULDR
+                MARGO PAMMY
+                RIKAB GULFS MULDR
+                ATPIP KASBU AD
+            ]
+            restrictions:
+            {
+                TROUB: >5000
+                RUDIE: <4000 <230
+                PAMMY: <7000
+                GULFS: <7000 <230
+                KASBU: <5000
+            }
+            labels: RUDIE PAMMY GULFS KASBU
+        }
+        {
+            direction: Outbound
+            name: 05 SIDs
+            runways: 05
+            segments:
+            [
+                KNOBL ROGGS PANKI
+                ROGGS BENDO
+                MOPRI SALIS PARKA BIGAL HAWKY
+                PARKA DERWY GILES
+                MOPRI ORBUN
+                MOPRI SEDAN
+            ]
+            restrictions:
+            {
+                MOPRI: >5000
+                SALIS: >7000
+                PARKA: >10000
+            }
+            labels: ROGGS SALIS PARKA BIGAL DERWY
+        }
+        {
+            direction: Outbound
+            name: 23 SIDs
+            runways: 23
+            segments:
+            [
+                COLPY SULLY MORPH BARKA MURRY BENDO
+                MURRY PANKI
+                COLPY KEEFO GILES
+                KEEFO BIGAL HAWKY
+                MORPH URADA SEDAN
+            ]
+            restrictions:
+            {
+                COLPY: >2500
+                SULLY: >5000
+                MORPH: >6000
+                BARKA: >14000
+                URADA: >12000
+            }
+            labels: COLPY MORPH KEEFO URADA
+        }
+    ]
+}
