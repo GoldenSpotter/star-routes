@@ -1,0 +1,264 @@
+{
+    airport: RPLL
+    labels: MIA LBG POLIO GONDO BUZAL
+    routes:
+    [
+        {
+            direction: Inbound
+            name: ALBAT 1
+            runways: 06 24
+            segments:
+            [
+                ALBAT MALEL MIA
+            ]
+            restrictions:
+            {
+                MALEL: =5000
+                MIA: =4000
+            }
+            labels: ALBAT MALEL
+        }
+        {
+            direction: Inbound
+            name: ESCAN 1
+            runways: 06 24
+            segments:
+            [
+                ESCAN ALPAS RADEG MIA
+            ]
+            restrictions:
+            {
+                RADEG: =6000
+            }
+            labels: RADEG ALPAS
+        }
+        {
+            direction: Inbound
+            name: ALBAT 1P & POLIO 1P
+            runways: 24
+            segments:
+            [
+                POLIO LOURD MUTAN
+                ALBAT LIPER MUTAN
+            ]
+            restrictions:
+            {
+                POLIO: >14500 <20500 <250
+                LOURD: >8000 <10500
+                ALBAT: >13500 <20500 <250
+                LIPER: >8500 <13000
+                MUTAN: >7000 <210
+            }
+            labels: LIPER LOURD MUTAN
+        }
+        {
+            direction: Inbound
+            name: ALBAT 1R & CONDE 1R
+            runways: 06
+            segments:
+            [
+                ALBAT SABAN ILING BATAS
+                CONDE SAFRA BATAS TRECE
+            ]
+            restrictions:
+            {
+                CONDE: >15500 <23000 <250
+                SAFRA: >8500 <11500
+                ALBAT: >11500 <15000 <250
+                SABAN: <10000
+                ILING: >8500
+                BATAS: <9000
+                TRECE: >5000 <210
+            }
+            labels: SAFRA ILING BATAS TRECE
+        }
+        {
+            direction: Inbound
+            name: BAYAN 1A
+            runways: 06 24
+            segments:
+            [   
+                BAYAN LABON MIA
+            ]
+            restrictions:
+            {
+                LABON: =6000
+                MIA: =4000
+            }
+            labels: BAYAN LABON
+        }
+        {
+            direction: Inbound
+            name: POLIO 1
+            runways: 06 24
+            segments:
+            [
+                POLIO MUNTI BANGI MIA
+            ]
+            restrictions:
+            {
+                MUNTI: =7000
+                MIA: =5000
+            }
+            labels: BANGI POLIO MUNTI
+        }
+        {
+            direction: Inbound
+            name: BETEL 1
+            runways: 06 24
+            segments:
+            [
+                BETEL KEERO BORGA MIA
+            ]
+            restrictions:
+            {
+                KEERO: =6000
+                BORGA: =5000
+                MIA: =4000
+            }
+            labels: BETEL KEERO BORGA
+        }
+        {
+            direction: Inbound
+            name: BUCAL 1
+            runways: 06 24
+            segments:
+            [
+                BUCAL BALAY INDAN MIA
+            ]
+            restrictions:
+            {
+                BALAY: =6000
+                INDAN: =5000
+                MIA: =4000
+            }
+            labels: BUCAL BALAY INDAN
+        }
+        {
+            direction: Inbound
+            name: CABANATUAN 1
+            runways: 06 24
+            segments:
+            [
+                CAB TARTA GARAY MIA
+            ]
+            restrictions:
+            {
+                TARTA: =7000
+                MIA: =5000
+            }
+            labels: CAB TARTA GARAY
+        }
+        {
+            direction: Inbound
+            name: CONDE 1
+            runways: 06 24
+            segments:
+            [
+                CONDE PABLO BANOS MIA
+            ]
+            restrictions:
+            {
+                PABLO: =10000
+                BANOS: =6000
+                MIA: =4000
+            }
+            labels: CONDE PABLO BANOS
+        }
+        {
+            direction: Inbound
+            name: CIA 1P & LBG 1P
+            runways: 24
+            segments:
+            [
+                LBG LUCAN ALIZA BUZAL
+                CIA SIDRO BUZAL
+            ]
+            restrictions:
+            {
+                CIA: >13000 <18500 <250
+                SIDRO: >9500 <13000
+                BUZAL: >7000 <210
+                ALIZA: >10000
+                LUCAN: >15500
+                LBG: >27000 <250
+            }
+            labels:
+            '''
+            CIA SIDRO BUZAL
+            ALIZA LUCAN LBG
+            '''
+        }
+        {
+            direction: Inbound
+            name: CIA 1R & POLIO 1R
+            runways: 06
+            segments:
+            [
+                CIA PUGAD OREVI DAGAT
+                POLIO VINCE PUGAD DAGAT
+            ]
+            restrictions:
+            {
+                POLIO: >24500 <36500 <250
+                VINCE: >13000 <18000
+                CIA: >13000 <21000 <250
+                PUGAD: >8000 <11000
+                OREVI: >6500 <9000
+                DAGAT: >5000 <210
+            }
+            labels:
+            '''
+            CIA VINCE PUGAD
+            OREVI DAGAT
+            '''
+        }
+        {
+            direction: Inbound
+            name: CONDE 1P, IBAGO 1P, LAIYA 1P
+            runways: 24
+            segments:
+            [
+                IBAGO BATON FRANI BANCA
+                CONDE TOBAL BANCA BRANO NATAY
+                LAIYA BATON
+            ]
+            restrictions:
+            {
+                IBAGO: >16000 <24000 <250
+                LAIYA: >16000 <23500
+                FRANI: >9500 <13500
+                BANCA: <10000
+                CONDE: >15000 <22000 <250
+                TOBAL: >9500 <13500
+                BRANO: >8000
+                NATAY: >5000 <210
+            }
+            labels:
+            '''
+            BATON BANCA BRANO
+            NATAY CONDE
+            '''
+        }
+        {
+            direction: Inbound
+            name: IBAGO 1R, LAIYA 1R, LBG 1R
+            runways: 06
+            segments:
+            [
+                LAIYA LOBOK GOLOD GONDO
+                IBAGO LOBOK
+                LBG GONDO
+            ]
+            restrictions:
+            {
+                LAIYA: >17500 <25500 <250
+                IBAGO: >17000 <25000 <250
+                GOLOD: >10000 <12500
+                GONDO: >5000 <210
+                LBG: >13000 <22500 <250
+            }
+            labels: GOLOD GONDO LBG LOBOK
+        }
+    ]
+}
