@@ -1,98 +1,101 @@
 {
-    airport: TNCC
-    labels: '''
-            OLITO NOXAD 
-            '''
-    routes: [
-        {
-            direction: Outbound
-            runways: 11
-            name: East Two RNAV Departure
-            segments: [
-                OLITO REPIS
-                OLITO EMAPA
-                OLITO IRLEP
-                OLITO AGLIS
-                OLITO URNOT
-                OLITO NOXAD
-                OLITO PJBCB
-                OLITO IRLEP
-            ]
-            labels: AGLIS IRLEP EMAPA REPIS OLITO
-        }
-        {
-            direction: Outbound
-            runways: 29
-            name: West Two RNAV Departure
-            segments: [
-                IMEVA REPIS
-                IMEVA EMAPA
-                IMEVA TABEB IRLEP
-                TABEB AGLIS
-                IMEVA AGLIS
-                IMEVA MUNBA
-                IMEVA URNOT
-                IMEVA NOXAD
-                IMEVA PJBCB
-            ]
-            labels: IMEVA TABEB AGLIS IRLEP EMAPA REPIS
-        }
-        {
-            direction: Inbound
-            runways: 29
-            name: East Three RNAV Arrival
-            segments: [
-                ONDAS NOXAD
-                KERLI NOXAD
-                BEXER NOXAD
-                SINDA NOXAD
-                NOXAD URNAP
-                EMAPA LOGLA URNAP
-                OVILA LOGLA
-            ]
-            labels: NOXAD URNAP LOGLA
-        }
-        {
-            direction: Inbound
-            runways: 11
-            name: West Three RNAV Arrival
-            segments: [
-                SINDA AGLIS
-                BEXER AGLIS
-                KERLI AGLIS
-                ONDAS AGLIS
-                AGLIS TABEB
-                IRLEP TABEB
-                PJBCB EMAPA TABEB
-                OVILA EMAPA
-            ]
-            labels: TABEB AGLIS EMAPA
-        }
-    ]
-    points: [
-        {
-            name: NOXAD
-            altitude_required_min: 3000
-        }
-        {
-            name: LOGLA
-            altitude_required_min: 3000
-        }
-        {
-            name: URNAP
-            altitude: 2500
-        }
-        {
-            name: AGLIS
-            altitude_required_min: 3000
-        }
-        {
-            name: EMAPA
-            altitude_required_min: 3000
-        }
-        {
-            name: TABEB
-            altitude: 2500
-        }
-    ]
+   airport: TNCC
+   labels: "OLITO NOXAD "
+   routes:
+   [
+      {
+         direction: Outbound
+         runways: 11
+         name: East Two RNAV Departure
+         segments:
+         [
+            OLITO REPIS
+            OLITO EMAPA
+            OLITO IRLEP
+            OLITO AGLIS
+            OLITO URNOT
+            OLITO NOXAD
+            OLITO PJBCB
+            OLITO IRLEP
+         ]
+         labels: AGLIS IRLEP EMAPA REPIS OLITO
+         restrictions:
+         {
+            NOXAD: >3000
+            AGLIS: >3000
+            EMAPA: >3000
+         }
+      }
+      {
+         direction: Outbound
+         runways: 29
+         name: West Two RNAV Departure
+         segments:
+         [
+            IMEVA REPIS
+            IMEVA EMAPA
+            IMEVA TABEB IRLEP
+            TABEB AGLIS
+            IMEVA AGLIS
+            IMEVA MUNBA
+            IMEVA URNOT
+            IMEVA NOXAD
+            IMEVA PJBCB
+         ]
+         labels: IMEVA TABEB AGLIS IRLEP EMAPA REPIS
+         restrictions:
+         {
+            NOXAD: >3000
+            AGLIS: >3000
+            EMAPA: >3000
+            TABEB: =2500
+         }
+      }
+      {
+         direction: Inbound
+         runways: 29
+         name: East Three RNAV Arrival
+         segments:
+         [
+            ONDAS NOXAD
+            KERLI NOXAD
+            BEXER NOXAD
+            SINDA NOXAD
+            NOXAD URNAP
+            EMAPA LOGLA URNAP
+            OVILA LOGLA
+         ]
+         labels: NOXAD URNAP LOGLA
+         restrictions:
+         {
+            NOXAD: >3000
+            LOGLA: >3000
+            URNAP: =2500
+            EMAPA: >3000
+         }
+      }
+      {
+         direction: Inbound
+         runways: 11
+         name: West Three RNAV Arrival
+         segments:
+         [
+            SINDA AGLIS
+            BEXER AGLIS
+            KERLI AGLIS
+            ONDAS AGLIS
+            AGLIS TABEB
+            IRLEP TABEB
+            PJBCB EMAPA TABEB
+            OVILA EMAPA
+         ]
+         labels: TABEB AGLIS EMAPA
+         restrictions:
+         {
+            AGLIS: >3000
+            EMAPA: >3000
+            TABEB: =2500
+         }
+      }
+   ]
 }

@@ -1,59 +1,45 @@
 {
-    airport: KBZN
-    options: no-global-labels
-    routes: [
-        {
-            direction: Inbound
-            # ILS Rwy 12 
-            name: ILS12
-            runways: 12
-            segments: [
-                HEBIV THESE FALIA BZN
-            ]
-            labels: HEBIV THESE FALIA BZN
-        }
-        {
-            direction: INBOUND
-            # RNAV Rwy 30
-            name: RNAV30
-            runways: 30
-            segments: [
-                JOXIT RANEY WOMET MODJY CIVMO JANOK SITRE
-                KECOT FIBNY
-                PESRE TIYOL LAVPE JAPER SITRE
-                FIDEP FIBNY
-            ]
-            labels: PESRE LAVPE SITRE JOXIT WOMET MODJY KECOT FIDEP
-        }
-    ]
-    points: [
-        {
-            name: HEBIV
-            altitude_recommended: 9400
-        }
-        {
-            name: FALIA
-            altitude_recommended: 8000
-        }
-        {
-            name: PESRE
-            altitude_recommended: 9000
-        }
-        {
-            name: LAVPE
-            altitude_recommended: 8300
-        }
-        {
-            name: SITRE
-            altitude_recommended: 5700
-        }
-        {
-            name: WOMET
-            altitude_recommended: 9000
-        }
-        {
-            name: MODJY
-            altitude_recommended: 7400
-        }
-    ]
+   airport: KBZN
+   options: no-global-labels
+   routes:
+   [
+      {
+         direction: Inbound
+         # ILS Rwy 12
+         name: ILS12
+         runways: 12
+         segments:
+         [
+            HEBIV THESE FALIA BZN
+         ]
+         labels: HEBIV THESE FALIA BZN
+         restrictions:
+         {
+            HEBIV: ~9400
+            FALIA: ~8000
+         }
+      }
+      {
+         direction: INBOUND
+         # RNAV Rwy 30
+         name: RNAV30
+         runways: 30
+         segments:
+         [
+            JOXIT RANEY WOMET MODJY CIVMO JANOK SITRE
+            KECOT FIBNY
+            PESRE TIYOL LAVPE JAPER SITRE
+            FIDEP FIBNY
+         ]
+         labels: PESRE LAVPE SITRE JOXIT WOMET MODJY KECOT FIDEP
+         restrictions:
+         {
+            PESRE: ~9000
+            LAVPE: ~8300
+            SITRE: ~5700
+            WOMET: ~9000
+            MODJY: ~7400
+         }
+      }
+   ]
 }

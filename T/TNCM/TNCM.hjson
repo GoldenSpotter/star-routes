@@ -1,50 +1,48 @@
 {
-    airport: TNCM
-    labels: ULUBA MODOR BOPAT ILORA
-    routes: [
-        {
-            direction: Inbound
-            name: ULUBA
-            runways: 10
-            segments: [
-                MNOLO ULUBA
-                TRNKY ULUBA
-                SLUGO ULUBA
-                GOUDA ILORA ULUBA
-                DANDE ULUBA
-                TIKAL ULUBA
-                ELOPO ULUBA
-            ]
-            labels: ULUBA
-        }
-        {
-            direction: Outbound
-            name: RNAV Departures
-            runways: 10
-            # BOPAT2 & MODOR2
-            segments: [
-                MODOR TRNKY
-                MODOR MNOLO
-                MODOR ELOPO
-                MODOR TIKAL
-                MODOR DANDE
-                MODOR GOUDA
-                MODOR JUICE
-                BOPAT GOUDA
-                BOPAT JUICE
-                BOPAT DANDE
-            ]
-            labels: MODOR BOPAT
-        }
-    ]
-    points: [
-        {
-            name: MODOR
-            altitude_required_min:4000
-        }
-        {
-            name: BOPAT
-            altitude_required_min: 4000
-        }
-    ]
+   airport: TNCM
+   labels: ULUBA MODOR BOPAT ILORA
+   routes:
+   [
+      {
+         direction: Inbound
+         name: ULUBA
+         runways: 10
+         segments:
+         [
+            MNOLO ULUBA
+            TRNKY ULUBA
+            SLUGO ULUBA
+            GOUDA ILORA ULUBA
+            DANDE ULUBA
+            TIKAL ULUBA
+            ELOPO ULUBA
+         ]
+         labels: ULUBA
+      }
+      {
+         direction: Outbound
+         name: RNAV Departures
+         runways: 10
+         # BOPAT2 & MODOR2
+         segments:
+         [
+            MODOR TRNKY
+            MODOR MNOLO
+            MODOR ELOPO
+            MODOR TIKAL
+            MODOR DANDE
+            MODOR GOUDA
+            MODOR JUICE
+            BOPAT GOUDA
+            BOPAT JUICE
+            BOPAT DANDE
+         ]
+         labels: MODOR BOPAT
+         restrictions:
+         {
+            MODOR: >4000
+            BOPAT: >4000
+         }
+      }
+   ]
 }

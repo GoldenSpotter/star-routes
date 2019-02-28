@@ -1,67 +1,68 @@
 {
-    airport: MMTJ
-    labels: KREPE ULDUD TJ502 TJ567
-    routes: [
-        {
-            direction: Inbound
-            name: 09 STAR
-            # TANRI1A, TOVES1A, and RNAV Approach
-            runways: 09
-            segments: [
-                TANRI ULDUD TUBUS
-                TOVES KREPE TUBUS
-                TUBUS TJ402 TJ414
-            ]
-            restrictions:
-            {
-                TANRI: >20000
-                ULDUD: >11000
-                TOVES: >20000
-                KREPE: >12000
-                TUBUS: >4000
-            }
-            labels: TUBUS TOVES TJ402 TJ414
-        }
-        {
-            direction: Inbound
-            name: 27 STAR
-            # TANRI1B, TOVES1B, and RNAV Approach
-            runways: 27
-            segments: [
-                TANRI ULDUD TJ557 TJ410
-                TOVES KREPE TJ556 TJ557
-            ]
-            restrictions:
-            {
-                TOVES: >20000
-                KREPE: >8000
-                TANRI: >20000
-                ULDUD: >8000
-            }
-            labels: TJ556 TJ557
-        }
-        {
-            direction: Outbound
-            name: 09/27 Departures
-            # KOBAM1A, KOBAM2B, TEVIR1A, TEVIR2B, TUMAP1A, TUMAP2B
-            runways: 09 27
-            segments: [
-                TJ502 OASIS KOBAM
-                OASIS TUMAP
-                OASIS TEVIR
-                TJ567 TJ561 OASIS
-            ]
-            restrictions:
-            {
-                TJ561: >8000
-                KOBAM: >20000
-                TUMAP: >20000
-                TEVIR: >20000
-            }
-            labels: TJ502 OASIS KOBAM TUMAP TEVIR TJ567 TJ561
-        }
-    ]
-    options: no-points
+   airport: MMTJ
+   labels: KREPE ULDUD TJ502 TJ567
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 09 STAR
+         # TANRI1A, TOVES1A, and RNAV Approach
+         runways: 09
+         segments:
+         [
+            TANRI ULDUD TUBUS
+            TOVES KREPE TUBUS
+            TUBUS TJ402 TJ414
+         ]
+         restrictions:
+         {
+            TANRI: >20000
+            ULDUD: >11000
+            TOVES: >20000
+            KREPE: >12000
+            TUBUS: >4000
+         }
+         labels: TUBUS TOVES TJ402 TJ414
+      }
+      {
+         direction: Inbound
+         name: 27 STAR
+         # TANRI1B, TOVES1B, and RNAV Approach
+         runways: 27
+         segments:
+         [
+            TANRI ULDUD TJ557 TJ410
+            TOVES KREPE TJ556 TJ557
+         ]
+         restrictions:
+         {
+            TOVES: >20000
+            KREPE: >8000
+            TANRI: >20000
+            ULDUD: >8000
+         }
+         labels: TJ556 TJ557
+      }
+      {
+         direction: Outbound
+         name: 09/27 Departures
+         # KOBAM1A, KOBAM2B, TEVIR1A, TEVIR2B, TUMAP1A, TUMAP2B
+         runways: 09 27
+         segments:
+         [
+            TJ502 OASIS KOBAM
+            OASIS TUMAP
+            OASIS TEVIR
+            TJ567 TJ561 OASIS
+         ]
+         restrictions:
+         {
+            TJ561: >8000
+            KOBAM: >20000
+            TUMAP: >20000
+            TEVIR: >20000
+         }
+         labels: TJ502 OASIS KOBAM TUMAP TEVIR TJ567 TJ561
+      }
+   ]
 }
-
-

@@ -1,99 +1,103 @@
 {
-    airport: MMMX
-    labels: SLM SMO MEX D140H D233F D053T
-    routes: [
-        {
-            direction: Inbound
-            name: 23L 23R STARs
-            runways: 23L 23R
-            segments: [
-                SLM ALKOM D053T
-                PCA ALKOM
-                QET TIKEB SLM D140H
-                SASUT SLM
-                AVSAR SLM
-                DATUL SLM
-                MEX D321W PTJ31 D303J SLM D140H
-            ]
-            restrictions:
-            {
-                SLM: >13000 <16000 =220
-                D140H: =12000 =200
-                MEX: =24000 =250
-                D321W: =18000
-            }
-            labels:
+   airport: MMMX
+   labels: SLM SMO MEX D140H D233F D053T
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 23L 23R STARs
+         runways: 23L 23R
+         segments:
+         [
+            SLM ALKOM D053T
+            PCA ALKOM
+            QET TIKEB SLM D140H
+            SASUT SLM
+            AVSAR SLM
+            DATUL SLM
+            MEX D321W PTJ31 D303J SLM D140H
+         ]
+         restrictions:
+         {
+            SLM: >13000 <16000 =220
+            D140H: =12000 =200
+            MEX: =24000 =250
+            D321W: =18000
+         }
+         labels:
             '''
             SLM D053T D140H SASUT AVSAR
             DATUL ALKOM QET PCA MEX D321W
             '''
-        }
-        {
-            direction: Inbound
-            name: 05L 05R
-            runways: 05L 05R
-            segments: [
-                QET TIKEB SLM SMO
-                SASUT SLM
-                AVSAR SLM
-                DATUL SLM
-                TEQ DUXOP MEX SMO
-            ]
-            restrictions:
-            {
-                MEX: =12000
-                SLM: >13000 <16000 =220
-            }
-            labels:
+      }
+      {
+         direction: Inbound
+         name: 05L 05R
+         runways: 05L 05R
+         segments:
+         [
+            QET TIKEB SLM SMO
+            SASUT SLM
+            AVSAR SLM
+            DATUL SLM
+            TEQ DUXOP MEX SMO
+         ]
+         restrictions:
+         {
+            MEX: =12000
+            SLM: >13000 <16000 =220
+         }
+         labels:
             '''
             QET SLM SMO SASUT AVSAR
             DATUL TEQ MEX
             '''
-        }
-        {
-            direction: Outbound
-            name: 23L/23R SIDs
-            runways: 23L 23R
-            segments: [
-                D233F URTOV OTMOS CUA
-                URTOV D239Q PBC
-                D239Q APN
-                D233F SMO PTJ
-                SMO TLC
-            ]
-            restrictions:
-            {
-                OTMOS: <23000
-            }
-            labels:
+      }
+      {
+         direction: Outbound
+         name: 23L/23R SIDs
+         runways: 23L 23R
+         segments:
+         [
+            D233F URTOV OTMOS CUA
+            URTOV D239Q PBC
+            D239Q APN
+            D233F SMO PTJ
+            SMO TLC
+         ]
+         restrictions:
+         {
+            OTMOS: <23000
+         }
+         labels:
             '''
             D233F OTMOS CUA URTOV D239Q
             PBC APN D233F SMO PTJ TLC
             '''
-        }
-        {
-            direction: Outbound
-            name: 05L/05R SIDs
-            runways: 05L 05R
-            segments: [
-                SEBED OMPUT
-                SEBED APN OMPUT
-                SEBED D102J TLC23
-                TLC23 TLC
-                TLC23 PTJ
-                D102J CUA
-                APN19 PBC
-            ]
-            restrictions:
-            {
-                TLC: <23000
-            }
-            labels:
+      }
+      {
+         direction: Outbound
+         name: 05L/05R SIDs
+         runways: 05L 05R
+         segments:
+         [
+            SEBED OMPUT
+            SEBED APN OMPUT
+            SEBED D102J TLC23
+            TLC23 TLC
+            TLC23 PTJ
+            D102J CUA
+            APN19 PBC
+         ]
+         restrictions:
+         {
+            TLC: <23000
+         }
+         labels:
             '''
             SEBED APN19 D102J TLC23
             OMPUT TLC PTJ PBC APN CUA
             '''
-        }
-    ]
-    options: no-points
+      }
+   ]
 }

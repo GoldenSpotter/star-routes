@@ -1,67 +1,66 @@
 {
-    airport: MHTG
-    labels: MELVO TALAG TG024 TG015 TG012 TNT
-    routes:
-    [
-        {
-            direction: Inbound
-            name: 02 STARs and RNAV Approach
-            runways: 02
-            segments:
-            [
-                TALAG MELVO TG017 TG015 TG014 TG013 TG012 TG011
-                VITAN TNT TG018 TG006 TG015
-            ]
-            restrictions:
-            {
-                TG015: =7000
-                TNT: >8000
-                VITAN: >10000
-                TALAG: >10000
-                MELVO: >9000
-                TG012: =5500
-            }
-            labels: TG015 TG012 MELVO TNT TG006 TALAG VITAN
-        }
-        {
-            direction: Inbound
-            name: 20 STARs and RNAV Approach
-            runways: 20
-            segments:
-            [
-                TALAG MELVO TG024 TG021 TG020
-                VITAN TNT
-            ]
-            restrictions:
-            {
-                TNT: >8000
-                VITAN: >10000
-                TALAG: >10000
-                MELVO: >9000
-                TG024: =6500
-            }
-            labels: VITAN TNT TALAG MELVO TG024
-        }
-        {
-            direction: Inbound
-            name: 02 RNAV SID
-            runways: 02
-            segments:
-            [
-                TG030 TG004 TG005 VITAN
-                TG030 TG002 ARITA
-                TG002 TALAG BTO
-                TALAG TG003 ALFRA LIBIS
-                ALFRA MGA
-            ]
-            restrictions:
-            {
-                TG002: >11000
-                TG030: >8500
-                TG004: >12000
-            }
-            labels: TG030 TG004 TALAG ALFRA VITAN TG002 ARITA LIBIS
-        }
-    ]
-    options: no-points
+   airport: MHTG
+   labels: MELVO TALAG TG024 TG015 TG012 TNT
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 02 STARs and RNAV Approach
+         runways: 02
+         segments:
+         [
+            TALAG MELVO TG017 TG015 TG014 TG013 TG012 TG011
+            VITAN TNT TG018 TG006 TG015
+         ]
+         restrictions:
+         {
+            TG015: =7000
+            TNT: >8000
+            VITAN: >10000
+            TALAG: >10000
+            MELVO: >9000
+            TG012: =5500
+         }
+         labels: TG015 TG012 MELVO TNT TG006 TALAG VITAN
+      }
+      {
+         direction: Inbound
+         name: 20 STARs and RNAV Approach
+         runways: 20
+         segments:
+         [
+            TALAG MELVO TG024 TG021 TG020
+            VITAN TNT
+         ]
+         restrictions:
+         {
+            TNT: >8000
+            VITAN: >10000
+            TALAG: >10000
+            MELVO: >9000
+            TG024: =6500
+         }
+         labels: VITAN TNT TALAG MELVO TG024
+      }
+      {
+         direction: Inbound
+         name: 02 RNAV SID
+         runways: 02
+         segments:
+         [
+            TG030 TG004 TG005 VITAN
+            TG030 TG002 ARITA
+            TG002 TALAG BTO
+            TALAG TG003 ALFRA LIBIS
+            ALFRA MGA
+         ]
+         restrictions:
+         {
+            TG002: >11000
+            TG030: >8500
+            TG004: >12000
+         }
+         labels: TG030 TG004 TALAG ALFRA VITAN TG002 ARITA LIBIS
+      }
+   ]
 }

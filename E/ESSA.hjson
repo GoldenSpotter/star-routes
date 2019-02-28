@@ -1,151 +1,149 @@
 {
-    airport: ESSA
-    labels:
-    '''
-    SA802 SA486 SA477 SA475 XILAN
-    SA474 HMR ELTOK NILUG TEB
-    '''
-    routes:
-    [
-        {
-            direction: Inbound
-            name: 26 RNAV Arrivals
-            # NILUG 1V, XILAN 2V, ELTOK 2V, HMR 2V
-            runways: 26
-            segments:
-            [
-                NILUG SA623 SA611 SA495 SA486
-                XILAN SA494 SA493 SA492 SA486
-                ELTOK SA911 SA491 SA490 SA472 SA471 SA486
-                HMR SA496 SA489 SA488 SA471
-            ]
-            restrictions:
-            {
-                SA911: >10000
-                SA491: >8000
-                SA490: >5000 <230
-                SA496: >10000
-                SA489: >8000
-                SA488: >5000 <230
-                SA486: >2500 <210
-                SA623: >10000
-                SA622: >8000
-                SA611: >5000 <230
-                SA494: >8000
-                SA493: >5000
-            }
-            labels: SA486 SA493 SA611 SA490 SA488
-        }
-        {
-            direction: Inbound
-            name: 08 RNAV Arrivals
-            #
-            runways: 08
-            segments:
-            [
-                ELTOK SA821 BALVI
-                HMR SA540 TEB
-                XILAN TEB
-                NILUG SA630 TEB
-            ]
-            restrictions:
-            {
-                NILUG: <19000
-                ELTOK: <11000
-                XILAN: <15000
-                HMR: <15000
-            }
-            labels: TEB NILUG ELTOK HMR XILAN BALVI
-        }
-        {
-            direction: Inbound
-            name: 01L RNAV Arrivals
-            # ELTOK 2J, HMR 2J, NILUG 1J, XILAN 1J
-            runways: 01L
-            segments:
-            [
-                ELTOK SA912 SA810 SA808 SA802
-                HMR SA500 SA499 SA604 SA605 SA802
-                XILAN SA619 SA618 SA604
-                NILUG SA818 SA817 SA811 SA802
-            ]
-            restrictions:
-            {
-                SA912: >10000
-                SA810: >8000
-                SA808: >5000 <220
-                SA802: >2500 <180
-                SA605: >2500 <200
-                SA604: >5000
-                SA499: >8000
-                SA500: >10000
-                SA818: >10000
-                SA817: >8000
-                SA811: >5000
-                SA619: >10000
-                SA618: >8000
-            }
-            labels:
+   airport: ESSA
+   labels:
+      '''
+      SA802 SA486 SA477 SA475 XILAN
+      SA474 HMR ELTOK NILUG TEB
+      '''
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 26 RNAV Arrivals
+         # NILUG 1V, XILAN 2V, ELTOK 2V, HMR 2V
+         runways: 26
+         segments:
+         [
+            NILUG SA623 SA611 SA495 SA486
+            XILAN SA494 SA493 SA492 SA486
+            ELTOK SA911 SA491 SA490 SA472 SA471 SA486
+            HMR SA496 SA489 SA488 SA471
+         ]
+         restrictions:
+         {
+            SA911: >10000
+            SA491: >8000
+            SA490: >5000 <230
+            SA496: >10000
+            SA489: >8000
+            SA488: >5000 <230
+            SA486: >2500 <210
+            SA623: >10000
+            SA622: >8000
+            SA611: >5000 <230
+            SA494: >8000
+            SA493: >5000
+         }
+         labels: SA486 SA493 SA611 SA490 SA488
+      }
+      {
+         direction: Inbound
+         name: 08 RNAV Arrivals
+         runways: 08
+         segments:
+         [
+            ELTOK SA821 BALVI
+            HMR SA540 TEB
+            XILAN TEB
+            NILUG SA630 TEB
+         ]
+         restrictions:
+         {
+            NILUG: <19000
+            ELTOK: <11000
+            XILAN: <15000
+            HMR: <15000
+         }
+         labels: TEB NILUG ELTOK HMR XILAN BALVI
+      }
+      {
+         direction: Inbound
+         name: 01L RNAV Arrivals
+         # ELTOK 2J, HMR 2J, NILUG 1J, XILAN 1J
+         runways: 01L
+         segments:
+         [
+            ELTOK SA912 SA810 SA808 SA802
+            HMR SA500 SA499 SA604 SA605 SA802
+            XILAN SA619 SA618 SA604
+            NILUG SA818 SA817 SA811 SA802
+         ]
+         restrictions:
+         {
+            SA912: >10000
+            SA810: >8000
+            SA808: >5000 <220
+            SA802: >2500 <180
+            SA605: >2500 <200
+            SA604: >5000
+            SA499: >8000
+            SA500: >10000
+            SA818: >10000
+            SA817: >8000
+            SA811: >5000
+            SA619: >10000
+            SA618: >8000
+         }
+         labels:
             '''
             SA802 HMR XILAN SA604
             SA808 ELTOK NILUG
             '''
-        }
-        {
-            direction: Inbound
-            name: 01R RNAV Arrivals
-            # ELKOM 7F, NILUG 1F, HMR 1F, XILAN 1F
-            runways: 01R
-            segments:
-            [
-                ELTOK SA854 SA815
-                NILUG SA692 SA693
-                XILAN SA687 SA693
-                HMR SA691 SA693
-            ]
-            restrictions:
-            {
-                SA691: >5000
-                SA687: >5000
-                SA692: >5000
-                ELKOM: <11000
-                SA854: <8000
-            }
-            labels:
+      }
+      {
+         direction: Inbound
+         name: 01R RNAV Arrivals
+         # ELKOM 7F, NILUG 1F, HMR 1F, XILAN 1F
+         runways: 01R
+         segments:
+         [
+            ELTOK SA854 SA815
+            NILUG SA692 SA693
+            XILAN SA687 SA693
+            HMR SA691 SA693
+         ]
+         restrictions:
+         {
+            SA691: >5000
+            SA687: >5000
+            SA692: >5000
+            ELKOM: <11000
+            SA854: <8000
+         }
+         labels:
             '''
             SA693 SA815 XILAN
             HMR NILUG ELTOK
             '''
-        }
-        {
-            direction: Inbound
-            name: 19L/19R RNAV Arrivals
-            runways: 19L 19R
-            segments:
-            [
-                ELTOK SA910 SA909 SA908 SA474
-                HMR SA485 SA484 SA483 SA475
-                NILUG SA614 SA479 SA480 SA477
-                XILAN SA482 SA481 SA480
-            ]
-            restrictions:
-            {
-                SA614: >10000
-                SA479: >7000
-                SA480: >5000 <230
-                SA481: >8000
-                SA482: >10000
-                SA477: >4000
-                SA910: >1000
-                SA909: >8000
-                SA908: >5000 <230
-            }
-            labels:
+      }
+      {
+         direction: Inbound
+         name: 19L/19R RNAV Arrivals
+         runways: 19L 19R
+         segments:
+         [
+            ELTOK SA910 SA909 SA908 SA474
+            HMR SA485 SA484 SA483 SA475
+            NILUG SA614 SA479 SA480 SA477
+            XILAN SA482 SA481 SA480
+         ]
+         restrictions:
+         {
+            SA614: >10000
+            SA479: >7000
+            SA480: >5000 <230
+            SA481: >8000
+            SA482: >10000
+            SA477: >4000
+            SA910: >1000
+            SA909: >8000
+            SA908: >5000 <230
+         }
+         labels:
             '''
             SA474 SA475 SA477 NILUG
             XILAN HMR ELTOK SA480
             '''
-        }
-    ]
-    options: no-points
+      }
+   ]
 }

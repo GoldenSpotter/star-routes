@@ -1,98 +1,103 @@
 {
-    airport: CYHZ
-    routes: [
-        {
-            direction: Inbound
-            # CABOT 2 RNAV ARRIVAL
-            name: CABOT 2
-            runways: 05 14 23 32
-            segments: [
-                CAYLY BOSUB LEROS 
-                BOSUB KEBOT VIMLA IGVOP
-                BOSUB OTVUV PEPTA OBNOM
-                BOSUB MENVO GABAP KIXIT
-            ]
-            restrictions:
-            {
-                LEROS: >3000 <200
-                IGVOP: >4000 <210
-                VIMLA: =5000 <210
-                MENVO: =5000 <230
-                GABAP: >4000 <210
-                PEPTA: =5000 <210
-                OBNOM: >4000 <210
-            }
-            labels: CAYLY BOSUB
-        }
-        {
-            direction: Inbound
-            # FUNDY 2 RNAV ARRIVAL 
-            name: FUNDY 2
-            runways: 05 14 23 32
-            segments: [
-                EBONY MUVOX
-                ALLEX MUVOX TETAR
-                MUVOX LOGPO DUTIR
-                MUVOX EBLUV EMBAX
-                MUVOX ODKAS
-            ]
-            restrictions:
-            {
-                TETAR: >3000 <200
-                LOGPO: =5000 <210
-                DUTIR: >4000 <210
-                EBLUV: =5000 <210
-                EMBAX: >4000 <210
-                ODKAS: >3000 <200
-            }
-            labels: ALLEX EBONY MUVOX
-        }
-        {
-            direction: Inbound
-            # LIRLA 2 RNAV ARRIVAL 
-            name: LIRLA 2
-            runways: 05 14 23 32
-            segments: [
-                AGMIR LIRLA LEROS
-                LIRLA VIMLA IGVOP
-                LIRLA PEPTA OBNOM
-                LIRLA VOKIL
-            ]
-            restrictions:
-            {
-                LEROS: >3000 <200
-                VIMLA: =5000 <210
-                IGVOP: >4000 <210
-                PEPTA: =5000 <210
-                OBNOM: >4000 <210
-                VOKIL: >3000 <200
-            }
-            labels: AGMIR LIRLA
-        }
-        {
-            direction: Inbound
-            # PEGGY 2 RNAV ARRIVAL 
-            name: PEGGY 2
-            runways: 05 14 23 32
-            segments: [
-                TUSKY ETGAR
-                ELERI ETGAR ILOTA MODIR DUNUB
-                ETGAR ODKAS
-                ETGAR OBNOM RUDBU OTVUV
-                ETGAR NOTUB EMBAX EBLIT
-            ]
-            restrictions:
-            {
-                ILOTA: =5000 <210
-                MODIR: >4000 <210
-                ODKAS: >3000 <200
-                NOTUB: =5000 <230
-                EMBAX: >4000 <210
-                RUDBU: =5000 <210
-                OTVUV: >4000 <210
-            }
-            labels: TUSKY ELERI ETGAR
-        }
-    ]
-    options: no-points no-global-labels
+   airport: CYHZ
+   routes:
+   [
+      {
+         direction: Inbound
+         # CABOT 2 RNAV ARRIVAL
+         name: CABOT 2
+         runways: 05 14 23 32
+         segments:
+         [
+            CAYLY BOSUB LEROS
+            BOSUB KEBOT VIMLA IGVOP
+            BOSUB OTVUV PEPTA OBNOM
+            BOSUB MENVO GABAP KIXIT
+         ]
+         restrictions:
+         {
+            LEROS: >3000 <200
+            IGVOP: >4000 <210
+            VIMLA: =5000 <210
+            MENVO: =5000 <230
+            GABAP: >4000 <210
+            PEPTA: =5000 <210
+            OBNOM: >4000 <210
+         }
+         labels: CAYLY BOSUB
+      }
+      {
+         direction: Inbound
+         # FUNDY 2 RNAV ARRIVAL
+         name: FUNDY 2
+         runways: 05 14 23 32
+         segments:
+         [
+            EBONY MUVOX
+            ALLEX MUVOX TETAR
+            MUVOX LOGPO DUTIR
+            MUVOX EBLUV EMBAX
+            MUVOX ODKAS
+         ]
+         restrictions:
+         {
+            TETAR: >3000 <200
+            LOGPO: =5000 <210
+            DUTIR: >4000 <210
+            EBLUV: =5000 <210
+            EMBAX: >4000 <210
+            ODKAS: >3000 <200
+         }
+         labels: ALLEX EBONY MUVOX
+      }
+      {
+         direction: Inbound
+         # LIRLA 2 RNAV ARRIVAL
+         name: LIRLA 2
+         runways: 05 14 23 32
+         segments:
+         [
+            AGMIR LIRLA LEROS
+            LIRLA VIMLA IGVOP
+            LIRLA PEPTA OBNOM
+            LIRLA VOKIL
+         ]
+         restrictions:
+         {
+            LEROS: >3000 <200
+            VIMLA: =5000 <210
+            IGVOP: >4000 <210
+            PEPTA: =5000 <210
+            OBNOM: >4000 <210
+            VOKIL: >3000 <200
+         }
+         labels: AGMIR LIRLA
+      }
+      {
+         direction: Inbound
+         # PEGGY 2 RNAV ARRIVAL
+         name: PEGGY 2
+         runways: 05 14 23 32
+         segments:
+         [
+            TUSKY ETGAR
+            ELERI ETGAR ILOTA MODIR DUNUB
+            ETGAR ODKAS
+            ETGAR OBNOM RUDBU OTVUV
+            ETGAR NOTUB EMBAX EBLIT
+         ]
+         restrictions:
+         {
+            ILOTA: =5000 <210
+            MODIR: >4000 <210
+            ODKAS: >3000 <200
+            NOTUB: =5000 <230
+            EMBAX: >4000 <210
+            RUDBU: =5000 <210
+            OTVUV: >4000 <210
+         }
+         labels: TUSKY ELERI ETGAR
+      }
+   ]
+   options: no-global-labels
 }

@@ -1,88 +1,92 @@
 {
-    airport: KMCO
-    routes: [
-        {
-            direction: Inbound
-            # BAIRN 4 RNAV ARRIVAL
-            name: BAIRN 4
-            runways: 35R 17L
-            segments: [
-                PHK BAIRN
-                PBI LLNCH BAIRN
-                TRV BAIRN
-                BAIRN SERAY
-                BAIRN NOBBS POPYE
-            ]
-            restrictions:
-            {
-            }
-            labels: PHK PBI TRV BAIRN SERAY POPYE
-        }
-        {
-            direction: Inbound
-            # BUGGZ 3 RNAV ARRIVAL
-            name: BUGGZ 3
-            runways: 36R 18R
-            segments: [
-                UGENE COAXE BURRD GRNCH BUGGZ BUNIE TWONA WAVIN
-            ]
-            restrictions:
-            {
-                BUGGZ: =12000 =250
-            }
-            labels: UGENE BURRD BUGGZ TWONA WAVIN
-        }
-        {
-            direction: Inbound
-            # COSTR 3 RNAV ARRIVAL
-            name: COSTR 3
-            runways: 36L 18R
-            segments: [
-                SYKES GUMMY LAL ANDRO COSTR TINKR KNUKL
-                DOWNN MOANS COSTR
-            ]
-            restrictions:
-            {
-                SYKES: =23000
-                ANDRO: =13000 =250
-                MOANS: =250
-            }
-            labels: SYKES ANDRO COSTR DOWNN TINKR KNUKL
-        }
-        {
-            direction: Inbound
-            # CWRLD 4 RNAV ARRIVAL
-            name: CWRLD 4
-            runways: 35R 17L
-            segments: [
-                LAMMA HARNY CWRLD RAMEZ NOBBS
-                GRDON TIMIE ASTRO ZEMOR CWRLD
-                APOLO ASTRO
-            ]
-            restrictions:
-            {
-                LAMMA: =12000 =250
-                TIMIE: =12000 =250
-                APOLO: =14000
-            }
-            labels: LAMMA CWRLD NOBBS TIMIE ASTRO APOLO
-        }
-        {
-            direction: Inbound
-            # PIGLT 5 RNAV ARRIVAL
-            name: PIGLT 5
-            runways: 36L 18R
-            segments: [
-                HKUNA MTATA JAFAR PIGLT RFIKI TTIGR TWONA WAVIN
-            ]
-            restrictions:
-            {
-                HKUNA: =29000
-                MTATA: =25000
-                PIGLT: =11000 =250
-            }
-            labels: HKUNA PIGLT TWONA WAVIN
-        }
-    ]
-    options: no-points no-global-labels
+   airport: KMCO
+   routes:
+   [
+      {
+         direction: Inbound
+         # BAIRN 4 RNAV ARRIVAL
+         name: BAIRN 4
+         runways: 35R 17L
+         segments:
+         [
+            PHK BAIRN
+            PBI LLNCH BAIRN
+            TRV BAIRN
+            BAIRN SERAY
+            BAIRN NOBBS POPYE
+         ]
+         restrictions: {}
+         labels: PHK PBI TRV BAIRN SERAY POPYE
+      }
+      {
+         direction: Inbound
+         # BUGGZ 3 RNAV ARRIVAL
+         name: BUGGZ 3
+         runways: 36R 18R
+         segments:
+         [
+            UGENE COAXE BURRD GRNCH BUGGZ BUNIE TWONA WAVIN
+         ]
+         restrictions:
+         {
+            BUGGZ: =12000 =250
+         }
+         labels: UGENE BURRD BUGGZ TWONA WAVIN
+      }
+      {
+         direction: Inbound
+         # COSTR 3 RNAV ARRIVAL
+         name: COSTR 3
+         runways: 36L 18R
+         segments:
+         [
+            SYKES GUMMY LAL ANDRO COSTR TINKR KNUKL
+            DOWNN MOANS COSTR
+         ]
+         restrictions:
+         {
+            SYKES: =23000
+            ANDRO: =13000 =250
+            MOANS: =250
+         }
+         labels: SYKES ANDRO COSTR DOWNN TINKR KNUKL
+      }
+      {
+         direction: Inbound
+         # CWRLD 4 RNAV ARRIVAL
+         name: CWRLD 4
+         runways: 35R 17L
+         segments:
+         [
+            LAMMA HARNY CWRLD RAMEZ NOBBS
+            GRDON TIMIE ASTRO ZEMOR CWRLD
+            APOLO ASTRO
+         ]
+         restrictions:
+         {
+            LAMMA: =12000 =250
+            TIMIE: =12000 =250
+            APOLO: =14000
+         }
+         labels: LAMMA CWRLD NOBBS TIMIE ASTRO APOLO
+      }
+      {
+         direction: Inbound
+         # PIGLT 5 RNAV ARRIVAL
+         name: PIGLT 5
+         runways: 36L 18R
+         segments:
+         [
+            HKUNA MTATA JAFAR PIGLT RFIKI TTIGR TWONA WAVIN
+         ]
+         restrictions:
+         {
+            HKUNA: =29000
+            MTATA: =25000
+            PIGLT: =11000 =250
+         }
+         labels: HKUNA PIGLT TWONA WAVIN
+      }
+   ]
+   options: no-global-labels
 }

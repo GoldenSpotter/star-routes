@@ -1,114 +1,113 @@
 {
-    airport: ENBR
-    labels: NEPAM GILVA
-    routes:
-    [
-        {
-            direction: Inbound
-            name: 17 RNAV Arrivals
-            runways: 17
-            segments:
-            [
-                PESUR BR624 LUTIV BR620 GILVA
-                LUNUR BR625 LUTIV
-                BADAB OKTOS BR624
-                ALUVA BR634 IRLOB
-                IRLOB BR630 NEPAM
-                MODNI BR634
-                ETNOR BR635 IRLOB
-                NIDGI BR635
-            ]
-            restrictions:
-            {
-                PESUR: >10000
-                BR624: >6000 <8000 <220
-                LUNUR: >10000
-                LUTIV: >6000 <8000 <220
-                GILVA: >4000
-                OKTOS: >9000
-                ALUVA: >9000
-                BR634: >4000 <8000 <220
-                IRLOB: >4000 <8000 <220
-                NEPAM: >4000
-                BR635: <220
-                ETNOR: >9000
-                NIDGI: >9000
-            }
-            labels:
+   airport: ENBR
+   labels: NEPAM GILVA
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 17 RNAV Arrivals
+         runways: 17
+         segments:
+         [
+            PESUR BR624 LUTIV BR620 GILVA
+            LUNUR BR625 LUTIV
+            BADAB OKTOS BR624
+            ALUVA BR634 IRLOB
+            IRLOB BR630 NEPAM
+            MODNI BR634
+            ETNOR BR635 IRLOB
+            NIDGI BR635
+         ]
+         restrictions:
+         {
+            PESUR: >10000
+            BR624: >6000 <8000 <220
+            LUNUR: >10000
+            LUTIV: >6000 <8000 <220
+            GILVA: >4000
+            OKTOS: >9000
+            ALUVA: >9000
+            BR634: >4000 <8000 <220
+            IRLOB: >4000 <8000 <220
+            NEPAM: >4000
+            BR635: <220
+            ETNOR: >9000
+            NIDGI: >9000
+         }
+         labels:
             '''
             NEPAM GILVA ALUVA BADAB ETNOR
             MODNI NIDGI LUNUR PESUR
             '''
-        }
-        {
-            direction: Inbound
-            name: 35 RNAV Arrivals
-            runways: 35
-            segments:
-            [
-                LUNUR BR734 RATUG BR730 GODID
-                PESUR BR734
-                BADAB OKTOS BR735 RATUG
-                ALUVA BR725 IBLIR BR722 BR720 RIVIP
-                NIDGI LELMI BR724 IBLIR
-                MODNI BR724
-                ETNOR LELMI
-            ]
-            restrictions:
-            {
-                LUNUR: >10000
-                PESUR: >10000
-                BR734: >6500 <8000 <220
-                RATUG: >6500 <8000 <220
-                GODID: >4000
-                OKTOS: >9000
-                ALUVA: >9000
-                IBLIR: >4000 <8000 <220
-                NIDGI: >9000
-                ETNOR: >9000
-                BR724: >4000 <8000 <220
-                RIVIP: >4000
-            }
-            labels:
+      }
+      {
+         direction: Inbound
+         name: 35 RNAV Arrivals
+         runways: 35
+         segments:
+         [
+            LUNUR BR734 RATUG BR730 GODID
+            PESUR BR734
+            BADAB OKTOS BR735 RATUG
+            ALUVA BR725 IBLIR BR722 BR720 RIVIP
+            NIDGI LELMI BR724 IBLIR
+            MODNI BR724
+            ETNOR LELMI
+         ]
+         restrictions:
+         {
+            LUNUR: >10000
+            PESUR: >10000
+            BR734: >6500 <8000 <220
+            RATUG: >6500 <8000 <220
+            GODID: >4000
+            OKTOS: >9000
+            ALUVA: >9000
+            IBLIR: >4000 <8000 <220
+            NIDGI: >9000
+            ETNOR: >9000
+            BR724: >4000 <8000 <220
+            RIVIP: >4000
+         }
+         labels:
             '''
             BADAB NIDGI ETNOR RIVIP GODID
             MODNI LUNUR PESUR RATUG IBLIR ALUVA
             '''
-        }
-        {
-            direction: Outbound
-            name: 17 RNAV Departures
-            runways: 17
-            segments:
-            [
-                UNPUT BR531 EKREL INTUM
-                UNPUT BR521 GISUK OLDAS
-                EKREL BR626 GOKAB
-                BR626 TINIG
-                UNPUT BEGOD
-                UNPUT TUXIL
-                GISUK EPOTU
-                GISUK REKLI
-            ]
-            labels: UNPUT BR531 BR521 GISUK EKREL
-        }
-        {
-            direction: Outbound
-            name: 35 RNAV Departures
-            runways: 35
-            segments:
-            [
-                ADIDO INTUM
-                ADIDO OLDAS
-                ADIDO BR831 ROLGU GOKAB
-                ROLGU EKREL TINIG
-                ADIDO BR821 GISUK BR822 SOGTI BEGOD
-                BR822 BAMLO TUXIL
-                GISUK REKLI
-                BR822 EPOTU
-            ]
-            labels: ADIDO BR831 BR821 ROLGU GISUK BR822
-        }
-    ]
-    options: no-points
+      }
+      {
+         direction: Outbound
+         name: 17 RNAV Departures
+         runways: 17
+         segments:
+         [
+            UNPUT BR531 EKREL INTUM
+            UNPUT BR521 GISUK OLDAS
+            EKREL BR626 GOKAB
+            BR626 TINIG
+            UNPUT BEGOD
+            UNPUT TUXIL
+            GISUK EPOTU
+            GISUK REKLI
+         ]
+         labels: UNPUT BR531 BR521 GISUK EKREL
+      }
+      {
+         direction: Outbound
+         name: 35 RNAV Departures
+         runways: 35
+         segments:
+         [
+            ADIDO INTUM
+            ADIDO OLDAS
+            ADIDO BR831 ROLGU GOKAB
+            ROLGU EKREL TINIG
+            ADIDO BR821 GISUK BR822 SOGTI BEGOD
+            BR822 BAMLO TUXIL
+            GISUK REKLI
+            BR822 EPOTU
+         ]
+         labels: ADIDO BR831 BR821 ROLGU GISUK BR822
+      }
+   ]
 }

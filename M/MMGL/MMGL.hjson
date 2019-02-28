@@ -1,125 +1,125 @@
 {
-    airport: MMGL
-    labels:
-    '''
-    DATSO DULNO APDAV
-    JAYES DUNER LORSI
-    '''
-    routes:
-    [
-        {
-            direction: Inbound
-            name: 10 RNAV Arrivals
-            runways: 10
-            segments:[
-                LONVA APDAV DULNO
-                LIVRI GL564 APDAV
-                JASTO GL564
-                LIPEP DANUN
-                VOLAT DATSO
-                USBIM DATSO
-                ONGEL LONPO DATSO
-                LONKU LONPO
-            ]
-            restrictions:
-            {
-                LONVA: >20000
-                JASTO: >20000
-                LIVRI: >20000
-                GL654: =17000
-                APDAV: =11000
-                DULNO: =11000
-                LIPEP: >20000
-                DANUN: >11000
-                VOLAT: >20000
-                DATSO: >11000
-                USBIM: >12000
-                LONKU: >20000
-                LONPO: >12000
-                ONGEL: >20000
-            }
-            labels:
+   airport: MMGL
+   labels:
+      '''
+      DATSO DULNO APDAV
+      JAYES DUNER LORSI
+      '''
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 10 RNAV Arrivals
+         runways: 10
+         segments:
+         [
+            LONVA APDAV DULNO
+            LIVRI GL564 APDAV
+            JASTO GL564
+            LIPEP DANUN
+            VOLAT DATSO
+            USBIM DATSO
+            ONGEL LONPO DATSO
+            LONKU LONPO
+         ]
+         restrictions:
+         {
+            LONVA: >20000
+            JASTO: >20000
+            LIVRI: >20000
+            GL654: =17000
+            APDAV: =11000
+            DULNO: =11000
+            LIPEP: >20000
+            DANUN: >11000
+            VOLAT: >20000
+            DATSO: >11000
+            USBIM: >12000
+            LONKU: >20000
+            LONPO: >12000
+            ONGEL: >20000
+         }
+         labels:
             '''
             DATSO DANUN DULNO
             APDAV LONPO GL564
             '''
-        }
-        {
-            direction: Inbound
-            name: 28 RNAV Arrivals
-            runways: 28
-            segments:
-            [
-                LONVA GL810 GL862
-                LIVRI GL835
-                JASTO GL835 GL862 JAYES
-                ONGEL EBDEG DUNER
-                LONKU DUNER
-                USBIM GL860 LORSI
-                VOLAT GL860
-                LIPEP GL860
-            ]
-            restrictions:
-            {
-                LIPEP: >20000
-                VOLAT: >20000
-                USBIM: >20000
-                GL860: >15000
-                LORSI: >9500
-                ONGEL: >20000
-                DUNER: >9000
-                LONKU: =20000
-                LONVA: >20000
-                GL810: >15000
-                GL862: =11000
-                LIVRI: >20000
-                GL835: >12000
-                JASTO: >20000
-                JAYES: >9000
-            }
-            labels:
+      }
+      {
+         direction: Inbound
+         name: 28 RNAV Arrivals
+         runways: 28
+         segments:
+         [
+            LONVA GL810 GL862
+            LIVRI GL835
+            JASTO GL835 GL862 JAYES
+            ONGEL EBDEG DUNER
+            LONKU DUNER
+            USBIM GL860 LORSI
+            VOLAT GL860
+            LIPEP GL860
+         ]
+         restrictions:
+         {
+            LIPEP: >20000
+            VOLAT: >20000
+            USBIM: >20000
+            GL860: >15000
+            LORSI: >9500
+            ONGEL: >20000
+            DUNER: >9000
+            LONKU: =20000
+            LONVA: >20000
+            GL810: >15000
+            GL862: =11000
+            LIVRI: >20000
+            GL835: >12000
+            JASTO: >20000
+            JAYES: >9000
+         }
+         labels:
             '''
             LORSI DUNER JAYES GL862
             GL810 GL860 GL835
             '''
-        }
-        {
-            direction: Outbound
-            name: 28 RNAV Departures
-            runways: 28
-            segments:
-            [
-                GL704 GL702 LONKU
-                GL704 EMIGU
-                GL704 NUBIG
-                GL704 TIKIT
-                GL704 TEILA
-                GL704 GOYAS
-            ]
-            labels:
+      }
+      {
+         direction: Outbound
+         name: 28 RNAV Departures
+         runways: 28
+         segments:
+         [
+            GL704 GL702 LONKU
+            GL704 EMIGU
+            GL704 NUBIG
+            GL704 TIKIT
+            GL704 TEILA
+            GL704 GOYAS
+         ]
+         labels:
             '''
             GL704 GL702 LONKU EMIGU
             NUBIG TIKIT TEILA GOYAS
             '''
-        }
-        {
-            direction: Outbound
-            name: 10 RNAV Departures
-            runways: 10
-            segments:
-            [
-                GL406 GL407 IRBEK
-                GL406 GL405 OVALI
-                GL405 KARUN
-                GL405 GOYAS
-                GL406 GL402 VOLUX
-            ]
-            labels:
+      }
+      {
+         direction: Outbound
+         name: 10 RNAV Departures
+         runways: 10
+         segments:
+         [
+            GL406 GL407 IRBEK
+            GL406 GL405 OVALI
+            GL405 KARUN
+            GL405 GOYAS
+            GL406 GL402 VOLUX
+         ]
+         labels:
             '''
             GL406 GL405 GL402 GL407 OVALI
             KARUN GOYAS VOLUX IRBEK
             '''
-        }
-    ]
-    options: no-points
+      }
+   ]
 }

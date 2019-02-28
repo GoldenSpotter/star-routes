@@ -1,44 +1,43 @@
 {
-    airport: NFFN
-    labels: FNNSI FNNWI
-    routes:
-    [
-        {
-            direction: Inbound
-            name: ILS RWY 02
-            runways: 02
-            segments:
-            [
-                FNNSI FNNSF FNNSM
-                FNNSG FNNSI
-                FNNSE FNNSI
-                FNNSD FNNSI
-            ]
-            restrictions:
-            {
-                FNNSI: =3500
-                FNNSF: =1910
-            }
-            labels: FNNSI
-        }
-        {
-            direction: Inbound
-            name: RNAV RWY 09
-            runways: 09
-            segments:
-            [
-                FNNWI FNNWF FNNWM
-                FNNWC FNNWI
-                FNNWB FNNWI
-                FNNWA FNNWI
-            ]
-            restrictions:
-            {
-                FNNWI: =3400
-                FNNWF: =1940
-            }
-            labels: FNNWI
-        }
-    ]
-    options: no-points
+   airport: NFFN
+   labels: FNNSI FNNWI
+   routes:
+   [
+      {
+         direction: Inbound
+         name: ILS RWY 02
+         runways: 02
+         segments:
+         [
+            FNNSI FNNSF FNNSM
+            FNNSG FNNSI
+            FNNSE FNNSI
+            FNNSD FNNSI
+         ]
+         restrictions:
+         {
+            FNNSI: =3500
+            FNNSF: =1910
+         }
+         labels: FNNSI
+      }
+      {
+         direction: Inbound
+         name: RNAV RWY 09
+         runways: 09
+         segments:
+         [
+            FNNWI FNNWF FNNWM
+            FNNWC FNNWI
+            FNNWB FNNWI
+            FNNWA FNNWI
+         ]
+         restrictions:
+         {
+            FNNWI: =3400
+            FNNWF: =1940
+         }
+         labels: FNNWI
+      }
+   ]
 }

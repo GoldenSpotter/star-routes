@@ -1,359 +1,377 @@
 {
-    airport: OMDB
-    routes: [
-        {
-            direction: Inbound
-            # DATOB 1E RNAV ARRIVAL 
-            name: DATOB 1E
-            runways: 12L 12R
-            segments: [
-                DATOB DB400 DB401 DB402 DB403 SOLIL ODLAL DB414 DB413 REREK
-            ]
-            restrictions:
-            {
-                DATOB: <10000 =230
-                DB400: <7000
-                DB401: <6000
-                DB402: =210
-                SOLIL: =185
-            }
-            labels: DATOB REREK
-        }
-        {
-            direction: Inbound
-            # DATOB 36 & 4D RNAV ARRIVALS
-            name: DATOB 3C & 4D
-            runways: 30R 30L
-            segments: [
-                DATOB DB531 DB533 DB534 DB528 DB524 DB525 DB506 ULDOT
-                DB531 PATID DB530 DB508 DB507 DB506
-            ]
-            restrictions:
-            {
-                DATOB: <12000 =230
-                MEPKU: <11000 =230
-                DB531: >8000
-                DB533: <8000 =210
-                DB528: <7000
-                DB524: =185
-                PATID: >7000 =210
-                DB530: <7000
-                DB508: =185
-            }
-            labels: DATOB DB531 ULDOT
-        }
-        {
-            direction: Inbound
-            # IMPED 3B & 3E RNAV ARRIVALS
-            name: IMPED 3B & 3E
-            runways: 12L 12R
-            segments: [
-                IMPED DB520 DB518 DB517 DB423 DB407 DB408 SOLIL ODLAL DB414 REREK
-                DB423 DB406 DB421 PASEV DB416 DB414
-            ]
-            restrictions: 
-            {
-                IMPED: <12000 =230
-                DB520: <11000 =230
-                DB517: <10000
-                DB423: >8000
-                DB406: <7000 =210
-                DB421: <6000
-                PASEV: =185
-                DB407: <6000 =210
-                SOLIL: =185
-            }
-            labels: IMPED DB517 DB423 DB414 REREK 
-        }
-        {
-            direction: Inbound
-            # IMPED 3C RNAV ARRIVAL
-            name: IMPED 3C
-            runways: 30L 30R
-            segments: [
-                IMPED DB520 DB518 VUTON DB515 DB514 DB513 DB508 DB507 DB506 ULDOT
-            ]
-            restrictions: 
-            {
-                IMPED: <12000 =230
-                DB520: <10000 =230
-                VUTON: <8000
-                DB515: =210
-                DB514: <6000
-                DB508: =185
-            }
-            labels: IMPED DB518 DB514 DB507 ULDOT
-        }
-        {
-            direction: Inbound
-            # LORID 1E RNAV ARRIVAL
-            name: LORID 1E
-            runways: 12L 12R
-            segments: [
-                LORID ORGUR PEBUS ROVIB DB400 DB401 DB402 DB403 SOLIL ODLAL DB414 REREK
-            ]
-            restrictions: 
-            {
-                LORID: <16000 =230
-                ORGUR: <12000
-                ROVIB: >8000
-                DB400: <7000
-                DB401: <6000
-                DB402: =210
-                SOLIL: =185
-            }
-            labels: LORID DB414 REREK
-        }
-        {
-            direction: Inbound
-            # LORID 3C & 4E RNAV ARRIVALS
-            name: LORID 3C & 4E
-            runways: 30L 30R
-            segments: [
-                LORID PEBUS EMOPO DB531 PATID DB530 DB508 DB507 DB506 ULDOT
-                DB531 DB533 DB528 DB524 DB525 DB506
-            ]
-            restrictions: 
-            {
-                LORID: <16000 =230
-                DB531: >8000
-                PATID: >7000 =210
-                DB530: <7000
-                DB508: =185
-                DB533: >8000 =210
-                DB528: <7000
-                DB524: =185
-            }
-            labels: LORID DB531 PATID DB533 DB506 ULDOT
-        }
-        {
-            direction: Inbound
-            # PUVAL 5B & 2E RNAV ARRIVALS
-            name: PUVAL 5B & 2E
-            runways: 12L 12R
-            segments: [
-                PUVAL MIVUR OVADI SERSA DB421 PASEV DB416 DB414 REREK
-                SERSA DB406 DB407 DB408 SOLIL ODLAL DB414
-            ]
-            restrictions: 
-            {
-                PUVAL: <11000 =230
-                SERSA: =210
-                DB421: <6000
-                PASEV: =185
-                DB406: <7000
-                DB407: <6000 =210
-                SOLIL: =185
-            }
-            labels: PUVAL SERSA DB407 DB414 REREK
-        }
-        {
-            direction: Inbound
-            # PUVAL 5C & 2D RNAV ARRIVALS
-            name: PUVAL 5C & 2D
-            runways: 30L 30R
-            segments: [
-                PUVAL KEBOG KUPOR DB530 DB508 DB507 DB506 ULDOT
-                KUPOR PATID DB532 RARPI DB524 DB525 DB506
-            ]
-            restrictions: 
-            {
-                PUVAL: <11000 =230
-                KUPOR: >8000 =210
-                DB530: <7000
-                DB508: =185
-                PATID: >7000 =210
-                DB532: <7000
-                DB524: =185
-            }
-            labels: PUVAL KUPOR DB506 ULDOT
-        }
-        {
-            direction: Inbound
-            # VUTEB 3B & 3E RNAV ARRIVALS
-            name: VUTEB 3B & 3E
-            runways: 12L 12R
-            segments: [
-                VUTEB DB400 DB401 DB402 DB403 SOLIL ODLAL DB414 REREK
-                VUTEB IVUTI DB427 DB426 DB425 DB421 PASEV DB416 DB414
-            ]
-            restrictions: 
-            {
-                VUTEB: <10000 =230
-                DB400: <7000
-                DB401: <6000
-                DB402: =210
-                SOLIL: =185
-                IVUTI: <10000 =230
-                DB427: <7000
-                DB426: =210
-                DB421: <6000
-                PASEV: =185
-            }
-            labels: VUTEB DB400 IVUTI DB414 REREK
-        }
-        {
-            direction: Inbound
-            # VUTEB 3C & 3D RNAV ARRIVALS
-            name: VUTEB 3C & 3D
-            runways: 30L 30R
-            segments: [
-                VUTEB LOVOK DB529 PATID DB530 DB508 DB507 DB506 ULDOT
-                PATID DB532 RARPI DB524 DB525 DB506
-            ]
-            restrictions: 
-            {
-                VUTEB: <12000 =230
-                LOVOK: <11000 =230
-                DB529: >8000
-                PATID: >7000 =210
-                DB530: <7000
-                DB508: =185
-                DB532: <7000
-                DB524: =185
-            }
-            labels: VUTEB PATID RARPI DB506 ULDOT
-        }
-        {
-            direction: Outbound
-            # DAVMO 3F & GETID 1F RNAV DEPARTURES
-            name: DAVMO 3F & GETID 1F
-            runways: 30L 30R
-            segments: [
-                OMDB DB570 DB576 DB568 KUNPI OBROG DAVMO
-                DB576 DB569 KUPOR UKRER VAXAB LUDEV GETID
-            ]
-            restrictions: 
-            {
-                DB576: >3000 <220
-                DB568: >4000
-                DAVMO: >12000
-                DB569: >4000
-                KUPOR: >5000
-                UKRER: >7000
-                VAXAB: >10000
-                LUDEV: >11000
-            }
-            labels: DB576 DAVMO GETID
-        }
-        {
-            direction: Outbound
-            # ANVIX 5G RNAV DEPARTURE
-            name: ANVIX 5E
-            runways: 12L 12R
-            segments: [
-                OMDB ASTES DB469 LUBAP LOPUV ANVIX
-            ]
-            restrictions: 
-            {
-                ASTES: <5000
-                DB469: >4000 <220
-                ANVIX: >10000
-            }
-            labels: DB469 ANVIX
-        }
-        {
-            direction: Outbound
-            # ANVIX 6F & ITOTU 1F RNAV DEPARTURES
-            name: ANVIX 6F & ITOTU 1F
-            runways: 30L 30R
-            segments: [
-                OMDB DB570 DB575 DB581 DB571 DB572 DB578 DB579 ITOTU
-                DB572 ULADO RAPMO ANVIX
-            ]
-            restrictions: 
-            {
-                DB575: >4000 <220
-                DB581: >6000
-                DB571: >7500
-                DB572: >9000 <250
-                DB578: >11000
-                DB579: >12000
-                ANVIX: >10000
-            }
-            labels: DB575 DB572 ITOTU ANVIX
-        }
-        {
-            direction: Outbound
-            # EMERU 1G & KUTLI 3G & MIROT 2G RNAV DEPARTURES
-            name: EMERU 1G & KUTLI 3G & MIROT 2G
-            runways: 12L 12R
-            segments: [
-                OMDB ASTES DB451 DB460 DB467 DB463 LOPAP MIROT
-                DB467 GINLA XARTA KUTLI
-                XARTA EMERU
-            ]
-            restrictions: 
-            {
-                ASTES: <5000
-                DB451: <220
-                DB460: >4000
-                DB467: >7000
-                GINLA: >10000
-                XARTA: >13000
-                KUTLI: >16000
-            }
-            labels: DB451 DB467 MIROT XARTA KUTLI EMERU
-        }
-        {
-            direction: Outbound
-            # EMERU 1F & KUTLI 3F & MIROT 2F RNAV DEPARTURES
-            name: EMERU 1F & KUTLI 3F & MIROT 2F
-            runways: 30L 30R
-            segments: [
-                OMDB DB570 DB575 LOPAP MIROT
-                DB575 DB467 GINLA XARTA KUTLI
-                XARTA EMERU
-            ]
-            restrictions: 
-            {
-                DB575: >4000 <220
-                DB467: >7000
-                GINLA: >10000
-                XARTA: >13000
-                KUTLI: >16000
-            }
-            labels: DB575 MIROT XARTA KUTLI EMERU
-        }
-        {
-            direction: Outbound
-            # NABIX 2G & RIDAP 2G & SENPA 2G RNAV DEPARTURES
-            name: NABIX 2G & RIDAP 2G & SENPA 2G
-            runways: 12L 12R
-            segments: [
-                OMDB ASTES DB451 DB460 DB465 DB467 SENPA
-                DB465 DB466 DB468 ORLAD RIDAP
-                DB467 DB463 NABIX
-            ]
-            restrictions: 
-            {
-                ASTES: <5000
-                DB451: <220
-                DB460: >4000
-                DB467: >7000
-                DB466: >7000
-                DB468: >9000
-            }
-            labels: DB451 DB465 DB467 RIDAP SENPA NABIX
-        }
-        {
-            direction: Outbound
-            # NABIX 2F & RIDAP 1F & SENPA 1F RNAV DEPARTURES
-            name: NABIX 2F & RIDAP 1F & SENPA 1F
-            runways: 30L 30R
-            segments: [
-                OMDB DB570 DB574 IVILI SENPA
-                DB570 DB573 ORLAD RIDAP
-                DB570 DB575 LOPAP NABIX
-            ]
-            restrictions: 
-            {
-                DB573: <220
-                DB575: >4000 <220
-                DB574: <220
-            }
-            labels: DB570 RIDAP SENPA NABIX
-        }
-    ]
-    options: no-points no-global-labels
+   airport: OMDB
+   routes:
+   [
+      {
+         direction: Inbound
+         # DATOB 1E RNAV ARRIVAL
+         name: DATOB 1E
+         runways: 12L 12R
+         segments:
+         [
+            DATOB DB400 DB401 DB402 DB403 SOLIL ODLAL DB414 DB413 REREK
+         ]
+         restrictions:
+         {
+            DATOB: <10000 =230
+            DB400: <7000
+            DB401: <6000
+            DB402: =210
+            SOLIL: =185
+         }
+         labels: DATOB REREK
+      }
+      {
+         direction: Inbound
+         # DATOB 36 & 4D RNAV ARRIVALS
+         name: DATOB 3C & 4D
+         runways: 30R 30L
+         segments:
+         [
+            DATOB DB531 DB533 DB534 DB528 DB524 DB525 DB506 ULDOT
+            DB531 PATID DB530 DB508 DB507 DB506
+         ]
+         restrictions:
+         {
+            DATOB: <12000 =230
+            MEPKU: <11000 =230
+            DB531: >8000
+            DB533: <8000 =210
+            DB528: <7000
+            DB524: =185
+            PATID: >7000 =210
+            DB530: <7000
+            DB508: =185
+         }
+         labels: DATOB DB531 ULDOT
+      }
+      {
+         direction: Inbound
+         # IMPED 3B & 3E RNAV ARRIVALS
+         name: IMPED 3B & 3E
+         runways: 12L 12R
+         segments:
+         [
+            IMPED DB520 DB518 DB517 DB423 DB407 DB408 SOLIL ODLAL DB414 REREK
+            DB423 DB406 DB421 PASEV DB416 DB414
+         ]
+         restrictions:
+         {
+            IMPED: <12000 =230
+            DB520: <11000 =230
+            DB517: <10000
+            DB423: >8000
+            DB406: <7000 =210
+            DB421: <6000
+            PASEV: =185
+            DB407: <6000 =210
+            SOLIL: =185
+         }
+         labels: IMPED DB517 DB423 DB414 REREK
+      }
+      {
+         direction: Inbound
+         # IMPED 3C RNAV ARRIVAL
+         name: IMPED 3C
+         runways: 30L 30R
+         segments:
+         [
+            IMPED DB520 DB518 VUTON DB515 DB514 DB513 DB508 DB507 DB506 ULDOT
+         ]
+         restrictions:
+         {
+            IMPED: <12000 =230
+            DB520: <10000 =230
+            VUTON: <8000
+            DB515: =210
+            DB514: <6000
+            DB508: =185
+         }
+         labels: IMPED DB518 DB514 DB507 ULDOT
+      }
+      {
+         direction: Inbound
+         # LORID 1E RNAV ARRIVAL
+         name: LORID 1E
+         runways: 12L 12R
+         segments:
+         [
+            LORID ORGUR PEBUS ROVIB DB400 DB401 DB402 DB403 SOLIL ODLAL DB414 REREK
+         ]
+         restrictions:
+         {
+            LORID: <16000 =230
+            ORGUR: <12000
+            ROVIB: >8000
+            DB400: <7000
+            DB401: <6000
+            DB402: =210
+            SOLIL: =185
+         }
+         labels: LORID DB414 REREK
+      }
+      {
+         direction: Inbound
+         # LORID 3C & 4E RNAV ARRIVALS
+         name: LORID 3C & 4E
+         runways: 30L 30R
+         segments:
+         [
+            LORID PEBUS EMOPO DB531 PATID DB530 DB508 DB507 DB506 ULDOT
+            DB531 DB533 DB528 DB524 DB525 DB506
+         ]
+         restrictions:
+         {
+            LORID: <16000 =230
+            DB531: >8000
+            PATID: >7000 =210
+            DB530: <7000
+            DB508: =185
+            DB533: >8000 =210
+            DB528: <7000
+            DB524: =185
+         }
+         labels: LORID DB531 PATID DB533 DB506 ULDOT
+      }
+      {
+         direction: Inbound
+         # PUVAL 5B & 2E RNAV ARRIVALS
+         name: PUVAL 5B & 2E
+         runways: 12L 12R
+         segments:
+         [
+            PUVAL MIVUR OVADI SERSA DB421 PASEV DB416 DB414 REREK
+            SERSA DB406 DB407 DB408 SOLIL ODLAL DB414
+         ]
+         restrictions:
+         {
+            PUVAL: <11000 =230
+            SERSA: =210
+            DB421: <6000
+            PASEV: =185
+            DB406: <7000
+            DB407: <6000 =210
+            SOLIL: =185
+         }
+         labels: PUVAL SERSA DB407 DB414 REREK
+      }
+      {
+         direction: Inbound
+         # PUVAL 5C & 2D RNAV ARRIVALS
+         name: PUVAL 5C & 2D
+         runways: 30L 30R
+         segments:
+         [
+            PUVAL KEBOG KUPOR DB530 DB508 DB507 DB506 ULDOT
+            KUPOR PATID DB532 RARPI DB524 DB525 DB506
+         ]
+         restrictions:
+         {
+            PUVAL: <11000 =230
+            KUPOR: >8000 =210
+            DB530: <7000
+            DB508: =185
+            PATID: >7000 =210
+            DB532: <7000
+            DB524: =185
+         }
+         labels: PUVAL KUPOR DB506 ULDOT
+      }
+      {
+         direction: Inbound
+         # VUTEB 3B & 3E RNAV ARRIVALS
+         name: VUTEB 3B & 3E
+         runways: 12L 12R
+         segments:
+         [
+            VUTEB DB400 DB401 DB402 DB403 SOLIL ODLAL DB414 REREK
+            VUTEB IVUTI DB427 DB426 DB425 DB421 PASEV DB416 DB414
+         ]
+         restrictions:
+         {
+            VUTEB: <10000 =230
+            DB400: <7000
+            DB401: <6000
+            DB402: =210
+            SOLIL: =185
+            IVUTI: <10000 =230
+            DB427: <7000
+            DB426: =210
+            DB421: <6000
+            PASEV: =185
+         }
+         labels: VUTEB DB400 IVUTI DB414 REREK
+      }
+      {
+         direction: Inbound
+         # VUTEB 3C & 3D RNAV ARRIVALS
+         name: VUTEB 3C & 3D
+         runways: 30L 30R
+         segments:
+         [
+            VUTEB LOVOK DB529 PATID DB530 DB508 DB507 DB506 ULDOT
+            PATID DB532 RARPI DB524 DB525 DB506
+         ]
+         restrictions:
+         {
+            VUTEB: <12000 =230
+            LOVOK: <11000 =230
+            DB529: >8000
+            PATID: >7000 =210
+            DB530: <7000
+            DB508: =185
+            DB532: <7000
+            DB524: =185
+         }
+         labels: VUTEB PATID RARPI DB506 ULDOT
+      }
+      {
+         direction: Outbound
+         # DAVMO 3F & GETID 1F RNAV DEPARTURES
+         name: DAVMO 3F & GETID 1F
+         runways: 30L 30R
+         segments:
+         [
+            OMDB DB570 DB576 DB568 KUNPI OBROG DAVMO
+            DB576 DB569 KUPOR UKRER VAXAB LUDEV GETID
+         ]
+         restrictions:
+         {
+            DB576: >3000 <220
+            DB568: >4000
+            DAVMO: >12000
+            DB569: >4000
+            KUPOR: >5000
+            UKRER: >7000
+            VAXAB: >10000
+            LUDEV: >11000
+         }
+         labels: DB576 DAVMO GETID
+      }
+      {
+         direction: Outbound
+         # ANVIX 5G RNAV DEPARTURE
+         name: ANVIX 5E
+         runways: 12L 12R
+         segments:
+         [
+            OMDB ASTES DB469 LUBAP LOPUV ANVIX
+         ]
+         restrictions:
+         {
+            ASTES: <5000
+            DB469: >4000 <220
+            ANVIX: >10000
+         }
+         labels: DB469 ANVIX
+      }
+      {
+         direction: Outbound
+         # ANVIX 6F & ITOTU 1F RNAV DEPARTURES
+         name: ANVIX 6F & ITOTU 1F
+         runways: 30L 30R
+         segments:
+         [
+            OMDB DB570 DB575 DB581 DB571 DB572 DB578 DB579 ITOTU
+            DB572 ULADO RAPMO ANVIX
+         ]
+         restrictions:
+         {
+            DB575: >4000 <220
+            DB581: >6000
+            DB571: >7500
+            DB572: >9000 <250
+            DB578: >11000
+            DB579: >12000
+            ANVIX: >10000
+         }
+         labels: DB575 DB572 ITOTU ANVIX
+      }
+      {
+         direction: Outbound
+         # EMERU 1G & KUTLI 3G & MIROT 2G RNAV DEPARTURES
+         name: EMERU 1G & KUTLI 3G & MIROT 2G
+         runways: 12L 12R
+         segments:
+         [
+            OMDB ASTES DB451 DB460 DB467 DB463 LOPAP MIROT
+            DB467 GINLA XARTA KUTLI
+            XARTA EMERU
+         ]
+         restrictions:
+         {
+            ASTES: <5000
+            DB451: <220
+            DB460: >4000
+            DB467: >7000
+            GINLA: >10000
+            XARTA: >13000
+            KUTLI: >16000
+         }
+         labels: DB451 DB467 MIROT XARTA KUTLI EMERU
+      }
+      {
+         direction: Outbound
+         # EMERU 1F & KUTLI 3F & MIROT 2F RNAV DEPARTURES
+         name: EMERU 1F & KUTLI 3F & MIROT 2F
+         runways: 30L 30R
+         segments:
+         [
+            OMDB DB570 DB575 LOPAP MIROT
+            DB575 DB467 GINLA XARTA KUTLI
+            XARTA EMERU
+         ]
+         restrictions:
+         {
+            DB575: >4000 <220
+            DB467: >7000
+            GINLA: >10000
+            XARTA: >13000
+            KUTLI: >16000
+         }
+         labels: DB575 MIROT XARTA KUTLI EMERU
+      }
+      {
+         direction: Outbound
+         # NABIX 2G & RIDAP 2G & SENPA 2G RNAV DEPARTURES
+         name: NABIX 2G & RIDAP 2G & SENPA 2G
+         runways: 12L 12R
+         segments:
+         [
+            OMDB ASTES DB451 DB460 DB465 DB467 SENPA
+            DB465 DB466 DB468 ORLAD RIDAP
+            DB467 DB463 NABIX
+         ]
+         restrictions:
+         {
+            ASTES: <5000
+            DB451: <220
+            DB460: >4000
+            DB467: >7000
+            DB466: >7000
+            DB468: >9000
+         }
+         labels: DB451 DB465 DB467 RIDAP SENPA NABIX
+      }
+      {
+         direction: Outbound
+         # NABIX 2F & RIDAP 1F & SENPA 1F RNAV DEPARTURES
+         name: NABIX 2F & RIDAP 1F & SENPA 1F
+         runways: 30L 30R
+         segments:
+         [
+            OMDB DB570 DB574 IVILI SENPA
+            DB570 DB573 ORLAD RIDAP
+            DB570 DB575 LOPAP NABIX
+         ]
+         restrictions:
+         {
+            DB573: <220
+            DB575: >4000 <220
+            DB574: <220
+         }
+         labels: DB570 RIDAP SENPA NABIX
+      }
+   ]
+   options: no-global-labels
 }
