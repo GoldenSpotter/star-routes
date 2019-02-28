@@ -1,42 +1,41 @@
 {
-    airport: EGKK
-    labels: MID SAM GWC HOLLY TIMBA
-    routes:
-    [
-        {
-            direction: Inbound
-            name: STARs
-            runways: 08L 08R 26L 26R
-            segments:
-            [
-                KIDLI MID HOLLY
-                KENET MID
-                BEDEK NIGIT MID
-                DOMUT KATHY AVANT GWC HOLLY
-                BILNI KUMIL AVANT
-                SAM GWC
-                TEBRA ABTUM ARNUN
-                KONAN ARNUN LARCK TIMBA
-                NEVIL NETVU AMDUT
-                KUNAV AMDUT TIMBA
-            ]
-            restrictions:
-            {
-                NEVIL: =22000
-                NETVU: =14000
-                TIMBA: =7000
-                ABTUM: =14000
-                HOLLY: =7000
-                DOMUT: >20000
-                KATHY: >16000
-                BILNI: >20000
-            }
-            labels:
+   airport: EGKK
+   labels: MID SAM GWC HOLLY TIMBA
+   routes:
+   [
+      {
+         direction: Inbound
+         name: STARs
+         runways: 08L 08R 26L 26R
+         segments:
+         [
+            KIDLI MID HOLLY
+            KENET MID
+            BEDEK NIGIT MID
+            DOMUT KATHY AVANT GWC HOLLY
+            BILNI KUMIL AVANT
+            SAM GWC
+            TEBRA ABTUM ARNUN
+            KONAN ARNUN LARCK TIMBA
+            NEVIL NETVU AMDUT
+            KUNAV AMDUT TIMBA
+         ]
+         restrictions:
+         {
+            NEVIL: =22000
+            NETVU: =14000
+            TIMBA: =7000
+            ABTUM: =14000
+            HOLLY: =7000
+            DOMUT: >20000
+            KATHY: >16000
+            BILNI: >20000
+         }
+         labels:
             '''
             MID GWC AVANT HOLLY TIMBA
             LARCK ARNUN MID GWC AMDUT ARNUN
             '''
-        }
-    ]
-    options: no-points
+      }
+   ]
 }

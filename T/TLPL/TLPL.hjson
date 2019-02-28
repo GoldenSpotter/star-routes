@@ -1,41 +1,42 @@
 {
-    airport: TLPL
-    labels: KISES NUKAK RIBOR TUBED UMIGO
-    routes: [
-        {
-            direction: Inbound
-            name: 10 RNAV STAR
-            runways: 10
-            segments: [
-                NUKAK ILOGO
-                KISES ILOGO TUBED BISNO
-                TIBOT LIDOG TUBED
-                RIBOR LIDOG
-                UMENU LIDOG
-            ]
-            labels: ILOGO TUBED LIDOG
-        }
-        {
-            direction: Inbound
-            name: 28 RNAV STAR
-            runways: 28
-            segments: [
-                KISES OKUGA
-                NUKAK OKUGA UMIGO
-                RIBOR AVASI UMIGO
-                TIBOT UMIGO MEDOR
-            ]
-            labels: UMIGO OKUGA AVASI
-        }
-    ]
-    points: [
-        {
-            name: UMIGO
-            altitude: 2500
-        }
-        {
-            name: TUBED
-            altitude: 3000
-        }
-    ]
+   airport: TLPL
+   labels: KISES NUKAK RIBOR TUBED UMIGO
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 10 RNAV STAR
+         runways: 10
+         segments:
+         [
+            NUKAK ILOGO
+            KISES ILOGO TUBED BISNO
+            TIBOT LIDOG TUBED
+            RIBOR LIDOG
+            UMENU LIDOG
+         ]
+         labels: ILOGO TUBED LIDOG
+         restrictions:
+         {
+            TUBED: =3000
+         }
+      }
+      {
+         direction: Inbound
+         name: 28 RNAV STAR
+         runways: 28
+         segments:
+         [
+            KISES OKUGA
+            NUKAK OKUGA UMIGO
+            RIBOR AVASI UMIGO
+            TIBOT UMIGO MEDOR
+         ]
+         labels: UMIGO OKUGA AVASI
+         restrictions:
+         {
+            UMIGO: =2500
+         }
+      }
+   ]
 }

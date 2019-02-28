@@ -1,122 +1,132 @@
 {
-    airport: KTPA
-    routes: [
-        {
-            direction: Inbound
-            # BLOND 4 RNAV ARRIVAL
-            name: BLOND 4
-            runways: 1L 1R 19L 19R
-            segments: [
-                SIMMR RUDOF BLOND AGASE OOSAF GUSNE
-                AGASE DADPE WOBKI
-            ]
-            restrictions:
-            {
-                BLOND: =10000
-            }
-            labels: SIMMR BLOND AGASE GUSNE WOBKI
-        }
-        {
-            direction: Inbound
-            # DADES 6 RNAV ARRIVAL
-            name: DADES 6
-            runways: 1L 1R 19L 19R
-            segments: [
-                JAYJA EDISN OLENE MARVI KOKOH DADES LZARD LISAF GUZDA JSTRM
-                LZARD JKBAL
-                ORL DADES
-            ]
-            restrictions:
-            {
-                JAYJA: =27000
-                OLENE: =13000 =250
-            }
-            labels: JAYJA ORL DADES JSTRM
-        }
-        {
-            direction: Inbound
-            # DEAKK 5 RNAV ARRIVAL
-            name: DEAKK 5
-            runways: 1L 1R 19L 19R
-            segments: [
-                RSW ROGAN
-                LBV ROGAN
-                PHK ROGAN DEAKK JSTRM GUZDA JKBAL
-            ]
-            restrictions:
-            {
-                DEAKK: =11000 =250
-            }
-            labels: RSW LBV PHK JKBAL JSTRM DEAKK
-        }
-        {
-            direction: Inbound
-            # FOOXX 5 RNAV ARRIVAL
-            name: FOOXX 5
-            runways: 1L 1R 19L 19R
-            segments: [
-                HEVVN LEGGT TABIR DIPAY GUSNE
-                DIPAY DARBS FOOXX DADPE BAYZZ WOBKI
-            ]
-            restrictions:
-            {
-                LEGGT: =27000
-                TABIR: =13000 =250
-                DIPAY: =10000
-            }
-            labels: HEVVN FOOXX WOBKI
-        }
-        {
-            direction: Outbound
-            # BAYPO 8 RNAV DEPARTURE
-            name: BAYPO 8
-            runways: 1L 1R 19L 19R 10 28
-            segments: [
-                KTPA FINKI BAYPO ECAKE WILON SPRNG CAMJO
-            ]
-            labels: BAYPO CAMJO
-        }
-        {
-            direction: Outbound
-            # CROWD 8 RNAV DEPARTURE
-            name: CROWD 8
-            runways: 1L 1R 19L 19R 10 28
-            segments: [
-                KTPA MILEJ CROWD HALLR
-            ]
-            labels: CROWD HALLR
-        }
-        {
-            direction: Outbound
-            # ENDED 8 RNAV DEPARTURE
-            name: ENDED 8
-            runways: 1L 1R 19L 19R 10 28
-            segments: [
-                KTPA ENDED LACEN
-            ]
-            labels: ENDED LACEN
-        }
-        {
-            direction: Outbound
-            # GANDY 8 RNAV DEPARTURE
-            name: GANDY 8
-            runways: 1L 1R 19L 19R 10 28
-            segments: [
-                KTPA GANDY PAIRS MURDO SABEE
-            ]
-            labels: GANDY SABEE
-        }
-        {
-            direction: Outbound
-            # SYKES 8 RNAV DEPARTURE
-            name: SYKES 8
-            runways: 1L 1R 19L 19R 10 28
-            segments: [
-                KTPA SYKES DORMR PSTOL
-                DORMR SIMMR
-            ]
-            labels: SYKES PSTOL SIMMR
-        }
-    ]
-    options: no-points no-global-labels
+   airport: KTPA
+   routes:
+   [
+      {
+         direction: Inbound
+         # BLOND 4 RNAV ARRIVAL
+         name: BLOND 4
+         runways: 1L 1R 19L 19R
+         segments:
+         [
+            SIMMR RUDOF BLOND AGASE OOSAF GUSNE
+            AGASE DADPE WOBKI
+         ]
+         restrictions:
+         {
+            BLOND: =10000
+         }
+         labels: SIMMR BLOND AGASE GUSNE WOBKI
+      }
+      {
+         direction: Inbound
+         # DADES 6 RNAV ARRIVAL
+         name: DADES 6
+         runways: 1L 1R 19L 19R
+         segments:
+         [
+            JAYJA EDISN OLENE MARVI KOKOH DADES LZARD LISAF GUZDA JSTRM
+            LZARD JKBAL
+            ORL DADES
+         ]
+         restrictions:
+         {
+            JAYJA: =27000
+            OLENE: =13000 =250
+         }
+         labels: JAYJA ORL DADES JSTRM
+      }
+      {
+         direction: Inbound
+         # DEAKK 5 RNAV ARRIVAL
+         name: DEAKK 5
+         runways: 1L 1R 19L 19R
+         segments:
+         [
+            RSW ROGAN
+            LBV ROGAN
+            PHK ROGAN DEAKK JSTRM GUZDA JKBAL
+         ]
+         restrictions:
+         {
+            DEAKK: =11000 =250
+         }
+         labels: RSW LBV PHK JKBAL JSTRM DEAKK
+      }
+      {
+         direction: Inbound
+         # FOOXX 5 RNAV ARRIVAL
+         name: FOOXX 5
+         runways: 1L 1R 19L 19R
+         segments:
+         [
+            HEVVN LEGGT TABIR DIPAY GUSNE
+            DIPAY DARBS FOOXX DADPE BAYZZ WOBKI
+         ]
+         restrictions:
+         {
+            LEGGT: =27000
+            TABIR: =13000 =250
+            DIPAY: =10000
+         }
+         labels: HEVVN FOOXX WOBKI
+      }
+      {
+         direction: Outbound
+         # BAYPO 8 RNAV DEPARTURE
+         name: BAYPO 8
+         runways: 1L 1R 19L 19R 10 28
+         segments:
+         [
+            KTPA FINKI BAYPO ECAKE WILON SPRNG CAMJO
+         ]
+         labels: BAYPO CAMJO
+      }
+      {
+         direction: Outbound
+         # CROWD 8 RNAV DEPARTURE
+         name: CROWD 8
+         runways: 1L 1R 19L 19R 10 28
+         segments:
+         [
+            KTPA MILEJ CROWD HALLR
+         ]
+         labels: CROWD HALLR
+      }
+      {
+         direction: Outbound
+         # ENDED 8 RNAV DEPARTURE
+         name: ENDED 8
+         runways: 1L 1R 19L 19R 10 28
+         segments:
+         [
+            KTPA ENDED LACEN
+         ]
+         labels: ENDED LACEN
+      }
+      {
+         direction: Outbound
+         # GANDY 8 RNAV DEPARTURE
+         name: GANDY 8
+         runways: 1L 1R 19L 19R 10 28
+         segments:
+         [
+            KTPA GANDY PAIRS MURDO SABEE
+         ]
+         labels: GANDY SABEE
+      }
+      {
+         direction: Outbound
+         # SYKES 8 RNAV DEPARTURE
+         name: SYKES 8
+         runways: 1L 1R 19L 19R 10 28
+         segments:
+         [
+            KTPA SYKES DORMR PSTOL
+            DORMR SIMMR
+         ]
+         labels: SYKES PSTOL SIMMR
+      }
+   ]
+   options: no-global-labels
 }

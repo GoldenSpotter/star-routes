@@ -1,96 +1,87 @@
 {
-    airport: SVMI
-    labels: OPTIG TEGUD DARPA KORLI LOMUN
-    routes: [
-        {
-            direction: Inbound
-            name: 09/10 Arrivals
-            runways: 10 09
-            segments: [
-                ANDAL ALDAK
-                PBL ALDAK
-                ALDAK TEGUD
-                NETSI OPTIG TEGUD
-                TOROP NETSI
-                KOMPU NETSI
-                MTA NETSI
-                CBC NETSI
-                LRS OPTIG
-            ]
-            labels: NETSI OPTIG ALDAK TEGUD
-        }
-        {
-            direction: Inbound
-            name: 28 Approach
-            runways: 28
-            segments: [
-                TORIM DARPA KORLI LOMUN
-                JUREL LOMUN
-            ]
-            labels: TORIM DARPA KORLI LOMUN JUREL
-        }
-        {
-            direction: Outbound
-            name: 09/10 Departures
-            runways: 09 10
-            segments: [
-                URASI VADOR BUTSA
-                BUTSA AVELO
-                BUTSA ANDAL
-                BUTSA PBL
-                URASI SOSKA MTA
-                SOSKA CBC
-                VADOR PULPO
-                VADOR LRS
-                VADOR TOROP
-            ]
-            labels: URASI VADOR BUTSA SOSKA
-        }
-        {
-            direction: Outbound
-            name: 28 Departures
-            runways: 28
-            segments: [
-                DOLVO DARPA
-                DOLVO REKON
-                DOLVO MARES
-                DOLVO KORLI OSMAR
-            ]
-            labels: DOLVO DARPA REKON MARES KORLI OSMAR
-        }
-    ]
-    points: [
-        {
-            name: OPTIG
-            altitude: 4000
-        }
-        {
-            name: TEGUD
-            altitude: 4000
-        }
-        {
-            name: NETSI
-            altitude_required_min: 16000
-            altitude_required_max: 23000
-        }
-        {
-            name: ALDAK
-            altitude_required_min: 10000
-            altitude_required_max: 13000
-        }
-        {
-            name: DARPA
-            altitude: 5000
-        }
-        {
-            name: SOSKA
-            altitude_required_min: 6000
-            altitude_required_max: 11000
-        }
-        {
-            name: VADOR
-            altitude_required_min: 3000
-            altitude_required_max: 15000
-        }
-    ]
+   airport: SVMI
+   labels: OPTIG TEGUD DARPA KORLI LOMUN
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 09/10 Arrivals
+         runways: 10 09
+         segments:
+         [
+            ANDAL ALDAK
+            PBL ALDAK
+            ALDAK TEGUD
+            NETSI OPTIG TEGUD
+            TOROP NETSI
+            KOMPU NETSI
+            MTA NETSI
+            CBC NETSI
+            LRS OPTIG
+         ]
+         labels: NETSI OPTIG ALDAK TEGUD
+         restrictions:
+         {
+            OPTIG: =4000
+            TEGUD: =4000
+            NETSI: >16000 <23000
+            ALDAK: >10000 <13000
+         }
+      }
+      {
+         direction: Inbound
+         name: 28 Approach
+         runways: 28
+         segments:
+         [
+            TORIM DARPA KORLI LOMUN
+            JUREL LOMUN
+         ]
+         labels: TORIM DARPA KORLI LOMUN JUREL
+         restrictions:
+         {
+            DARPA: =5000
+         }
+      }
+      {
+         direction: Outbound
+         name: 09/10 Departures
+         runways: 09 10
+         segments:
+         [
+            URASI VADOR BUTSA
+            BUTSA AVELO
+            BUTSA ANDAL
+            BUTSA PBL
+            URASI SOSKA MTA
+            SOSKA CBC
+            VADOR PULPO
+            VADOR LRS
+            VADOR TOROP
+         ]
+         labels: URASI VADOR BUTSA SOSKA
+         restrictions:
+         {
+            SOSKA: >6000 <11000
+            VADOR: >3000 <15000
+         }
+      }
+      {
+         direction: Outbound
+         name: 28 Departures
+         runways: 28
+         segments:
+         [
+            DOLVO DARPA
+            DOLVO REKON
+            DOLVO MARES
+            DOLVO KORLI OSMAR
+         ]
+         labels: DOLVO DARPA REKON MARES KORLI OSMAR
+         restrictions:
+         {
+            DARPA: =5000
+         }
+      }
+   ]
 }

@@ -1,37 +1,40 @@
 {
-    airport: CYMM
-    routes: [
-        {
-            direction: Inbound
-            # LEXON 2 ARRIVAL
-            name: LEXON 2
-            runways: 07 25
-            segments: [
-                LEXON NANLU METPI NOPOV BOXUN
-                LEXON ONGUT UKPIG MENBA LESUT OTRIL
-            ]
-            restrictions:
-            {
-                METPI: <250
-                NOPOV: >5000 <200
-                BOXUN: >4000
-                MENBA: <250
-                LESUT: >5000 <200
-                OTRIL: >4000
-            }
-            labels: LEXON BOXUN OTRIL
-        }
-        {
-            direction: Outbound
-            # CACHO 2 DEPARTURE
-            name: CACHO 2
-            runways: 07 25
-            segments: [
-                CYMM VIKTU CACHO
-                CYMM TEXAL SEDUN ONGUT CACHO
-            ]
-            labels: CACHO
-        }
-    ]
-    options: no-points no-global-labels
+   airport: CYMM
+   routes:
+   [
+      {
+         direction: Inbound
+         # LEXON 2 ARRIVAL
+         name: LEXON 2
+         runways: 07 25
+         segments:
+         [
+            LEXON NANLU METPI NOPOV BOXUN
+            LEXON ONGUT UKPIG MENBA LESUT OTRIL
+         ]
+         restrictions:
+         {
+            METPI: <250
+            NOPOV: >5000 <200
+            BOXUN: >4000
+            MENBA: <250
+            LESUT: >5000 <200
+            OTRIL: >4000
+         }
+         labels: LEXON BOXUN OTRIL
+      }
+      {
+         direction: Outbound
+         # CACHO 2 DEPARTURE
+         name: CACHO 2
+         runways: 07 25
+         segments:
+         [
+            CYMM VIKTU CACHO
+            CYMM TEXAL SEDUN ONGUT CACHO
+         ]
+         labels: CACHO
+      }
+   ]
+   options: no-global-labels
 }

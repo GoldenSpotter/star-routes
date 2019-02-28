@@ -1,111 +1,114 @@
 {
-  airport: SBGL
-  labels:
-    '''
-    DONGI ESORU ILTIT
-    VUSRA
-    '''
-  routes:
-  [
-    {
-      direction: Inbound
-      name: VUSRA
-      runways: 10 15
-      segments:
-      [
-        ESORU EPGIP VUSRA
-        VUDAV ILTIT
-        ROPAS ILTIT
-        ILTIT KABUK KUDSI VUSRA
-        VUSRA DONGI
-      ]
-      restrictions:
+   airport: SBGL
+   labels:
+      '''
+      DONGI ESORU ILTIT
+      VUSRA
+      '''
+   routes:
+   [
       {
-          KABUK: <23000
-          KUDSI: >12000
-          DONGI: >6000
-          VUSRA: ~9000
+         direction: Inbound
+         name: VUSRA
+         runways: 10 15
+         segments:
+         [
+            ESORU EPGIP VUSRA
+            VUDAV ILTIT
+            ROPAS ILTIT
+            ILTIT KABUK KUDSI VUSRA
+            VUSRA DONGI
+         ]
+         restrictions:
+         {
+            KABUK: <23000
+            KUDSI: >12000
+            DONGI: >6000
+            VUSRA: ~9000
+         }
+         labels:
+            '''
+            KUDSI EPGIP VUSRA
+            DONGI ESORU ILTIT
+            '''
       }
-      labels:
-        '''
-        KUDSI EPGIP VUSRA
-        DONGI ESORU ILTIT
-        '''
-    }
-    {
-        direction: Inbound
-        name: TODAB
-        runways: 10 15
-        segments:
-        [
+      {
+         direction: Inbound
+         name: TODAB
+         runways: 10 15
+         segments:
+         [
             OGMUK VAKUB GIGSO UTBOM
             MEBGA KOSRU TODAB UTBOM
-        ]
-        restrictions:
-        {
+         ]
+         restrictions:
+         {
             UTBOM: >6000
             VAKUB: <12000
             GIGSO: >7000
-        }
-        labels: UTBOM TODAB OGMUK
-    }
-    {
-        direction: Inbound
-        name: EPGIP
-        runways: 28 33
-        segments: [
+         }
+         labels: UTBOM TODAB OGMUK
+      }
+      {
+         direction: Inbound
+         name: EPGIP
+         runways: 28 33
+         segments:
+         [
             ESORU EPGIP IVTAL
             IVTAL OPSID
             IVTAL SEDBU
             ILTIT KABUK EPGIP
             ROPAS ILTIT
             VUDAV ILTIT
-        ]
-        restrictions:
-        {
+         ]
+         restrictions:
+         {
             KABUK: <23000
             IVTAL: >8000
             SEDBU: >5000
             OPSID: >5000
-        }
-        labels:
+         }
+         labels:
             '''
             EPGIP IVTAL OPSID SEDBU
             ILTIT KABUK
             '''
-    }
-    {
-        direction: Inbound
-        name: North Arrivals
-        # VAKUB and DIVRO arrivals
-        runways: 28 33
-        segments: [
+      }
+      {
+         direction: Inbound
+         name: North Arrivals
+         # VAKUB and DIVRO arrivals
+         runways: 28 33
+         segments:
+         [
             OGMUK VAKUB
             MEBGA KOSRU VAKUB
             VAKUB IVTAL
             MOLSU DIVRO
             ADA DIVRO
             DIVRO KETUX OPSID
-        ]
-        restrictions:
-        {
+         ]
+         restrictions:
+         {
             IVTAL: >8000
             SEDBU: >5000
             OPSID: >5000
             KETUX: >5000
-        }
-        labels:
+         }
+         labels:
             '''
             OGMUK MEBGA VAKUB IVTAL
             MOLSU ADA DIVRO KETUX
             '''
-    }
-    {
-        direction: Outbound
-        name: 28/33 SIDs
-        # LIXEP SURKU PUMSO NIBGU
-        runways: 28 33
-        segments: [
+      }
+      {
+         direction: Outbound
+         name: 28/33 SIDs
+         # LIXEP SURKU PUMSO NIBGU
+         runways: 28 33
+         segments:
+         [
             EDMAD 2287S/4337W
             2287S/4337W SURKU
             2287S/4337W UTNOP PUMSO
@@ -121,14 +124,15 @@
             NIBGU EPKAX
             NIBGU IMBAP
             NIBGU UKENU
-        ]
-        labels: UTNOP SURKU LIXEP NIBGU 2287S/4337W ALMOS
-    }
-    {
-        direction: Outbound
-        name: 10/15 SIDs
-        runways: 10 15
-        segments: [
+         ]
+         labels: UTNOP SURKU LIXEP NIBGU 2287S/4337W ALMOS
+      }
+      {
+         direction: Outbound
+         name: 10/15 SIDs
+         runways: 10 15
+         segments:
+         [
             UTMIP PCX ISRIN IMBAP
             PCX ADA
             UTMIP ISVUL TIVRO NAXOP
@@ -136,17 +140,16 @@
             EVRAD UGROK LIXEP SIDUR
             PCX TISVA
             EVKOX UMBAD
-        ]
-        restrictions:
-        {
+         ]
+         restrictions:
+         {
             ISVUL: >6000
-        }
-        labels:
-        '''
-        PCX ISRIN ADA ISVUL TIVRO EVRAD
-        ENSOD UGROK LIXEP TISVA EVKOX
-        '''
-    }
-    ]
-    options: no-points
+         }
+         labels:
+            '''
+            PCX ISRIN ADA ISVUL TIVRO EVRAD
+            ENSOD UGROK LIXEP TISVA EVKOX
+            '''
+      }
+   ]
 }

@@ -1,102 +1,102 @@
 {
-    airport: SKBO
-    labels:
-    '''
-    AMVES ZIP
-    '''
-    routes: [
-        {
-            direction: Outbound
-            name: 31 SIDs
-            runways: 31L 31R
-            segments: [
-                BO509 BO505 BO438 VASIL
-                BO502 BO504 ZIP OSUSU
-                OSUSU AKROB
-                OSUSU BUV
-                BO505 BO422 DANSA
-                DANSA ANLAV
-                DANSA ZIP
-                BO422 POVSO
-                BO422 LIXAG
-                BO505 VAPOM
-            ]
-            restrictions:
-            {
-                POVSO: >15000
-                OSUSU: >14000
-                BO422: >13000
-            }
-            labels: BO505 BO422 BO504 ZIP
-        }
-        {
-            direction: Outbound
-            name: 13 SIDs
-            runways: 13L 13R
-            segments: [
-                SOA VASIL
-                GUXUN ZIP OSUSU
-                OSUSU AKROB
-                OSUSU BUV
-                SOA BO422 DANSA
-                DANSA ANLAV
-                DANSA ZIP
-                BO422 POVSO
-                GUXUN ZIP ANLAV
-                SOA VAPOM
-                BO422 LIXAG
-            ]
-            restrictions:
-            {
-                OSUSU: >14000
-                BO422: >13000
-            }
-            labels: SOA BO422 GUXUN ZIP
-        }
-        {
-            direction: Inbound
-            name: STARs
-            runways: 13L 13R 31L 31R
-            segments: [
-                ILSEV PAPET
-                BO822 PAPET
-                SIRUG PAPET
-                DORSA AMVES
-                EGEPI VUNEX BO846 GUVIM AMVES
-                GIR IRUPU
-                TOLIM IRUPU
-                TIRTO IRUPU
-                IRUPU GUVIM
-                PAPET DORSA
-                ISVAT MQU DORSA
-                ATANA MQU
-                EDPUL MQU
-            ]
-            restrictions:
-            {
-                VUNEX: >13000
-            }
-            labels: DORSA GUVIM AMVES VUNEX
-        }
-        {
-            direction: Inbound
-            name: 31 Approaches
-            runways: 31L 31R
-            segments: [
+   airport: SKBO
+   labels: AMVES ZIP
+   routes:
+   [
+      {
+         direction: Outbound
+         name: 31 SIDs
+         runways: 31L 31R
+         segments:
+         [
+            BO509 BO505 BO438 VASIL
+            BO502 BO504 ZIP OSUSU
+            OSUSU AKROB
+            OSUSU BUV
+            BO505 BO422 DANSA
+            DANSA ANLAV
+            DANSA ZIP
+            BO422 POVSO
+            BO422 LIXAG
+            BO505 VAPOM
+         ]
+         restrictions:
+         {
+            POVSO: >15000
+            OSUSU: >14000
+            BO422: >13000
+         }
+         labels: BO505 BO422 BO504 ZIP
+      }
+      {
+         direction: Outbound
+         name: 13 SIDs
+         runways: 13L 13R
+         segments:
+         [
+            SOA VASIL
+            GUXUN ZIP OSUSU
+            OSUSU AKROB
+            OSUSU BUV
+            SOA BO422 DANSA
+            DANSA ANLAV
+            DANSA ZIP
+            BO422 POVSO
+            GUXUN ZIP ANLAV
+            SOA VAPOM
+            BO422 LIXAG
+         ]
+         restrictions:
+         {
+            OSUSU: >14000
+            BO422: >13000
+         }
+         labels: SOA BO422 GUXUN ZIP
+      }
+      {
+         direction: Inbound
+         name: STARs
+         runways: 13L 13R 31L 31R
+         segments:
+         [
+            ILSEV PAPET
+            BO822 PAPET
+            SIRUG PAPET
+            DORSA AMVES
+            EGEPI VUNEX BO846 GUVIM AMVES
+            GIR IRUPU
+            TOLIM IRUPU
+            TIRTO IRUPU
+            IRUPU GUVIM
+            PAPET DORSA
+            ISVAT MQU DORSA
+            ATANA MQU
+            EDPUL MQU
+         ]
+         restrictions:
+         {
+            VUNEX: >13000
+         }
+         labels: DORSA GUVIM AMVES VUNEX
+      }
+      {
+         direction: Inbound
+         name: 31 Approaches
+         runways: 31L 31R
+         segments:
+         [
             AMVES BO706 BO704 BO751
             OPLEK BO756 BO752
             MADLA BO767 BO704
-            ]
-            restrictions:
-            {
-                BO767: >14000
-                OPLEK: >13000
-                BO756: >11000
-                BO706: >12000 <180
-            }
-            labels: AMVES BO704 BO756
-        }
-    ]
-    options: no-points
+         ]
+         restrictions:
+         {
+            BO767: >14000
+            OPLEK: >13000
+            BO756: >11000
+            BO706: >12000 <180
+         }
+         labels: AMVES BO704 BO756
+      }
+   ]
 }
-

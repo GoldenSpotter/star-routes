@@ -1,233 +1,244 @@
 {
-    airport: KORD
-    routes: [
-        {
-            direction: Inbound
-            # BENKY 5 RNAV ARRIVAL
-            name: BENKY 5
-            runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
-            segments: [
-                LOAMY DRAMS RYELY BDF BYLAW BENKY NEWRK AHSTN PETAH
-                PETAH KURKK HIMGO
-                PETAH TONIE
-                TRICH BENKY
-            ]
-            restrictions:
-            {
-                DRAMS: <34000
-                RYELY: >24000
-                BDF: >22000
-                BYLAW: >19000 <23000
-                BENKY: =12000
-                TRICH: >13000 <15000
-            }
-            labels: LOAMY BENKY HIMGO TONIE
-        }
-        {
-            direction: Inbound
-            # ERNNY 5 RNAV ARRIVAL
-            name: ERNNY 5
-            runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
-            segments: [
-                GRB FGHRN
-                FOLGO FGHRN
-                LGHRN FGHRN FAH KOHLL GURNN CHDRR SPAHN LYNNI PHRLY SWIIS ERNNY
-                STASH TOWNE PRADY MUSKY MINCE ERNNY
-                YOLUR MUSKY
-                ERNNY PAPPI TUBEZ VULCN BAMBB
-                TUBEZ MONKZ JORJO POSSM
-            ]
-            restrictions:
-            {
-                KOHLL: >18000 <21000
-                GURNN: <18000
-                CHDRR: =14000
-                SPAHN: <10000
-                MINCE: <10000
-            }
-            labels: GRB FOLGO LGHRN ERNNY BAMBB POSSM
-        }
-        {
-            direction: Inbound
-            # ESSPO 4 RNAV ARRIVAL
-            name: ESSPO 4
-            runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
-            segments: [
-                MZZ FRIDG WATSN
-                FWA PRONK DAIFE
-                NOLNN DAIFE WATSN MKITA ESSPO LAACY IZARD CABIJ
-                CABIJ MONKZ POSSM
-                CABIJ VULCN BAMBB
-            ]
-            restrictions:
-            {
-                DAIFE: =25000
-                MKITA: =16000
-                ESSPO: =12000
-            }
-            labels: MZZ FWA NOLNN ESSPO POSSM BAMBB
-        }
-        {
-            direction: Inbound
-            # FYTTE 5 RNAV ARRIVAL
-            name: FYTTE 5
-            runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
-            segments: [
-                ZZIPR TEEOO BHAWK
-                MYRRS BENNR BHAWK
-                BHAWK STNLE CUUPP CHMPN CLSBY FYTTE MOTRR COGSS MADII SOOLU
-                SHIKY BUSSE HYYDE JAKSA MOOPS FYTTE
-                SOOLU KURKK HIMGO
-                SOOLU JORJO TONIE
-            ]
-            restrictions:
-            {
-                BHAWK: >22000 <26000
-                STNLE: >17000 <21000 =280
-                CUUPP: >15000 <18000 =280
-                CLSBY: >13000 <15000 =270
-                FYTTE: =11000 =250
-                BUSSE: >24000
-                HYYDE: >17000 <22000
-                JAKSA: =15000 =280
-                MOOPS: >14000
-            }
-            labels: ZZIPR MYRRS BHAWK FYTTE SHIKY HIMGO TONIE
-        }
-        {
-            direction: Inbound
-            # MADII 4 RNAV ARRIVAL
-            name: MADII 4
-            runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
-            segments: [
-                GRB FGHRN
-                FOLGO FGHRN
-                LGHRN FGHRN
-                FGHRN FAH KOHLL GURNN CHDRR ZANDI HOPSS HUNKA MADII SOOLU
-                SOOLU KURKK HIMGO
-                SOOLU JORJO TONIE
-            ]
-            restrictions:
-            {
-                KOHLL: >18000 <21000
-                GURNN: <18000
-                CHDRR: =14000
-            }
-            labels: GRB FOLGO LGHRN MADII HIMGO TONIE
-        }
-        {
-            direction: Inbound
-            # SHAIN 1 RNAV ARRIVAL
-            name: SHAIN 1
-            runways: 09L 09R 10L 10C 10R
-            segments: [
-                IRK DRAMS RYELY BDF EZZRA PHLLP TRIDE
-                WELTS CASHN
-                FTZ GROOV CASHN
-                STL GROOV
-                CASHN VINCA MAROC KELTS FNBAR TRIDE
-                TRICH TRIDE
-                TRIDE SHAIN RAGSS JUMPN GIBNS JUKIC
-            ]
-            restrictions:
-            {
-                DRAMS: <34000
-                RYELY: >24000
-                BDF: >22000
-                EZZRA: >19000
-                PHLLP: >17000 <20000
-                VINCA: <34000
-                MAROC: >24000 <27000
-                KELTS: >20000
-                FNBAR: >17000 <20000
-                TRIDE: >14000 <16000
-                SHAIN: =12000
-            }
-            labels: IRK WELTS FTZ STL TRICH SHAIN
-        }
-        {
-            direction: Inbound
-            # TRTLL 5 RNAV ARRIVAL
-            name: TRTLL 5
-            runways: 04L 04R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
-            segments: [
-                WELTS CASHN
-                FTZ GROOV CASHN
-                STL GROOV
-                CASHN VINCA MAROC TRICH TRTLL HIHRY RINNO
-                RINNO KURKK HIMGO
-                RINNO JORJO TONIE
-                PNT TRICH
-                BYLAW TRTLL
-            ]
-            restrictions:
-            {
-                VINCA: <34000
-                MAROC: >24000 <27000
-                TRICH: >13000 <15000
-                BYLAW: >19000 <22000
-                TRTLL: =11000
-            }
-            labels: WELTS FTZ STL TRTLL HIMGO TONIE PNT BYLAW
-        }
-        {
-            direction: Inbound
-            # VEECK 4 RNAV ARRIVAL
-            name: VEECK 4
-            runways: 04L 04R 10L 10C 10R 22L 22R
-            segments: [
-                FWA ROYKO VEECK
-                MZZ NYLEN VEECK
-                VEECK BOONE HANNI CLUSO KAYTO PINKK
-                PINKK VULCN BAMBB
-                PINKK MONKZ JORJO POSSM
-            ]
-            labels: MZZ FWA VEECK POSSM BAMBB
-        }
-        {
-            direction: Inbound
-            # WATSN 3 RNAV ARRIVAL
-            name: WATSN 3
-            runways: 27L 27R 28L 28C 28R
-            segments: [
-                MZZ FRIDG WATSN
-                ROD FWA SPANN
-                ZANLA SPANN DAIFE WATSN HAUPO MKITA PRISE HULLS STYLE DWEEB CENAK
-            ]
-            restrictions:
-            {
-                FRIDG: =24000
-                DAIFE: =25000
-                HAUPO: =16000
-                HULLS: =12000
-            }
-            labels: MZZ ROD ZANLA WATSN CENAK
-        }
-        {
-            direction: Inbound
-            # WYNDE 9 RNAV ARRIVAL
-            name: WYNDE 9
-            runways: 04L 04R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
-            segments: [
-                TVC UFDUH WLTER
-                JODEE GAULT OBSTR VIO
-                ODAXY GAULT
-                FNT EMMMA VIO WLTER RHIVR PAITN
-                PMM PAITN
-                PAITN WYNDE ERNNY PAPPI TUBEZ
-                TUBEZ VULCN BAMBB
-                TUBEZ MONKZ JORJO POSSM
-            ]
-            restrictions:
-            {
-                TVC: <24000
-                UFDUH: <24000
-                OBSTR: =32000
-                EMMMA: =32000
-                RHIVR: =20000
-            }
-            labels: TVC JODEE ODAXY FNT VIO WLTER PMM WYNDE BAMBB POSSM
-        }
-    ]
-    options: no-points no-global-labels
+   airport: KORD
+   routes:
+   [
+      {
+         direction: Inbound
+         # BENKY 5 RNAV ARRIVAL
+         name: BENKY 5
+         runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
+         segments:
+         [
+            LOAMY DRAMS RYELY BDF BYLAW BENKY NEWRK AHSTN PETAH
+            PETAH KURKK HIMGO
+            PETAH TONIE
+            TRICH BENKY
+         ]
+         restrictions:
+         {
+            DRAMS: <34000
+            RYELY: >24000
+            BDF: >22000
+            BYLAW: >19000 <23000
+            BENKY: =12000
+            TRICH: >13000 <15000
+         }
+         labels: LOAMY BENKY HIMGO TONIE
+      }
+      {
+         direction: Inbound
+         # ERNNY 5 RNAV ARRIVAL
+         name: ERNNY 5
+         runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
+         segments:
+         [
+            GRB FGHRN
+            FOLGO FGHRN
+            LGHRN FGHRN FAH KOHLL GURNN CHDRR SPAHN LYNNI PHRLY SWIIS ERNNY
+            STASH TOWNE PRADY MUSKY MINCE ERNNY
+            YOLUR MUSKY
+            ERNNY PAPPI TUBEZ VULCN BAMBB
+            TUBEZ MONKZ JORJO POSSM
+         ]
+         restrictions:
+         {
+            KOHLL: >18000 <21000
+            GURNN: <18000
+            CHDRR: =14000
+            SPAHN: <10000
+            MINCE: <10000
+         }
+         labels: GRB FOLGO LGHRN ERNNY BAMBB POSSM
+      }
+      {
+         direction: Inbound
+         # ESSPO 4 RNAV ARRIVAL
+         name: ESSPO 4
+         runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
+         segments:
+         [
+            MZZ FRIDG WATSN
+            FWA PRONK DAIFE
+            NOLNN DAIFE WATSN MKITA ESSPO LAACY IZARD CABIJ
+            CABIJ MONKZ POSSM
+            CABIJ VULCN BAMBB
+         ]
+         restrictions:
+         {
+            DAIFE: =25000
+            MKITA: =16000
+            ESSPO: =12000
+         }
+         labels: MZZ FWA NOLNN ESSPO POSSM BAMBB
+      }
+      {
+         direction: Inbound
+         # FYTTE 5 RNAV ARRIVAL
+         name: FYTTE 5
+         runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
+         segments:
+         [
+            ZZIPR TEEOO BHAWK
+            MYRRS BENNR BHAWK
+            BHAWK STNLE CUUPP CHMPN CLSBY FYTTE MOTRR COGSS MADII SOOLU
+            SHIKY BUSSE HYYDE JAKSA MOOPS FYTTE
+            SOOLU KURKK HIMGO
+            SOOLU JORJO TONIE
+         ]
+         restrictions:
+         {
+            BHAWK: >22000 <26000
+            STNLE: >17000 <21000 =280
+            CUUPP: >15000 <18000 =280
+            CLSBY: >13000 <15000 =270
+            FYTTE: =11000 =250
+            BUSSE: >24000
+            HYYDE: >17000 <22000
+            JAKSA: =15000 =280
+            MOOPS: >14000
+         }
+         labels: ZZIPR MYRRS BHAWK FYTTE SHIKY HIMGO TONIE
+      }
+      {
+         direction: Inbound
+         # MADII 4 RNAV ARRIVAL
+         name: MADII 4
+         runways: 04L 04R 09L 09R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
+         segments:
+         [
+            GRB FGHRN
+            FOLGO FGHRN
+            LGHRN FGHRN
+            FGHRN FAH KOHLL GURNN CHDRR ZANDI HOPSS HUNKA MADII SOOLU
+            SOOLU KURKK HIMGO
+            SOOLU JORJO TONIE
+         ]
+         restrictions:
+         {
+            KOHLL: >18000 <21000
+            GURNN: <18000
+            CHDRR: =14000
+         }
+         labels: GRB FOLGO LGHRN MADII HIMGO TONIE
+      }
+      {
+         direction: Inbound
+         # SHAIN 1 RNAV ARRIVAL
+         name: SHAIN 1
+         runways: 09L 09R 10L 10C 10R
+         segments:
+         [
+            IRK DRAMS RYELY BDF EZZRA PHLLP TRIDE
+            WELTS CASHN
+            FTZ GROOV CASHN
+            STL GROOV
+            CASHN VINCA MAROC KELTS FNBAR TRIDE
+            TRICH TRIDE
+            TRIDE SHAIN RAGSS JUMPN GIBNS JUKIC
+         ]
+         restrictions:
+         {
+            DRAMS: <34000
+            RYELY: >24000
+            BDF: >22000
+            EZZRA: >19000
+            PHLLP: >17000 <20000
+            VINCA: <34000
+            MAROC: >24000 <27000
+            KELTS: >20000
+            FNBAR: >17000 <20000
+            TRIDE: >14000 <16000
+            SHAIN: =12000
+         }
+         labels: IRK WELTS FTZ STL TRICH SHAIN
+      }
+      {
+         direction: Inbound
+         # TRTLL 5 RNAV ARRIVAL
+         name: TRTLL 5
+         runways: 04L 04R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
+         segments:
+         [
+            WELTS CASHN
+            FTZ GROOV CASHN
+            STL GROOV
+            CASHN VINCA MAROC TRICH TRTLL HIHRY RINNO
+            RINNO KURKK HIMGO
+            RINNO JORJO TONIE
+            PNT TRICH
+            BYLAW TRTLL
+         ]
+         restrictions:
+         {
+            VINCA: <34000
+            MAROC: >24000 <27000
+            TRICH: >13000 <15000
+            BYLAW: >19000 <22000
+            TRTLL: =11000
+         }
+         labels: WELTS FTZ STL TRTLL HIMGO TONIE PNT BYLAW
+      }
+      {
+         direction: Inbound
+         # VEECK 4 RNAV ARRIVAL
+         name: VEECK 4
+         runways: 04L 04R 10L 10C 10R 22L 22R
+         segments:
+         [
+            FWA ROYKO VEECK
+            MZZ NYLEN VEECK
+            VEECK BOONE HANNI CLUSO KAYTO PINKK
+            PINKK VULCN BAMBB
+            PINKK MONKZ JORJO POSSM
+         ]
+         labels: MZZ FWA VEECK POSSM BAMBB
+      }
+      {
+         direction: Inbound
+         # WATSN 3 RNAV ARRIVAL
+         name: WATSN 3
+         runways: 27L 27R 28L 28C 28R
+         segments:
+         [
+            MZZ FRIDG WATSN
+            ROD FWA SPANN
+            ZANLA SPANN DAIFE WATSN HAUPO MKITA PRISE HULLS STYLE DWEEB CENAK
+         ]
+         restrictions:
+         {
+            FRIDG: =24000
+            DAIFE: =25000
+            HAUPO: =16000
+            HULLS: =12000
+         }
+         labels: MZZ ROD ZANLA WATSN CENAK
+      }
+      {
+         direction: Inbound
+         # WYNDE 9 RNAV ARRIVAL
+         name: WYNDE 9
+         runways: 04L 04R 10L 10C 10R 22L 22R 27L 27R 28L 28C 28R
+         segments:
+         [
+            TVC UFDUH WLTER
+            JODEE GAULT OBSTR VIO
+            ODAXY GAULT
+            FNT EMMMA VIO WLTER RHIVR PAITN
+            PMM PAITN
+            PAITN WYNDE ERNNY PAPPI TUBEZ
+            TUBEZ VULCN BAMBB
+            TUBEZ MONKZ JORJO POSSM
+         ]
+         restrictions:
+         {
+            TVC: <24000
+            UFDUH: <24000
+            OBSTR: =32000
+            EMMMA: =32000
+            RHIVR: =20000
+         }
+         labels: TVC JODEE ODAXY FNT VIO WLTER PMM WYNDE BAMBB POSSM
+      }
+   ]
+   options: no-global-labels
 }

@@ -1,56 +1,60 @@
 {
-    airport: TKPK
-    options: no-points
-    labels: GABAR ANASU TIKAL BOMET
-    routes: [
-        {
-            direction: Inbound
-            name: 07 RNAV STAR
-            runways: 07
-            segments: [
-                GABAR OMONO 1719N/6291W
-                TIKAL OMONO
-                ANASU IKNIG 1719N/6291W
-                BOMET IKNIG
-            ]
-            labels: OMONO IKNIG GABAR TIKAL ANASU BOMET
-        }
-        {
-            direction: Inbound
-            name: 25 RNAV STAR
-            runways: 25
-            segments: [
-                ANASU MAXVU
-                BOMET MAXVU UDGEL
-                TIKAL NOVAR
-                GABAR NOVAR UDGEL
-            ]
-            labels: NOVAR MAXVU UDGEL ANASU BOMET TIKAL GABAR
-        }
-        {
-            direction: Outbound
-            name: 07 GNSS Departures
-            runways: 07
-            segments: [
-                KIPUR UDGEL NOVAR GABAR
-                KIPUR MAXVU BOMET
-                MAXVU ANASU
-                NOVAR ELOPO
-                KASAM TIKAL
-            ]
-            labels: KIPUR UDGEL MAXVU NOVAR GABAR BOMET ANASU ELOPO TIKAL KASAM
-        }
-        {
-            direction: Outbound
-            name: 25 GNSS Departures
-            runways: 25
-            segments: [
-                DUSUL OMONO GABAR
-                OMONO TIKAL
-                DUSUL EPVOS ANU
-                EPVOS ANASU
-            ]
-            labels: DUSUL OMONO EPVOS TIKAL GABAR ANASU ANU
-        }
-    ]
+   airport: TKPK
+   labels: GABAR ANASU TIKAL BOMET
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 07 RNAV STAR
+         runways: 07
+         segments:
+         [
+            GABAR OMONO 1719N/6291W
+            TIKAL OMONO
+            ANASU IKNIG 1719N/6291W
+            BOMET IKNIG
+         ]
+         labels: OMONO IKNIG GABAR TIKAL ANASU BOMET
+      }
+      {
+         direction: Inbound
+         name: 25 RNAV STAR
+         runways: 25
+         segments:
+         [
+            ANASU MAXVU
+            BOMET MAXVU UDGEL
+            TIKAL NOVAR
+            GABAR NOVAR UDGEL
+         ]
+         labels: NOVAR MAXVU UDGEL ANASU BOMET TIKAL GABAR
+      }
+      {
+         direction: Outbound
+         name: 07 GNSS Departures
+         runways: 07
+         segments:
+         [
+            KIPUR UDGEL NOVAR GABAR
+            KIPUR MAXVU BOMET
+            MAXVU ANASU
+            NOVAR ELOPO
+            KASAM TIKAL
+         ]
+         labels: KIPUR UDGEL MAXVU NOVAR GABAR BOMET ANASU ELOPO TIKAL KASAM
+      }
+      {
+         direction: Outbound
+         name: 25 GNSS Departures
+         runways: 25
+         segments:
+         [
+            DUSUL OMONO GABAR
+            OMONO TIKAL
+            DUSUL EPVOS ANU
+            EPVOS ANASU
+         ]
+         labels: DUSUL OMONO EPVOS TIKAL GABAR ANASU ANU
+      }
+   ]
 }

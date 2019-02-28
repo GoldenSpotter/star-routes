@@ -1,48 +1,50 @@
 {
-    airport: TNCA
-    options: no-points
-    labels: DAVLA MIDVU
-    routes: [
-        {
-            direction: Inbound
-            name: 11 STAR
-            runways: 11
-            segments: [
-                TETUM DAVLA
-                MOBAM BOGVU
-                APNUT BOGVU
-                BOGVU DAVLA
-                DATOR ELUMO
-                NOREX ELUMO
-                ELUMO DAVLA
-            ]
-            labels:
-                '''
-                DATOR NOREX TETUM
-                MOBAM APNUT BOGVU
-                DAVLA
-                '''
-        }
-        {
-            direction: Inbound
-            name: 29 STAR
-            runways: 29
-            segments: [
-                TETUM OKUTO
-                MOBAM OKUTO
-                APNUT OKUTO
-                OKUTO MIDVU
-                ADRIV MIDVU
-                DATOR NADAV
-                ITSEL NADAV
-                NADAV MIDVU
-            ]
-            labels:
-                '''
-                TETUM MOBAM APNUT
-                ADRIV DATOR ITSEL
-                OKUTO NADAV MIDVU
-                '''
-        }
-    ]
+   airport: TNCA
+   labels: DAVLA MIDVU
+   routes:
+   [
+      {
+         direction: Inbound
+         name: 11 STAR
+         runways: 11
+         segments:
+         [
+            TETUM DAVLA
+            MOBAM BOGVU
+            APNUT BOGVU
+            BOGVU DAVLA
+            DATOR ELUMO
+            NOREX ELUMO
+            ELUMO DAVLA
+         ]
+         labels:
+            '''
+            DATOR NOREX TETUM
+            MOBAM APNUT BOGVU
+            DAVLA
+            '''
+      }
+      {
+         direction: Inbound
+         name: 29 STAR
+         runways: 29
+         segments:
+         [
+            TETUM OKUTO
+            MOBAM OKUTO
+            APNUT OKUTO
+            OKUTO MIDVU
+            ADRIV MIDVU
+            DATOR NADAV
+            ITSEL NADAV
+            NADAV MIDVU
+         ]
+         labels:
+            '''
+            TETUM MOBAM APNUT
+            ADRIV DATOR ITSEL
+            OKUTO NADAV MIDVU
+            '''
+      }
+   ]
 }

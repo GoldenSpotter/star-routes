@@ -1,78 +1,83 @@
 {
-    airport: KEWR
-    routes: [
-        {
-            direction: Inbound
-            # FLOSI 3 RNAV ARRIVAL
-            name: FLOSI 3
-            runways: 04L 04R 11 22L 22R 29
-            segments: [
-                GEE EXTOL HNK HELON
-                HANAA TALCO HELON FLOSI CRANK SAX PHLBO HOKIR
-                BAF TALCO
-                NELIE FLOSI
-            ]
-            restrictions:
-            {
-                HANAA: <24000
-                BAF: <16000
-                NELIE: <16000
-                CRANK: =7000
-            }
-            labels: GEE HANAA BAF NELIE FLOSI HOKIR
-        }
-        {
-            direction: Inbound
-            # PHLBO 3 RNAV ARRIVAL
-            name: PHLBO 3
-            runways: 04L 04R 11 22L 22R 29
-            segments: [
-                GVE OTT
-                FAK OTT PALEO PEEDS
-                PXT PEEDS
-                PEEDS FUBRR DQO STEFE SOMTO DYLIN METRO MARRT PHLBO
-            ]
-            restrictions:
-            {
-                DQO: >20000
-                STEFE: >13000
-                SOMTO: =11000
-                DYLIN: =8000
-            }
-            labels: GVE FAK PXT PHLBO
-        }
-        {
-            direction: Inbound
-            # WILLIAMSPORT 3 ARRIVAL
-            name: FQM 3
-            runways: 04L 04R 11 22L 22R 29
-            segments: [
-                SLT FQM MEGSS HAYED RACKI PENNS SWEET BWZ
-            ]
-            restrictions:
-            {
-                RACKI: =13000
-                SWEET: =7000
-            }
-            labels: SLT FQM BWZ
-        }
-        {
-            direction: Outbound
-            # PORTT 4 RNAV DEPARTURE
-            name: PORTT 4
-            runways: 22L 22R
-            segments: [
-                KEWR BAGGA PORTT SIRLY FENLY ELIOT
-                PORTT RIETA SBJ PARKE
-                SBJ LANNA
-                SBJ BIGGY
-            ]
-            restrictions:
-            {
-                BAGGA: <220
-            }
-            labels: PORTT ELIOT PARKE LANNA BIGGY
-        }
-    ]
-    options: no-points no-global-labels
+   airport: KEWR
+   routes:
+   [
+      {
+         direction: Inbound
+         # FLOSI 3 RNAV ARRIVAL
+         name: FLOSI 3
+         runways: 04L 04R 11 22L 22R 29
+         segments:
+         [
+            GEE EXTOL HNK HELON
+            HANAA TALCO HELON FLOSI CRANK SAX PHLBO HOKIR
+            BAF TALCO
+            NELIE FLOSI
+         ]
+         restrictions:
+         {
+            HANAA: <24000
+            BAF: <16000
+            NELIE: <16000
+            CRANK: =7000
+         }
+         labels: GEE HANAA BAF NELIE FLOSI HOKIR
+      }
+      {
+         direction: Inbound
+         # PHLBO 3 RNAV ARRIVAL
+         name: PHLBO 3
+         runways: 04L 04R 11 22L 22R 29
+         segments:
+         [
+            GVE OTT
+            FAK OTT PALEO PEEDS
+            PXT PEEDS
+            PEEDS FUBRR DQO STEFE SOMTO DYLIN METRO MARRT PHLBO
+         ]
+         restrictions:
+         {
+            DQO: >20000
+            STEFE: >13000
+            SOMTO: =11000
+            DYLIN: =8000
+         }
+         labels: GVE FAK PXT PHLBO
+      }
+      {
+         direction: Inbound
+         # WILLIAMSPORT 3 ARRIVAL
+         name: FQM 3
+         runways: 04L 04R 11 22L 22R 29
+         segments:
+         [
+            SLT FQM MEGSS HAYED RACKI PENNS SWEET BWZ
+         ]
+         restrictions:
+         {
+            RACKI: =13000
+            SWEET: =7000
+         }
+         labels: SLT FQM BWZ
+      }
+      {
+         direction: Outbound
+         # PORTT 4 RNAV DEPARTURE
+         name: PORTT 4
+         runways: 22L 22R
+         segments:
+         [
+            KEWR BAGGA PORTT SIRLY FENLY ELIOT
+            PORTT RIETA SBJ PARKE
+            SBJ LANNA
+            SBJ BIGGY
+         ]
+         restrictions:
+         {
+            BAGGA: <220
+         }
+         labels: PORTT ELIOT PARKE LANNA BIGGY
+      }
+   ]
+   options: no-global-labels
 }
