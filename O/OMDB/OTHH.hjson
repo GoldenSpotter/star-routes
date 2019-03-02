@@ -1,0 +1,146 @@
+{
+    airport: OTHH
+    labels: IMKAT TOVAN GOLSI LAGMA
+    routes:
+    [
+        {
+            direction: Outbound
+            name: 16s SIDs
+            runways: 16L 16R
+            segments:
+            [
+                BUDEB VUVAN TONBI BATHA
+                BUDEB XABAB BUNDU
+                TORKO GOBLU ALVEN
+                GOBLU ALSEM
+                GOBLU NAMLA
+                VUVAN BONEL EGSUN ENELI DEBIL ALNAK PATOM
+                BONEL EGSUN DASIB SALWA
+            ]
+            labels:
+            '''
+            GOBLU VUVAN DASIB
+            ENELI BONEL XABAB
+            '''
+        }
+        {
+            direction: Outbound
+            name: 34 SIDs
+            runways: 34L 34R
+            segments:
+            [
+                GETAM DASIB LAGNO TONBI BATHA
+                GETAM ENELI KOBEN GIBIN
+                GIBIN ALSEM
+                GIBIN GOBLU NAMLA
+                GOBLU BUNDU
+                KOBEN DEBIL ALNAK PATOM
+                DEBIL ALVEN
+                DASIB ASNOS SALWA
+            ]
+            labels:
+            '''
+            GETAM DASIB TONBI ENELI
+            GIBIN KOBEN DEBIL
+            '''
+        }
+        {
+            direction: Inbound
+            name: 16L STARs
+            runways: 16L
+            segments:
+            [
+                GINTO LAGNO PUTAN IVANI TOVAN
+                BAYAN ASTIM EGNUG PUTAN
+                AFNAN SIDMU EGNUG
+            ]
+            restrictions:
+            {
+                GINTO: <12000
+                IVANI: >5000 <220
+                EGNUG: >8000
+                AFNAN: <12000
+                BAYAN: <12000
+                TOVAN: <180
+            }
+            labels: PUTAN EGNUG GINTO ASTIM AFNAN
+        }
+        {
+            direction: Inbound
+            name: 16R STARs
+            runways: 16R
+            segments:
+            [
+                GINTO LAGNO DATMO TANDO GOLSI
+                BAYAN ASTIM EGNUG DATMO
+                AFNAN SIDMU EGNUG
+            ]
+            restrictions:
+            {
+                GINTO: <12000
+                DATMO: >8000
+                TANDO: >5000 <220
+                GOLSI: <180
+                BAYAN: <12000
+                EGNUG: >8000
+                AFNAN: <12000
+            }
+            labels: ASTIM EGNUG AFNAN DATMO GINTO
+        }
+        {
+            direction: Inbound
+            name: 34L STARs
+            runways: 34L
+            segments:
+            [
+                GINTO LAGNO MUSAN OTIDA
+                AFNAN MUVEX LOVAN PUXEL
+                BAYAN OTIDA PUXEL DANIK IMKAT
+            ]
+            restrictions:
+            {
+                GINTO: <12000
+                OTIDA: >8000
+                PUXEL: >6000 <220
+                DANIK: >5000 <220
+                IMKAT: <180
+                BAYAN: <12000
+                AFNAN: <12000
+                LOVAN: >8000
+            }
+            labels:
+            '''
+            GINTO MUSAN AFNAN
+            BAYAN DANIK MUVEX
+            '''
+        }
+        {
+            direction: Inbound
+            name: 34R STARs
+            runways: 34R
+            segments:
+            [
+                GINTO LAGNO SIDMU
+                BAYAN EGNUG SIDMU LOVAN
+                AFNAN MUVEX LOVAN MUXED LAGMA
+
+            ]
+            restrictions:
+            {
+                GINTO: <12000
+                BAYAN: <12000
+                SIDMU: >8000
+                AFNAN: <12000
+                MUVEX: <8000
+                LOVAN: <8000 <220
+                MUXED: >5000 <220
+                LAGMA: <180
+            }
+            labels:
+            '''
+            EGNUG AFNAN LOVAN
+            SIDMU MUXED GINTO
+            '''
+        }
+    ]
+}
