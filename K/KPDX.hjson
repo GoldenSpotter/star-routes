@@ -1,0 +1,91 @@
+{
+    airport: KPDX
+    labels: BTG
+    routes:
+    [
+        {
+            direction: Inbound
+            name: HELNS 6
+            runways: 10L 10R 28L 28R
+            segments:
+            [
+                BUWZO HELNS KRATR BTG
+            ]
+            restrictions:
+            {
+                BTG: >7000
+                KRATR: =12000
+            }
+            labels: BUWZO HELNS KRATR BTG
+        }
+        {
+            direction: Inbound
+            name: HHOOD 4
+            runways: 10L 10R 28L 28R 21
+            segments:
+            [
+                LUUND YENTL HHOOD BLRUN
+                MYTOE BAYYR HHOOD
+                SODDA RABBI HHOOD
+                BLRUN SSDEE THEID EMZEY CIZZL
+                CIZZL YORKY NNUTT BUXOM
+                BLRUN SHAFR REEDI
+                BLRUN SOOZN
+            ]
+            restrictions:
+            {
+                LUUND: >17000
+                YENTL: >13000 =270
+                MYTOE: >17000
+                BAYYR: >13000 =270
+                SODDA: >17000
+                RABBI: >13000 =270
+                HHOOD: >9000 <15000 =250
+                SHAFR: =6500 =210
+                SOOZN: =8000 =210
+                SSDEE: >9000 <11000
+                THEID: >8000 <10000
+                EMZEY: >7000 <8000 =230
+                CIZZL: >5000 =210
+                YORKY: =5000
+            }
+            labels:
+            '''
+            EMZEY SOOZN REEDI
+            NNUTT BLRUN HHOOD
+            '''
+        }
+        {
+            direction: Inbound
+            name: TMBRS 2
+            runways: 10L 10R 28L 28R 21
+            segments:
+            [
+                PORTL TMBRS CITYY
+                '''
+                TMBRS VANTZ FLOWR FFULL
+                SSAIL MYCRO PUBBB
+                '''
+                FLOWR HHOPZ
+                FLOWR ICEAX
+            ]
+            restrictions:
+            {
+                PORTL: >11000 <24000 =270
+                CITYY: >11000
+                TMBRS: >11000 =270
+                VANTZ: >11000 <15000 =250
+                FLOWR: >7000 <9000
+                FFULL: >7000 <9000
+                SSAIL: >6000 <8000
+                MYCRO: =5000 =210
+                HHOPZ: =7000 =210
+            }
+            labels:
+            '''
+            FLOWR TMBRS HHOPZ
+            ICEAX PUBBB
+            '''
+        }
+    ]
+}
