@@ -1,0 +1,87 @@
+{
+    airport: LEPA
+    labels: D143C CDP POS MJV PA400
+    routes:
+    [
+        {
+            direction: Inbound
+            name: 06L/06R STARs
+            runways: 06L 06R
+            segments:
+            [
+                GODOX RUPIT D143C
+                LAMPA PA400 PA405 MJV
+                MEBUT PA400
+                OSGAL PA405
+                TOLSO INPUS NEKUG TAKUS
+                LORES POSBA NUDSA XOTNU
+                XOTNU TAKUS EVOLI D143C
+                KENAS CDP LUNIK
+                CDP NAKOP MJV
+                RIXOT CDP MORSS
+            ]
+            restrictions:
+            {
+                GODOX: >4000
+                RUPIT: >4000 <230
+                D143C: >4000 <230
+                LAMPA: >6000
+                PA400: >5000
+                IBIVU: >5000 <230
+                PA405: >4000 <230
+                MEBUT: >7000
+                OSGAL: >4000 <250
+                INPUS: >8000 <250
+                NUDSA: >7000 <250
+                XOTNU: >7000 <250
+                NEKUG: >7000 <230
+                EVOLI: >7000 <230
+                NAXOP: <250
+                RIXOT: <23000
+                MORSS: <23000
+            }
+            labels:
+            '''
+            RUPIT PA400 PA405 OSGAL
+            TOLSO LORES TAKUS CDP
+            '''
+        }
+        {
+            direction: Inbound
+            name: 24L/24R STARs
+            runways: 24L 24R
+            segments:
+            [
+                GODOX RUPIT POS
+                LAMPA PA400 IBIVU MJV
+                MEBUT PA400
+                OSGAL MJV
+                KENAS CDP LUNIK
+                LORES POSBA POS
+                TOLSO LISAS POS
+                RIXOT CDP MORSS
+            ]
+            restrictions:
+            {
+                GODOX: >6000
+                RUPIT: >6000 <14000 <250
+                POS: >6000 <250
+                LAMPA: >6000
+                PA400: >5000
+                IBIVU: >5000 <250
+                MJV: >3000 <250
+                MEBUT: >7000
+                OSGAL: >4000 <250
+                TOLSO: >12000
+                POSBA: >250
+                RIXOT: <23000
+                MORSS: <23000
+            }
+            labels:
+            '''
+            RUPIT POS PA400 MJV
+            OSGAL CDP LISAS
+            '''
+        }
+    ]
+}
