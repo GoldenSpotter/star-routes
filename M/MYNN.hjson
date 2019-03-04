@@ -1,0 +1,84 @@
+{
+    airport: MYNN
+    labels: CUDLI JOBIB MUNIE
+    routes:
+    [
+        {
+            direction: Outbound
+            name: FREDY 1 & INGRA 1
+            runways: 14
+            segments:
+            [
+                FREDY POLBE JEDIK
+                FREDY EXIGE
+                FREDY JUTED HEROM NICKO
+                HEROM SYDNY
+                POLBE INGRA
+
+            ]
+            restrictions:
+            {
+                JUTED: >1000
+            }
+            labels: JUTED HEROM POLBE
+        }
+        {
+            direction: Outbound
+            name: JAVIS 1
+            runways: 32
+            segments:
+            [
+                NICKO JAVIS MAJUR
+                SYDNY JAVIS HABDO JEDIK
+            ]
+            restrictions:
+            {
+                HABDO: >1000
+            }
+            labels: NICKO MAJUR SYDNY HABDO JEDIK
+        }
+        {
+            direction: Inbound
+            name: 09 GPS Approach
+            runways: 09
+            segments:
+            [
+                RELVE JOBIB ATADE
+            ]
+            restrictions:
+            {
+                JOBIB: =2000
+            }
+            labels: RELVE ATADE
+        }
+        {
+            direction: Inbound
+            name: 14 ILS
+            runways: 14
+            segments:
+            [
+                KURAY MUNIE HINZY
+                MAJUR MUNIE MELON
+            ]
+            restrictions:
+            {
+                MUNIE: =2000
+            }
+            labels: HINZY MAJUR MELON KURAY
+        }
+        {
+            direction: Inbound
+            name: 32 GPS Approach
+            runways: 32
+            segments:
+            [
+                ZUTUN CUDLI HIDNO
+            ]
+            restrictions:
+            {
+                CUDLI: =2000
+            }
+            labels: ZUTUN HIDNO
+        }
+    ]
+}
