@@ -1,0 +1,32 @@
+{
+    airport: LSZA
+    labels: BEG SRN MMP PINIK
+    routes:
+    [
+        {
+            direction: Inbound
+            name: STARs
+            runways: 01 19
+            segments:
+            [
+                LUSIL BEG LUGAN
+                ODINA LUGAN PINIK
+                BEG ZA631 ZA632 PINIK
+                SRN PINIK
+                TOP VOG MMP PINIK
+            ]
+            restrictions:
+            {
+                BEG: >12000
+                LUGAN: >10000
+                ODINA: >14000
+                PINIK: >6000
+                VOG: >9000
+                SRN: >6000
+                ZA631: >1000
+                ZA632: >8000
+            }
+            labels: PINIK ODINA BEG MMP SRN
+        }
+    ]
+}
