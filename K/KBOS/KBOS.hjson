@@ -1,6 +1,6 @@
 {
    airport: KBOS
-   labels: LOBBY
+   labels: GDM JFUND ORW OOSHN ROBUC WOONS
    routes:
    [
       {
