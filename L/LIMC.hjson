@@ -1,0 +1,50 @@
+{
+    airport: LIMC
+    labels: SRN RIGON SOKBU MC628 MMP
+    routes:
+    [
+        {
+            direction: Inbound
+            name: 35L/35R Arrivals
+            runways: 35L 35R
+            segments:
+            [
+                AKASU MC406 MC407 SOKBU
+                ODINA SRN LEMKI MC412 RIGON
+                OSKOR SRN LEMKI
+                LUSIL SRN
+                SOKBU MC407 MEBUR MC412 RIGON
+                DEVOX MC407 ASTIG TOP
+            ]
+            labels:
+            '''
+            AKASU ODINA SRN
+            LEMKI MC406 ASTIG
+            '''
+        }
+        {
+            direction: Outbound
+            name: 35L/35R Departures
+            runways: 35L 35R
+            segments:
+            [
+                MC628 NELAB BLA
+                MC628 NELAB FARAK
+                MC628 MC632 IRKED
+                MMP IRKED SRN
+                IRKED TELVA
+            ]
+            labels: MC628 NELAB MC632 IRKED SRN
+        }
+        {
+            direction: Inbound
+            name: 17L/17R Approaches
+            runways: 17L 17R
+            segments:
+            [
+                MMP MC628 D348J
+            ]
+            labels: MMP MC628 D348J
+        }
+    ]
+}
