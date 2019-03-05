@@ -6,7 +6,7 @@
          direction: Inbound
          # KAROT 5 ARRIVAL
          name: KAROT 5
-         runways: 06 12 24 30
+         runways: 06 11 24 29
          segments:
          [
             TADES KAROT NOREK AXANU LERET NOSIL RAGUP
@@ -30,7 +30,7 @@
          direction: Inbound
          # OLAVO 4 ARRIVAL
          name: OLAVO 4
-         runways: 06 12 24 30
+         runways: 06 11 24 29
          segments:
          [
             OLAVO RETIP IKBUS RAGUP VITEN
@@ -55,7 +55,7 @@
          direction: Inbound
          # OMVAR 1 ARRIVAL
          name: OMVAR 1
-         runways: 06 12 24 30
+         runways: 06 11 24 29
          segments:
          [
             OMVAR DUTIL DEDGO USBUR XUDLU
@@ -80,7 +80,7 @@
          direction: Inbound
          # PESAC 4 ARRIVAL
          name: PESAC 4
-         runways: 06 12 24 30
+         runways: 06 11 24 29
          segments:
          [
             PESAC GONUM PIBNI OMADU
@@ -105,7 +105,7 @@
          direction: Inbound
          # SIMTO 4 ARRIVAL
          name: SIMTO 4
-         runways: 06 12 24 30
+         runways: 06 11 24 29
          segments:
          [
             SIMTO IKDEB
@@ -159,7 +159,7 @@
          direction: Outbound
          # TILAC 1 DEPARTURE
          name: TILAC 1
-         runways: 30
+         runways: 29
          segments:
          [
             CYQB TILAC XUBUN OLAVO
@@ -173,5 +173,4 @@
          labels: XUBUN OLAVO IKMIK FLEUR
       }
    ]
-   options: no-global-labels
 }
