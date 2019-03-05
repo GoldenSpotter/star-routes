@@ -1,0 +1,193 @@
+{
+   airport: KONT
+   labels: EAGLZ GLRNO JCKIE KARLB SCBBY SETER ZIGGY
+   routes:
+   [
+      {
+         direction: Inbound
+         name: EAGLZ TWO
+         runways: 8R 8L 26R 26L
+         segments:
+         [
+            NATEE FEYLA PEIRC LRSON JNBOY JCKIE GBNEY GRRAY SEONG HINOH EAGLZ
+            MARUE SCROW FJAYY GRNER JAJEE JNBOY JCKIE GBNEY GRRAY SEONG HINOH EAGLZ
+            HEYNG GUYRR JCKIE GBNEY GRRAY SEONG HINOH EAGLZ
+            EAGLZ STOMN 
+            EAGLZ TYNIN WELDR ESAYE EFFXX CASIE
+         ]
+         labels: NATEE MARUE HEYNG EAGLZ PEIRC LRSON GRNER JAJEE JNBOY GBNEY GRRAY SEONG HINOH SEONG TYNIN WELDR ESAYE EFFXX
+         restrictions:
+         {
+            FJAYY: >24000 <30000
+            GRNER: >24000 =280
+            JAJEE: =22000
+            JNBOY: <21000
+            PEIRC: >24000 =280
+            LRSON: >21000 <22000
+            HEYNG: >24000 =280
+            JCKIE: >17000 <19000 
+            GBNEY: <16000
+            GRRAY: >11000 <14000
+            HINOH: >11000
+            SEONG: >10000
+            EAGLZ: =9000 =240
+            TYNIN: =9000
+            WELDR: =8000
+            ESAYE: =6000
+            EFFXX: =6000 =210
+         }
+      }
+      {
+         direction: Inbound
+         name: GLRNO TWO
+         runways: 8L 8R 26L 26R
+         segments:
+         [
+            CLASN MURDY GLRNO JEEYU TRJAN DODJR CASAA RAFII 
+            OYVEY SOSHA KARNY RABBL GLRNO JEEYU TRJAN DODJR CASAA RAFII 
+            RAFII BOTIE 
+            RAFII WELDR ESAYE EFFXX CASIE
+         ]
+         labels: CLASN OYVEY GLRNO RAFII JEEYU TRJAN DODJR CASAA WELDR BOTIE ESAYE EFFXX CASIE
+         restrictions: 
+         {
+            GLRNO: >24000 
+            JEEYU: <23000
+            TRJAN: >15000
+            DODJR: >14000 <15000 =250
+            CASAA: >11000
+            RAFII: =8000 =240
+            BOTIE: =8000
+            WELDR: =8000
+            ESAYE: =6000
+            EFFXX: =6000 =210
+            CASIE: =4000
+         }
+      }
+      {
+         direction: Inbound
+         name: JCKIE ONE 
+         runways: 8R 8L 26R 26L
+         segments:
+         [
+            NATEE FEYLA PEIRC LRSON JNBOY JCKIE GBNEY GRRAY SEONG HINOH ARRAN JMANN
+            MARUE SCROW FJAYY GRNER JAJEE JNBOY JCKIE GBNEY GRRAY SEONG HINOH ARRAN JMANN
+            HEYNG GUYRR JCKIE JCKIE GBNEY GRRAY SEONG HINOH ARRAN JMANN
+            JMANN PDZ
+         ]
+         labels: NATEE MARUE HEYNG JNBOY JCKIE FJAYY PEIRC LRSON JAJEE GRNER GBNEY GRRAY HINOH ARRAN JMANN 
+         restrictions:
+         {
+            FJAYY: >24000 <30000
+            GRNER: >24000 =280
+            JAJEE: =22000
+            JNBOY: <21000
+            PEIRC: >24000 =280
+            LRSON: >21000 <22000
+            HEYNG: >24000 =280
+            JCKIE: >17000 <19000 
+            GBNEY: <16000
+            GRRAY: >11000 <14000
+            HINOH: >11000
+            ARRAN: >10000 <250
+            JMANN: =9000
+         }
+      }
+      {
+         direction: Inbound
+         name: KARLB TWO 
+         runways: 8R 8L 26L 26R
+         segments:
+         [
+            FICKY ROSIN MALIT GOATZ DIRBY PHUNN SHHOW COAZT KARLB POXKU PDZ 
+            ELKEY DIRBY PHUNN SHHOW COAZT KARLB POXKU PDZ 
+         ]
+         labels: ELKEY FICKY DIRBY PHUNN SHHOW COAZT KARLB POXKU PDZ
+         restrictions:
+         {
+            DIRBY: >16000 <19000 =280
+            PHUNN: <14000
+            SHHOW: <12000
+            COAZT: >9000
+            KARLB: <8000
+            POXKU: =7000 =220
+            PDZ: =7000
+         }
+      }
+      {
+         direction: Inbound
+         name: SCBBY TWO
+         runways: 8L 8R 26R 26L
+         segments:
+         [
+            TTRUE CHPLN JEPRS SCRPY DEWWW ZOINK MSTRY MCHNE DEWAY SCBBY 
+            DAFNY GOAST GOBLN GHOUL SCRPY DEWWW ZOINK MSTRY MCHNE DEWAY SCBBY 
+            PHRED FOILD QUTIP VLLMA DEWWW ZOINK MSTRY MCHNE DEWAY SCBBY 
+            AMMOR RNCHO SNSTT SOLAY SCBBY
+            SCBBY STRKS CAYDE KALEA TAKOE
+            SCBBY RRJAY HRVEE HVANI EFFXX CASIE
+         ]
+         labels: TTRUE DAFNY PHRED AMMOR SCRPY DEWWW JEPRS GHOUL VLLMA ZOINK MSTRY MCHNE DEWAY SOLAY SCBBY STRKS CAYDE KALEA TAKOE RRJAY HRVEE HVANI EFFXX 
+         restrictions:
+         {
+            JEPRS: <29000
+            GHOUL: <29000
+            SCRPY: >24000
+            VLMMA: >24000 <28000
+            DEWWW: >21000
+            ZOINK: <20000
+            MSTRY: >16000 <19000
+            MCHNE: >15000 <16000
+            SCBBY: >9300 <11000
+            SOLAY: >12000 <14000
+            STRKS: >7900
+            CAYDE: >6000
+            KALEA: >5000 =220
+            TAKOE: >4300 =210
+            RRJAY: >8000 <9000
+            HRVEE: >7000
+            HVANI: =6000 =240
+            EFFXX: =6000 =210
+         }
+      }
+      {
+         direction: Inbound
+         name: SETER FIVE
+         runways: 8L 8R 26L 26R
+         segments:
+         [
+            JLI ROTHY SETER
+            PSP AHLEX BANDS SETER
+            SETER PETIS
+            SETER BERDU PDZ
+         ]
+         labels: JLI PSP SETER ROTHY 
+         restrictions:
+         {
+            PSP: =16000
+            ROTHY: =12000
+            JLI: <24000
+         }
+      }
+      {
+         direction: Inbound
+         name: ZIGGY SEVEN
+         runways: 8R 8L 26R 26L
+         segments:
+         [
+            EHF ZARTI LANDO PMD FLAVR MAJEK HESPE HITOP NITIY ZIGGY
+            TTE ZARTI LANDO PMD FLAVR MAJEK HESPE HITOP NITIY ZIGGY
+            DAG BULGY DAWNA ARRAN GAREY ZIGGY
+            HEC BULGY DAWNA ARRAN GAREY ZIGGY
+            ZIGGY PETIS PDZ
+         ]
+         labels: EHF TTE DAG HEC ZIGGY FLAVR ZARTI BULGY DAWNA 
+         restrictions:
+         {
+            BULGY: >24000
+            DAWNA: =12000
+            FLAVR: =14000 =250
+         }
+      }
+   ]
+}
