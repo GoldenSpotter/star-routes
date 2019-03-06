@@ -1,0 +1,83 @@
+{
+    airport: MUVR
+    labels: BANAO KITEN VR501 VR500 VOLEM
+    routes:
+    [
+        {
+            
+            direction: Inbound
+            name: BANAO 2 & VOLEM 1B
+            runways: 24
+            segments:
+            [
+                 FUNDI BANAO KITEN
+                 TANIA BANAO
+                 DENGU VOLEM KITEN
+                 UCL VOLEM IBSEN
+                 APRIK VOLEM AMITU
+                 CRILE VOLEM
+            ]
+            restrictions:
+            {
+                KITEN: >3000
+                BANAO: <7000
+                VOLEM: <7000
+            }
+            labels: BANAO KITEN VOLEM
+        }
+        {
+            direction: Inbound
+            name: GOLFO 2 & LARGO 2A
+            runways: 06
+            segments:
+            [
+                FUNDI GOLFO TANIA
+                GOLFO VR500 AGDEM
+                DENGU LARGO UCL
+                APRIK LARGO AMITU
+                CRILE LARGO VR501 AGDEM
+            ]
+            restrictions:
+            {
+                GOLFO: >10000 <210
+                VR500: >3000 <210
+                AGDEM: >2500
+                VR501: >3000 <210
+                LARGO: <7000 <210
+            }
+            labels: VR500 GOLFO LARGO VR501
+        }
+        {
+            direction: Outbound
+            name: ESVUR 1A, LARGO 2B, and PESBI 2
+            runways: 24
+            segments:
+            [
+                VILBA PESBI IKBIX
+                PESBI TANIA
+                FARKO ESVUR DUTAN
+                VILBA LARGO DENGU
+                UCL LARGO APRIK
+                AMITU LARGO CRILE
+            ]
+            labels: VILBA LARGO PESBI FARKO
+        }
+        {
+            direction: Outbound
+            name: GOLFO 1, NOXIL 1, VARDE 1A, and VOLEM 1A
+            runways: 06
+            segments:
+            [
+                IKBIX GOLFO VR524 VOLEM DENGU
+                UCL VOLEM APRIK
+                AMITU VOLEM CRILE
+                TANIA NOXIL ALVEK
+            ]
+            restrictions:
+            {
+                GOLFO: <9000
+            }
+            labels: GOLFO NOXIL VOLEM ALVEK
+        }
+    ]
+}
