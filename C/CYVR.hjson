@@ -1,0 +1,128 @@
+{
+   airport: CYVR
+   options: no-global-labels
+   routes:    [
+       {
+           direction: Inbound
+           name: ACORD two arrival
+           runways:  08L 08R 12
+           segments: [
+               CREEB PIZZE BACON ACORD
+               BEZOV EGRET ACORD
+               ACORD HADER BUBUL
+               ACORD HADER EMKAM
+           ]
+           labels: ACORD
+       }
+       {
+           direction: Inbound
+           name: BOOTH two arrival
+           runways:  08L 08R 12
+           segments: [
+               BOOTH VITEV STAVE SHARD LANNE MILLS BASRA
+               BASRA EMKAM
+               BASRA BUBUL
+           ]
+           labels: BOOTH
+           }
+       {
+           direction: Inbound
+           name: CASDY three arrival
+           runways:  26L 26R
+           segments: [
+               TOU EMLOX CASDY
+               SEFIX  CASDY
+               INHAM  FOCHE ANVAP CASDY
+               CASDY YVR
+               YVR SAVED
+               YVR  GOREG
+           ]
+           labels: CASDY
+           }
+       {
+           direction: Inbound
+           name: KEINN four arrival
+           runways:  08L 08R 12 26L 26R
+           segments: [
+               YZT POWOL QUODY
+               TRENA QUODY
+               QUODY MUZON KEINN AQUIN  CEESE FASBO
+               FASBO EMKAM
+               FASBO BUBUL
+           ]
+           labels: KEINN
+           }
+       {
+           direction: Inbound
+           name: NUTBE two arrival
+           runways:  08L 08R 12 26L 26R
+           segments: [
+               OTIKA NUTBE BAJOL
+               BAJOL EMKAM
+               BAJOL BUBUL
+               BAJOL YPK
+               YPK GOREG
+               YPK SAVED
+           ]
+           labels: NUTBE
+           }
+       {
+           direction: Inbound
+           name: STAVE one arrival
+           runways:  26L 26R
+           segments: [
+               BOOTH VITEV STAVE MOGUS OBTOT NEWTN
+               NEWTN GOREG
+               NEWTN BOGGI SAVED
+           ]
+           labels: STAVE
+           }
+       {
+           direction: Inbound
+           name: ETMON three arrival
+           runways:  08L 08R
+           segments: [
+               TOU BISPA
+               SEFIX FOCHE
+               INHAM FOCHE
+               FOCHE BISPA
+               BISPA LEXEG
+               LEXEG BUBUL
+               LEXEG MIXUS EMKAM
+           ]
+           labels: BISPA
+           }
+       {
+           direction: Inbound
+           name: WHATCOM one arrival
+           runways:  26L 26R
+           segments: [
+               CREEB PIZZE BACON ACORD
+               BEZOV EGRET ACORD
+               ACORD  NEWTN GOREG
+               ACORD BOGGI SAVED
+           ]
+           labels: ACORD
+           }
+       {
+           direction: Outbound
+           name: RICHMOND six departure
+           runways:  08L 08R 12 26L 26R
+           segments: [
+               YVR DOLLR
+               YVR MODDY
+               YVR FERRY
+               YVR COGLE
+               YVR IMPOR
+               YVR TOU
+               YVR DUNCN
+               YVR CASDY
+               YVR ARMAC
+               YVR TREEL
+
+               YVR FASBO
+           ]
+           labels: YVR
+           }
+           ]
+           }
