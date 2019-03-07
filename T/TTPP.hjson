@@ -1,0 +1,50 @@
+{
+    airport: TTPP
+    labels: LEXOR SHARK NAPKO ALNOT SEBAS
+    routes:
+    [
+        {
+            direction: Inbound
+            name: 10 RNAV Approaches
+            runways: 10
+            segments:
+            [
+                CURRY SHARK
+                ITRAK NAPKO LEXOR
+                DUKLA NAPKO NOTEL
+                POS IMIRA LEXOR
+                MEGIR SHARK LEXOR
+            ]
+            restrictions:
+            {
+                LEXOR: =2500
+            }
+            labels:
+            '''
+            MEGIR CURRY ITRAK
+            DUKLA NOTEL POS
+            '''
+        }
+        {
+            direction: Inbound
+            name: 28 RNAV Approaches
+            runways: 28
+            segments:
+            [
+                ITRAK SEBAS DUKLA
+                SEBAS BOSAT NOTEL
+                MITAK ALNOT BOVEL
+                POS ALNOT BOSAT
+            ]
+            restrictions:
+            {
+                BOSAT: =2500
+            }
+            labels:
+            '''
+            ITRAK DUKLA BOVEL
+            MITAK POS NOTEL
+            '''
+        }
+    ]
+}
