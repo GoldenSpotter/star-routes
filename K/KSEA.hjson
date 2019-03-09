@@ -1,0 +1,189 @@
+{
+  airport: KSEA
+  routes:
+  [
+     {
+        direction: Inbound
+        name: CHINS 2 arrival
+        runways: 16L 16C 16R 34L 34C 34R
+        segments:
+        [
+           BRUKK SUNED YKM CHINS RADDY HUMPP AUBRN
+        ]
+        restrictions:
+        {
+           SUNED: >10000 <18000
+        }
+        labels: SUNED
+     }
+     {
+        direction: Inbound
+        name: EPHRATA 8 arrival
+        runways: 16L 16C 16R 34L 34C 34R
+        segments:
+        [
+           ODESS SKYKO HUVUS HETHR
+        ]
+        restrictions:
+        {
+           ODESS: >10000 <18000
+        }
+        labels: ODESS
+     }
+     {
+        direction: Inbound
+        name: GLASR 1 arrival
+        runways: 16L 16C 16R 34L 34C 34R
+        segments:
+        [
+           ONSET LOSTT KRUZR GLASR JAKSN WOODI HETHR
+           TEMPL WITRO ODAHL GLASR
+        ]
+        restrictions:
+        {
+           LOSTT: >10000 <18000
+           TEMPL: >10000 <18000
+        }
+        labels: LOSTT TEMPL GLASR
+     }
+     {
+        direction: Inbound
+        name: HAWKZ 6 RNAV arrival
+        runways: 16L 16C 16R 34L 34C 34R
+        segments:
+        [
+           LATAY AAYRR HAWKZ
+           PTERA KRIEG HAWKZ
+        ]
+        restrictions:
+        {
+           HAWKZ: >12000 =270
+        }
+        labels: HAWKZ
+     }
+     {
+        direction: Inbound
+        name: JAWBN 5 arrival
+        runways: 16L 16C 16R 34L 34C 34R
+        segments:
+        [
+           YVR JAWBN
+           YYJ JAWBN
+           TOU JAWBN
+           JAWBN DIGGN ALKIA
+        ]
+        restrictions:
+        {
+           JAWBN: >10000
+        }
+        labels: JAWBN
+     }
+     {
+        direction: Inbound
+        name: OLYMPIA 2 arrival
+        runways: 16L 16C 16R 34L 34C 34R
+        segments:
+        [
+           COUGA LACEE ARVAD FOURT
+           UBG LACEE
+        ]
+        restrictions:
+        {
+           LACEE: >12000
+        }
+        labels: LACEE
+     }
+     {
+        direction: Inbound
+        name: final 16
+        runways: 16L 16C 16R
+        segments:
+        [
+           AUBRN ZEMSO MGNUM
+           HETHR ZEMSO
+           HAWKZ LIINE PIKEZ COFAY BREVE NETTZ KWEST VASHN HUDSA MGNUM
+           ALKIA MGNUM
+           FOURT HUDSA
+        ]
+        labels: MGNUM
+     }
+     {
+        direction: Inbound
+        name: final 34
+        runways: 34L 34C 34R
+        segments:
+        [
+           AUBRN ZIVDI
+           HETHR AUBRN
+           HAWKZ LIINE FOOTT GOALZ SONDR ODBOE ZIVDI
+           ALKIA OYABO ODBOE
+           FOURT FAWNA ZIVDI
+        ]
+        labels: ZIVDI      
+     }
+     {
+        direction: Outbound
+        name: 34 initial
+        runways: 34L 34C 34R
+        segments:
+        [
+           WUREL ATOME
+           DODVE WUREL
+           NESOE WUREL
+           CUSBU WUREL
+        ]
+        labels: ATOME
+    }
+    {
+        direction: Outbound
+        name: BANGER NINE
+        runways: 34L 34R 34C 16L 16C 16R
+        segments:
+        [   
+            WUREL ATOME BREMM BANGR
+            PANGL BANGR ARRIE
+            RENBE RICHR TOMRE BANGR
+        ]
+        restrictions:
+        {
+            WUREL: >3000
+            BANGR: >10000
+            RENBE: >3000
+        }
+        labels: ATOME BANGR
+    }
+    {
+        direction: Outbound
+        name: HAROB SIX
+        runways: 34L 34C 34R 16L 16C 16R
+        segments:
+        [
+            WUREL ATOME BREMM HAROB
+            HQM HAROB ERAVE
+        ]
+        restrictions:
+        {
+            WUREL: >3000
+            HAROB: >10000
+        }
+        labels: ATOME HAROB
+    }
+        {
+            direction: Outbound
+            name: ISBRG ONE, JEFPO ONE, OZWLD ONE
+            runways: 34L 34R 34C
+            segments:
+            [
+                WUREL ATOME BREMM ISBRG
+                ATOME CENEX JEFPO
+                BREMM OZWLD
+            ]
+            restrictions:
+            {
+                WUREL: >3000
+            }
+            labels: ATOME ISBRG JEFPO OZWLD
+        }
+  ]
+  options: no-global-labels
+}
