@@ -1,0 +1,275 @@
+{
+    airport: ENGM
+    routes:
+    [
+        {
+            direction: Inbound
+            name: ADOPI 3L STAR
+            runways: 01L 01R
+            segments:
+            [
+                ADOPI NIVDU GM402 GM405 GM406 GM404 GM455 VALPU
+            ]
+            restrictions:
+            {
+                ADOPI: <250
+                GM402: =10000 <220
+                GM455: =10000
+                VALPU: >5000
+            }
+            labels: ADOPI VALPU
+        }
+        {
+            direction: Inbound
+            name: ADOPI 3M STAR
+            runways: 19L 19R
+            segments:
+            [
+                ADOPI GM428 GM429 GM430 GM431 GM452 BAVAD
+            ]
+            restrictions:
+            {
+                ADOPI: <250
+                GM428: =10000 <220
+                GM452: =10000
+                BAVAD: >5000
+            }
+            labels: ADOPI BAVAD
+        }
+        {
+            direction: Inbound
+            name: BELGU 3L STAR
+            runways: 01L 01R
+            segments:
+            [
+                BELGU VANUK GM456 GM400 GM402 GM405 GM406 GM404 GM455 VALPU
+            ]
+            restrictions:
+            {
+                BELGU: <250
+                VANUK: <250
+                GM456: <12000
+                GM400: =9000
+                GM402: <220
+                GM455: =9000
+                VALPU: >5000
+            }
+            labels: BELGU VALPU
+        }
+        {
+            direction: Inbound
+            name: BELGU 3M STAR
+            runways: 19L 19R
+            segments:
+            [
+                BELGU AGNIL GM432 GM433 GM434 GM435 BAVAD
+            ]
+            restrictions:
+            {
+                BELGU: <250
+                GM432: =11000 <220
+                GM435: =11000
+                BAVAD: >5000
+            }
+            labels: BELGU BAVAD
+        }
+        {
+            direction: Inbound
+            name: ESEBA 4L STAR
+            runways: 01L 01R
+            segments:
+            [
+                ESEBA GM403 GM411 GM413 GM412 GM454 INSUV
+            ]
+            restrictions:
+            {
+                ESEBA: <250
+                GM403: =10000 <220
+                GM454: =10000
+                INSUV: >5000
+            }
+            labels: ESEBA INSUV
+        }
+        {
+            direction: Inbound
+            name: ESEBA 4M STAR
+            runways: 19L 19R
+            segments:
+            [
+                ESEBA GM422 GM423 GM424 GM425 GM453 TITLA
+            ]
+            restrictions:
+            {
+                ESEBA: <250
+                GM422: =10000 <220
+                GM453: =10000
+                TITLA: >5000
+            }
+            labels: ESEBA TITLA
+        }
+        {
+            direction: Inbound
+            name: INREX 4L STAR
+            runways: 01L 01R
+            segments:
+            [
+                INREX SUSIB GM457 GM401 GM403 GM411 GM413 GM412 GM454 INSUV
+            ]
+            restrictions:
+            {
+                INREX: <250
+                SUSIB: <250
+                GM457: <12000
+                GM401: =9000
+                GM403: <220
+                GM454: =9000
+                INSUV: >5000
+            }
+            labels: INREX INSUV
+        }
+        {
+            direction: Inbound
+            name: INREX 4M STAR
+            runways: 19L 19R
+            segments:
+            [
+                INREX GM418 GM419 GM420 GM421 TITLA
+            ]
+            restrictions:
+            {
+                INREX: <250
+                GM418: =11000 <220
+                GM421: =11000
+                TITLA: >5000
+            }
+            labels: INREX TITLA
+        }
+        {
+            direction: Inbound
+            name: LUNIP 4L STAR
+            runways: 01L 01R
+            segments:
+            [
+                LUNIP DEVKU GM416 GM417 GM415 GM414 INSUV
+            ]
+            restrictions:
+            {
+                LUNIP: <250
+                DEVKU: >12000
+                GM416: =11000 <220
+                GM414: =11000
+                INSUV: >5000
+            }
+            labels: LUNIP INSUV
+        }
+        {
+            direction: Inbound
+            name: LUNIP 4M STAR
+            runways: 19L 19R
+            segments:
+            [
+                LUNIP DIDAX GM447 GM426 GM422 GM423 GM424 GM425 GM453 TITLA
+            ]
+            restrictions:
+            {
+                LUNIP: <250
+                DIDAX: <250
+                GM447: <12000
+                GM426: =9000
+                GM422: <220
+                GM453: =9000
+                TITLA: >5000
+            }
+            labels: LUNIP TITLA
+        }
+        {
+            direction: Inbound
+            name: RIPAM 3L STAR
+            runways: 01L 01R
+            segments:
+            [
+                RIPAM ROXIM GM410 GM409 GM408 GM407 VALPU
+            ]
+            restrictions:
+            {
+                RIPAM: <250
+                ROXIM: >12000
+                GM410: =11000 <220
+                GM407: =11000
+                VALPU: >5000
+            }
+            labels: RIPAM VALPU
+        }
+        {
+            direction: Inbound
+            name: RIPAM 4M STAR
+            runways: 19L 19R
+            segments:
+            [
+                RIPAM INGAR UTEXO GM451 GM427 GM428 GM429 GM430 GM431 GM452 BAVAD
+            ]
+            restrictions:
+            {
+                RIPAM: <250
+                INGAR: <250
+                UTEXO: <250
+                GM451: <12000
+                GM427: =9000
+                GM428: <220
+                GM452: =9000
+                BAVAD: >5000
+            }
+            labels: RIPAM BAVAD
+        }
+        {
+            direction: Outbound
+            name: VEMIN 4A SID
+            runways: 01L
+            segments:
+            [
+                ENGM VEMIN GM614 TOR
+                GM614 ATLAP
+                VEMIN GM619 GM400 GM445 GM450 EVTOG
+            ]
+            restrictions:
+            {
+                VEMIN: =1700
+            }
+            labels: VEMIN TOR ATLAP EVTOG
+        }
+        {
+            direction: Outbound
+            name: VEMIN 9D SID
+            runways: 19R
+            segments:
+            [
+                ENGM VEMIN GM607 NANON TOR
+                VEMIN GM619 GM448 ATLAP
+                GM619 GM717 EVTOG
+                VEMIN GM443 PEMUS NUVSA
+            ]
+            restrictions:
+            {
+                VEMIN: =1700
+            }
+            labels: VEMIN TOR ATLAP EVTOG NUVSA
+        }
+        {
+            direction: Outbound
+            name: VIBUK 5C SID
+            runways: 01R 19L
+            segments:
+            [
+                ENGM VIBUK NIDIM LILBA NUVSA
+                VIBUK GM508 GM422 MASEV
+                VIBUK GM449 OKSAT
+            ]
+            restrictions:
+            {
+                VIBUK: =1700
+            }
+            labels: VIBUK NUVSA MASEV OKSAT
+        }
+    ]
+    options: no-global-labels
+}
