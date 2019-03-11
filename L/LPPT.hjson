@@ -1,0 +1,214 @@
+{
+    airport: LPPT
+    labels: PT421 EKMAR UMUPI PT411 ADSAD
+    routes:
+    [
+        {
+            direction: Inbound
+            name: South 03/35 Arrivals
+            runways: 03 35
+            segments:
+            [
+                LIGRA PT418 EKMAR
+                EKMAR PT420 PT421 PT422
+                NAKOS PT409 ADSAD
+                ADSAD PT419 GODGI PT421
+                PT422 PESEX
+            ]
+            restrictions:
+            {
+                LIGRA: <19000 <250
+                PT418: >4000
+                EKMAR: >4000 <220
+                PT420: >4000 <220
+                PT421: >4000 <200
+                NAKOS: <19000 <250
+                PT409: >4000
+                ADSAD: >4000 <220
+                PT419: >4000
+                GODGI: >4000 <220
+            }
+            labels: PT409 PT418 PT421 LIGRA NAKOS
+        }
+        {
+            direction: Inbound
+            name: West 03/35 Arrivals
+            runways: 03 35
+            segments:
+            [
+                BUSEN PT418 EKMAR PT420 PT421
+                PT421 PT422 PESEX
+            ]
+            restrictions:
+            {
+                BUSEN: <17000 <250
+                PT418: >4000
+                EKMAR: >4000 <220
+                PT420: >4000 <220
+                PUT421: >4000 <200
+            }
+            labels: EKMAR BUSEN PT421
+        }
+        {
+            direction: Inbound
+            name: South 21 Arrivals
+            runways: 21
+            segments:
+            [
+                BUSEN EKMAR ODLIX PT405 PT407
+                EKMAR PT414 PINIM UMUPI PT415
+                PT415 PT411 UPKAT
+                PT407 PT408 RINOR PT410 PT411
+                GAIOS EKMAR GODGI GAIOS
+            ]
+            restrictions:
+            {
+                BUSEN: <25000
+                EKMAR: >7000
+                ODLIX: >7000
+                PT414: >7000
+                PT405: >7000 <220
+                PT415: >7000
+                UMUPI: <220
+                RINOR: >7000
+                UPKAT: >4000 <180
+                GAIOS: <25000 <280
+            }
+            labels:
+            '''
+            BUSEN EKMAR UMUPI PT411
+            PT408 ODLIX UPKAT GAIOS
+            '''
+        }
+        {
+            direction: Inbound
+            name: East 03/35 Arrivals
+            runways: 03 35
+            segments:
+            [
+                EXONA ADSAD GAIOS
+                ADSAD PT419 GODGI PT421
+                PT421 PT422 PESEX
+            ]
+            restrictions:
+            {
+                EXONA: <23000 <280
+                GAIOS: <17000 <250
+                ADSAD: >4000 <220
+                PT419: >4000
+                GODGI: >4000 <220
+                PT421: >4000 <200
+            }
+            labels: EXONA GAIOS ADSAD PT421
+        }
+        {
+            direction: Inbound
+            name: North 03/35 Arrivals
+            runways: 03 35
+            segments:
+            [
+                INBOM FTM PT405 ODLIX PT401
+                PT401 PT402 PT420 PT421
+                PT421 PT422 PESEX
+                FTM XAMAX BADUM UMUPI
+                UMUPI PINIM PT414 EKMAR PT420
+            ]
+            restrictions:
+            {
+                XAMAX: <29000 <280
+                BADUM: <25000 <280
+                FTM: <25000 <280
+                PT405: >7000 <250
+                PT414: >7000
+                ODLIX: >4000 <220
+                EKMAR: >4000 <220
+                PT401: >4000
+                PT402: >4000
+                PT420: >4000 <220
+                PT421: >4000 <200
+            }
+            labels: BADUM FTM EKMAR PT420 PT421
+        }
+        {
+            direction: Inbound
+            name: North 21 Arrivals
+            runways: 21
+            segments:
+            [
+                XAMAX BADUM UMUPI PT415 PT411
+                XAMAX FTM RINOR PT410 PT411
+                PT411 UPKAT
+            ]
+            restrictions:
+            {
+                XAMAX: <25000 <280
+                FTM: <250
+                BADUM: <250
+                UMUPI: <220
+                PT415: >7000
+                RINOR: >7000 <220
+                UPKAT: >4000 <180
+            }
+            labels: UPKAT FTM UMUPI XAMAX
+        }
+        {
+            direction: Outbound
+            name: South/West 03/35 Departures
+            runways: 03 35
+            segments:
+            [
+                PT416 MONUR BUSEN
+                GANSU MONUR GAIOS
+                LIGRA MONUR NAKOS
+                MONUR TROIA
+            ]
+            restrictions:
+            {
+                MONUR: >6000
+                PT416: >3000
+            }
+            labels: MONUR BUSEN TROIA
+        }
+        {
+            direction: Outbound
+            name: 21 Departures
+            runways: 21
+            segments:
+            [
+                EXONA GUDAV NETVO BUSEN
+                GANSU NETVO GAIOS
+                INBOM USIVI GUDAV IXIDA
+                LIGRA NETVO NAKOS
+                NETVO TROIA
+            ]
+            restrictions:
+            {
+                NETVO: >3000
+            }
+            labels:
+            '''
+            NETVO BUSEN GUDAV
+            GANSU GAIOS NAKOS
+            '''
+        }
+        {
+            direction: Outbound
+            name: North/East 03/35 Departures
+            runways: 03 35
+            segments:
+            [
+                IDBID PT412 IXIDA
+                PT412 USIVI INBOM
+                ROKOB  BOMKO ALAMA FTM
+            ]
+            restrictions:
+            {
+                PT412: >4000
+                ROKOB: >3000
+                BOMKO: >4000
+                ALAMA: >7000
+            }
+            labels: PT412 BOMKO ALAMA
+        }
+    ]
+}
