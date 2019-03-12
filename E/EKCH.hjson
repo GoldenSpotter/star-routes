@@ -1,0 +1,159 @@
+{
+    airport: EKCH
+    labels: TNO KOR CH881 CH441 CH882 TIDVU MONAK
+    routes:
+    [
+        {
+            direction: Inbound
+            name: North/West 22L Arrivals
+            runways: 22L
+            segments:
+            [
+                ERNOV CH886 CH885 CH882 CH881 LAMOX
+                TESPI ROSBI TNO CH887 CH884 CH883 CH882
+                TUDLO LUGAS KOR CH888 CH884
+            ]
+            restrictions:
+            {
+                ENROV: >10000
+                CH886: >7000
+                CH885: >5000
+                CH887: >7000
+                CH883: >5000
+            }
+            labels: CH884 CH882 TESPI TUDLO ERNOV
+        }
+        {
+            direction: Inbound
+            name: North/West 04L Arrivals
+            runways: 04L
+            segments:
+            [
+                TUDLO LUGAS KOR CH449 CH444 CH442 CH441 BASLO
+                TESPI ROSBI TNO CH448 CH444 CH442
+                ERNOV CH447 CH446 CH445 CH443 CH441
+            ]
+            restrictions:
+            {
+                ENROV: >10000
+                CH447: >7000
+                CH445: >5000
+                CH449: >7000
+                CH442: >4000
+                CH448: >7000
+            }
+            labels: TUDLO CH444 ERNOV TESPI CH446
+        }
+        {
+            direction: Inbound
+            name: South/East 04L Arrivals
+            runways: 04L
+            segments:
+            [
+                MONAK KUBIS CH551 CH441 BASLO
+                TIDVU REPRO CH552 CH551
+            ]
+            restrictions:
+            {
+                CH551: >4000
+                CH552: >5000
+            }
+            labels: CH551 CH441 TIDVU MONAK
+        }
+        {
+            direction: Inbound
+            name: South/East 22L Arrivals
+            runways: 22L
+            segments:
+            [
+                MONAK KUTAX CH993 CH992 CH991 CH881 LAMOX
+                TIDVU VALTI CH993
+            ]
+            restrictions:
+            {
+                CH992: >5000
+            }
+            labels: CH993 CH881 TIDVU MONAK
+        }
+        {
+            direction: Outbound
+            name: 04L/04R Departures
+            runways: 04L 04R
+            segments:
+            [
+                ASTOS CH361 KEMAX
+                CH361 CH362 CH364 DENEK SIMEG
+                CH364 CH365 GAVBA BALOX
+                CH362 CH366 BISTA NEXEN
+                BISTA BETUD
+                CH363 TOBIS LANGO
+                CH365 MAXEL KOPEX
+                CH368 CH371 DOBEL ODN
+                CH368 CH369 SORGA MIKSI
+            ]
+            labels: CH368 CH361 CH364 CH371
+        }
+        {
+            direction: Outbound
+            name: 12 Departures
+            runways: 12
+            segments:
+            [
+                CH363 CH361 ASTOS
+                CH361 KEMAX
+                DENEK SIMEG
+                CH382 GAVBA BALOX
+                CH396 BISTA NEXEN
+                BISTA BETUD
+                LANGO TOBIS CH365
+                CH395 MAXEL KOPEX
+                CH365 CH395 CH396
+                CH361 CH378 SORGA MIKSI
+                CH378 DOBEL ODN
+            ]
+            labels: CH363 CH365 DENEK CH378
+        }
+        {
+            direction: Outbound
+            name: 22L/22R Departures
+            runways: 22L 22R
+            segments:
+            [   
+                ASTOS CH361 KEMAX
+                CH377 CH381 CH361
+                CH381 CH382 DENEK SIMEG
+                CH382 GAVBA BALOX
+                NEXEN BISTA BETUD
+                CH377 BISTA
+                CH377 TOBIS LANGO
+                CH377 MAXEL KOPEX
+                CH377 DOBEL ODN
+                CH377 CH384 SORGA MIKSI
+            ]
+            labels: CH381 CH384 DENEK BISTA
+        }
+        {
+            direction: Inbound
+            name: 30 Departures
+            runways: 30
+            segments:
+            [
+                ASTOS CH398 CH370
+                CH370 CH392 KEMAX
+                CH399 CH374 CH364 DENEK SIMEG
+                CH374 CH365 GAVBA BALOX
+                CH374 BISTA NEXEN
+                BISTA BETUD
+                CH399 TOBIS LANGO
+                CH374 MAXEL KOPEX
+                CH399 DOBEL ODN
+                CH398 SORGA MIKSI
+            ]
+            labels:
+            '''
+            CH398 CH392 SORGA
+            CH374 CH364 DOBEL
+            '''
+        }
+    ]
+}
