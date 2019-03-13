@@ -1,0 +1,255 @@
+{
+    airport: KOAK
+    routes:
+    [
+        {
+            direction: Inbound
+            name: AANET 1 STAR
+            runways: 12
+            segments:
+            [
+                SPAMY HUBRT WNDSR
+                RBUCL BMBOO DRAXE WNDSR
+                WNDSR AANET RAIDR
+            ]
+            restrictions:
+            {
+                SPAMY: =280 >24000 <26000
+                HUBRT: <23000
+                WNDSR: >16000 <22000
+                RBUCL: =280 <30000
+                BMBOO: >24000 <26000
+                DRAXE: <23000
+                AANET: >13000
+                RAIDR: =5000
+            }
+            labels: SPAMY RBUCL AANET RAIDR
+        }
+        {
+            direction: Inbound
+            name: BANND 2 STAR
+            runways: 12
+            segments:
+            [
+                MRLET POYSN OAKES
+                RPARK OAKES
+                RUSME OAKES
+                OAKES GRUDG BANND SULRR KEENR LOHGN WHYEE HIRMO
+            ]
+            restrictions:
+            {
+                OAKES: =280 >24000 <32000
+                GRUDG: =20000
+                BANND: =270 <18000
+                SULRR: <13000
+                KEENR: =8000
+                LOHGN: =230 =6000
+                WHYEE: >5000
+                HIRMO: =4000
+            }
+            labels: MRLET RPARK RUSME BANND HIRMO
+        }
+        {
+            direction: Inbound
+            name: EMZOH 3 STAR
+            runways: 28L 28R 30
+            segments:
+            [
+                RGOOD EMZOH MYJAW SKIZM MYRIB MYHIP MYNEE MYSHN CYMBL
+                MYSHN FIXME MYCAF BIGPD FRNNY
+            ]
+            restrictions:
+            {
+                EMZOH: >28000
+                MYJAW: =280 >22000
+                SKIZM: >15000 <19000
+                MYRIB: =240 >9000 <10000
+                MYNEE: =7000
+                MYSHN: >6200
+                CYMBL: =5300
+                FIXME: >5200
+                MYCAF: >5000
+                BIGPD: >4500
+                FRNNY: >4100
+            }
+            labels: RGOOD EMZOH CYMBL FRNNY
+        }
+        {
+            direction: Inbound
+            name: OAKES 2 STAR
+            runways: 28L 28R 30
+            segments:
+            [
+                MRLET POYSN OAKES
+                MONOH OAKES
+                RUSME OAKES
+                OAKES GRUDG BANND TOOOL EVOLV BBUBB
+                TOOOL FFIST PRFCT PARBB
+            ]
+            restrictions:
+            {
+                OAKES: =280 >24000 <32000
+                GRUDG: =280 >20000 <23000
+                BANND: <19000
+                TOOOL: =280 >11000 <17000
+                EVOLV: >7000 <9000
+                BBUBB: =5000
+                FFIST: >7000 <9000
+                PRFCT: >5000
+                PARBB: =4500
+            }
+            labels: MRLET MONOH RUSME OAKES BBUBB PARBB
+        }
+        {
+            direction: Inbound
+            name: PIRAT 1 STAR
+            runways: 28L 28R 30
+            segments:
+            [
+                PAINT SUPER
+                ALCOA SUPER
+                SUPER PASIF
+                CINNY HUNTS PASIF
+                PASIF PIRAT BRINY SIDBY
+            ]
+            restrictions:
+            {
+                ALCOA: >24000
+                SUPER: =280 >21000
+                PASIF: =260 <19500
+                CINNY: >27000
+                HUNTS: =280 >21000
+                BRINY: =250 <12000
+                SIDBY: =230 =8000
+            }
+            labels: PAINT ALCOA CINNY PIRAT SIDBY
+        }
+        {
+            direction: Inbound
+            name: SHARR 1 STAR
+            runways: 10L 10R 12
+            segments:
+            [
+                MRLET POYSN BIFFY
+                RPARK JOFAY BIFFY
+                RUSME BIFFY
+                BIFFY MAMIE SHARR CATTY
+            ]
+            restrictions:
+            {
+                BIFFY: =280 =20000
+                CATTY: =8000
+            }
+            labels: MRLET RPARK RUSME SHARR CATTY
+        }
+        {
+            direction: Inbound
+            name: SKIZM 2 STAR
+            runways: 12
+            segments:
+            [
+                RGOOD EMZOH MYJAW SKIZM EMAAA WNDML FOOTO BRRZI LOHGN WHYEE HIRMO
+            ]
+            restrictions:
+            {
+                EMZOH: =280 >28000
+                MYJAW: =280 >22000
+                SKIZM: >15000 <19000
+                EMAAA: >11000 <14000
+                WNDML: =240 >9000 <1000
+                FOOTO: >7000 <8000
+                BRRZI: =7000
+                LOHGN: =230 =6000
+                WHYEE: >5000
+                HIRMO: =4000
+            }
+            labels: RGOOD SKIZM HIRMO
+        }
+        {
+            direction: Inbound
+            name: WNDSR 2 STAR
+            runways: 28L 28R 30
+            segments:
+            [
+                SPAMY HUBRT WNDSR
+                RBUCL BMBOO DRAXE WNDSR
+                WNDSR WEBRR BOYYS HOPTA AAAME
+                HOPTA ALLXX CRSEN
+            ]
+            restrictions:
+            {
+                SPAMY: =280 >24000 <26000
+                HUBRT: <23000
+                WNDSR: =280 >16000 <22000
+                RBUCL: =280 <30000
+                BMBOO: >24000 <26000
+                DRAXE: <23000
+                WEBRR: >9000 <13000
+                BOYYS: =7000
+                HOPTA: =5000
+                AAAME: =210 =5000
+                ALLXX: =210 =5000
+            }
+            labels: SPAMY RBUCL WNDSR AAAME CRSEN
+        }
+        {
+            direction: Outbound
+            name: CNDEL 4 SID
+            runways: 28L 28R 30
+            segments:
+            [
+                KOAK LEJAY CNDEL PORTE FFOIL LIBBO YYUNG
+                PORTE UTOOB NTELL
+                PORTE KAYEX LOSHN
+                PORTE SUSEY EBAYE
+                PORTE KTINA CISKO
+            ]
+            restrictions:
+            {
+                LEJAY: <2000
+                PORTE: <10000
+            }
+            labels: CNDEL YYUNG NTELL LOSHN EBAYE CISKO
+        }
+        {
+            direction: Outbound
+            name: HUSHH 2 SID
+            runways: 30
+            segments:
+            [
+                KOAK HUSSH NIITE GOBBS
+                NIITE REBAS GRTFL
+                REBAS DEDHD
+                REBAS ORRCA
+                REBAS MOGEE
+                REBAS TAMMM TIPRE
+                REBAS TAMMM SYRAH
+            ]
+            restrictions:
+            {
+                REBAS: >8000
+            }
+            labels: HUSSH GOBBS GRTFL DEDHD ORRCA MOGEE TIPRE SYRAH
+        }
+        {
+            direction: Outbound
+            name: KATFH 2 SID
+            runways: 10L 10R 12
+            segments:
+            [
+                KOAK ROWLY VYYDA KATFH MCOVY NTELL
+                MCOVY KAYEX LOSHN
+                MCOVY SUSEY EBAYE
+                MCOVY KTINA CISKO
+            ]
+            restrictions:
+            {
+                ROWLY: <3000
+                VYYDA: <4000
+                KATFH: >6000
+            }
+            labels: KATFH NTELL LOSHN EBAYE CISKO
+        }
+    ]
+    options: no-global-labels
+}

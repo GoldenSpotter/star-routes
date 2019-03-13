@@ -1,0 +1,25 @@
+{
+   airport: VNLK
+   routes:
+   [
+      {
+         direction: Inbound
+         # possible approach 
+         name: 06 arrival
+         runways: 06
+         segments:
+         [
+            KIMTI 2725N/8616E 2725N/8634E 2725N/8642E 2740N/8642E VNLK
+         ]
+         restrictions:
+         {
+            KIMTI: >12000 
+2725N/8634E: >11000
+2725N/8642E: >10000
+2740N/8642E: =9500
+         }
+         labels: KIMTI 2725N/8634E 2725N/8642E 2740N/8642E
+      }
+  ]
+   options: no-global-labels
+}

@@ -1,0 +1,221 @@
+{
+    airport: ENTC
+    labels: UMSEG VAMEN APSIM NONRU REBLI
+    routes:
+    [
+        {
+            direction: Inbound
+            name: Northeast/East Arrivals
+            runways: 01
+            segments:
+            [
+                BAREG AKAKA UMSEG
+                IDLIN AKAKA LENSA
+            ]
+            restrictions:
+            {
+                BAREG: >8000
+                IDLIN: >8000
+                LENSA: >8000
+                AKAKA: >6500
+                UMSEG: >6000 <220
+            }
+            labels: BAREG IDLIN LENSA AKAKA
+        }
+        {
+            direction: Inbound
+            name: East Arrivals
+            runways: 19
+            segments:
+            [
+                LENSA APSIM IDLIN
+                BAREG APSIM
+            ]
+            restrictions:
+            {
+                BAREG: >8000
+                IDLIN: >8000
+                LENSA: >12000
+                APSIM: >5000
+            }
+            labels: BAREG IDLIN LENSA APSIM
+        }
+        {
+            direction: Inbound
+            name: South Arrivals
+            runways: 01
+            segments:
+            [
+                AMIMO RISLU NETUM USONI
+                AMIMO ABUBU USONI VAMEN
+                AMIMO VABUG TULDA UMSEG
+            ]
+            restrictions:
+            {
+                AMIMO: >11000
+                RISLU: >11000
+                NETUM: >11000
+                ABUBU: >11000
+                USONI: >7000
+                VAMEN: >5000 <210
+                VABUG: >11000
+                TULDA: >7000
+                UMSEG: >6000 <220
+            }
+            labels: UMSEG TULDA VAMEN USONI
+        }
+        {
+            direction: Inbound
+            name: South Arrivals
+            runways: 19
+            segments:
+            [
+                AMIMO TULDA APSIM
+                AMIMO NETUM GIBMO
+                GIBMO KEKEX NONRU
+                AMIMO RISLU NETUM
+            ]
+            restrictions:
+            {
+                AMIMO: >11000
+                TULDA: >11000
+                APSIM: >5000
+                GIBMO: >11000
+                NONRU: >5000
+            }
+            labels: TULDA APSIM NONRU GIBMO
+        }
+        {
+            direction: Inbound
+            name: North/West Arrivals
+            runways: 01
+            segments:
+            [
+                GILGU REBLI
+                LOMVI OSRAD REBLI
+            ]
+            restrictions:
+            {
+                GILGU: >5000
+                REBLI: >5000 <220
+                OSRAD: >5000
+                LOMVI: >11000
+            }
+            labels: GILGU OSRAD REBLI
+        }
+        {
+            direction: Inbound
+            name: North/West Arrivals
+            runways: 19
+            segments:
+            [
+                GILGU NONRU
+                LOMVI TC501
+            ]
+            restrictions:
+            {
+                GILGU: >8000
+                NONRU: >5000
+                LOMVI: >7000
+                TC501: >5000
+            }
+            labels: GILGU NONRU LOMVI TC501
+        }
+        {
+            direction: Inbound
+            name: SENJA 8M & LURAP 3L
+            runways: 01 19
+            segments:
+            [
+                6910N/1749E GIBMO MACKA 6949N/1900E
+                LURAP MOLON VAMEN
+            ]
+            restrictions:
+            {
+                GIBMO: >5500
+                MOLON: >7000
+            }
+            labels: GIBMO MACKA LURAP MOLON
+        }
+        {
+            direction: Outbound
+            name: North/East Departures
+            runways: 01
+            segments:
+            [
+                TC616 TC615 BAREG
+                IDLIN TC615 LENSA
+                TC616 TC603 TC601 BAREG
+                TC603 LOMVI
+            ]
+            restrictions:
+            {
+                TC615: <230
+                TC616: <210
+                TC601: <230
+            }
+            labels: BAREG LOMVI LENSA IDLIN
+        }
+        {
+            direction: Outbound
+            name: South Departures
+            runways: 01
+            segments:
+            [
+                TC603 TC605 TULDA
+                TC603 TC604
+                GILGU TC604 ROSKO AMIMO
+            ]
+            restrictions:
+            {
+                TC603: >2000 <230
+                TC604: <230
+                TC605: <230
+            }
+            labels:
+            '''
+            TC603 TC604 TULDA ROSKO
+            TC605 GILGU
+            '''
+        }
+        {
+            direction: Outbound
+            name: North/East Departures
+            runways: 19
+            segments:
+            [
+                TC707 TC708 TC710 LOMVI
+                TC707 TC704 TC706 BAREG
+                IDLIN TC706 LENSA
+            ]
+            restrictions:
+            {
+                TC704: <210
+                TC708: <190
+                TC707: <190
+            }
+            labels:
+            '''
+            TC706 BAREG IDLIN
+            LENSA TC710 TC708
+            '''
+        }
+        {
+            direction: Outbound
+            name: South/West Departures
+            runways: 19
+            segments:
+            [
+                TC701 TULDA
+                TC700 MOLON AMIMO
+                GILGU TC703 ROSKO
+                TC700 TC702 TC703
+            ]
+            labels:
+            '''
+            TULDA ROSKO MOLON
+            GILGU TC703 TC701
+            '''
+        }
+    ]
+}
