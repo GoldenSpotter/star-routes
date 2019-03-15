@@ -1,0 +1,322 @@
+{
+    airport: KABQ
+    routes:
+    [
+        {
+            direction: inbound
+            #Eastern arrival into KABQ
+            name: COLTR THREE
+            runways: 03 08 21 26
+            labels: COLTR YYLEE
+            segments:
+            [
+                TCC ACH TALLR COLTR YYLEE CYOTE TNTOE
+                RECKN ZATOX SNEWP COLTR
+                #Rwy 21,26 arrival
+                YYLEE TACOH
+                #Rwy 03 arrival
+                TNTOE PLNET
+                #Rwy 08 arrival
+                TNTOE ACMIE
+            ]
+            restrictions:
+            {
+                TALLR: <28000 >20000 =270
+                SNEWP: <28000 >20000 =270
+                COLTR: <18000 >14000
+                YYLEE: >11000 =250
+                TACOH: =10000 =210
+                TNTOE: =10000 =210
+            }
+        }
+        {
+            direction: inbound
+            #Southern West arrivals in to KABQ
+            name: KRKEE THREE
+            runways: 03 08 21 26
+            labels: KRKEE ELRRA XMRKS
+            segments:
+            [
+                CABNO KRKEE ELRRA XMRKS AMRRA
+                KALSE KRKEE
+                #Rwy 03 arrival
+                XMRKS SHWNA BIBQU
+                #Rwy 26 arrival
+                XMRKS STIKI BRNDO
+                #Rwy 08 Arrival
+                AMRRA UNCIR
+                #Rwy 21 Arrival
+                AMRRA FOXRR
+            ]
+            restrictions:
+            {
+                KRKEE: <28000 >21000 =270
+                ELRAA: <18000 >14000
+                XMRKS: >11000 =250
+                SHWNA: >9000
+                BIBQU: >8000 =210
+                STIKI: =10000 <210
+                BRNDO: >9000
+                AMRRA: >10000
+                UNCIR: >8000 =210
+                FIXRR: =10000 =210
+            }
+        }
+        {
+            direction: inbound
+            #northern arrivals into KABQ
+            name: LOWBO THREE
+            runways: 03 08 21 26
+            labels: LOWBO JOKLO ITUNE
+            segments:
+            [
+                ROSEI SSKYE FORUN LOWBO JOKLO ITUNE
+                BRMLY JMUZE HIKKR LOWBO
+                GUP BUKEE WSTRN LOWBO
+                #Rwy 08, 03
+                ITUNE MUSCC DWNLD CMSTR
+                #Rwy 21, 26
+                ITUNE SDUNX PASEO NODME
+            ]
+            restrictions:
+            {
+                ROSEI: >29000
+                SSKYE: <28000
+                FORUN: <26000 >20000 =270
+                BRMLY: >29000
+                JMUZE: <28000
+                HIKKR: <26000 >20000 =270
+                WSTRN: <26000 >20000 =270
+                JOKLO: <18000 >14000 =250
+                SDUNX: <10500 >9000
+                PASEO: <10000 >9000
+                NODME: =9000 =210
+                MUSCC: <12000 >9000
+                DWNLD: <11000 >9000
+                CMSTR: =9000 =210
+            }
+        }
+        {
+            direction: inbound
+            #Southern East arrival for KABQ
+            name: LZZRD THREE
+            runways: 03 08 21 26
+            labels: LZZRD MKYON
+            segments:
+            [
+                CME LOKKE JETOS BOBYY HAKOR LZZRD MKYON
+                #Rwy 21,26
+                MKYON SOPPA PILLA
+                #Rwy 08,03
+                MKYON HAPEE COMRO
+            ]
+            restrictions:
+            {
+                JETOS: <30000 >26000 =280
+                LZZRD: <18000 >14000 =250
+                MKYON: <15000 >13000
+                HAPEE: <13000 >11000
+                COMRO: =10000 =210
+                PILLA: =10000 =210
+            }
+        }
+        {
+            direction: inbound
+            #Northern east arrivals for KABQ
+            name: SNDIA THREE
+            runways: 03 08 21 26
+            labels: SNDIA VLCNO ASIDE
+            segments:
+            [
+                DATME EBIDE DETEC SNDIA VLCNO ASIDE
+                TAMEY FITEE SNDIA
+                #Rwy 03,08
+                ASIDE CRSTN
+                #Rwy 21,26
+                ASIDE CADAT
+            ]
+            restrictions:
+            {
+                DETEC: <28000 >20000 =270
+                FITEE: <28000 >20000 =270
+                VLCNO: <16000 >14000 =250
+                ASIDE: <11000 >10000 =250
+                CADAT: =9000 <210
+                CRSTN: =9000 =210
+            }
+        }
+        {
+            direction: outbound
+            #Western departure Rwy 21/26
+            name: ADYOS THREE
+            runways: 21 26
+            labels: ADYOS ZUN GUP
+            segments:
+            [
+                ABQ ADYOS
+                ASTAH LVSTA ADYOS
+                #GUP transition
+                ADYOS BABYY BUSLE GUP
+                #ZUN transition
+                ADYOS PNYON ZUN
+            ]
+        }
+        {
+            direction: outbound
+            #northern departure Rwy 21/26
+            name: ATOMK THREE
+            runways: 21 26
+            labels: ATOMK FOXRR
+            segments:
+            [
+                FOXRR TYWEB TKILA FIREY ATOMK
+                HUMKU FOXRR
+            ]
+            restrictions:
+            {
+                FOXRR: >8000
+                TYWEB: >10000
+                TKILA: >11500 <250
+            }
+        }
+        {
+            direction: outbound
+            #southern departure Rwy 21/26
+            name: BOSQE THREE
+            runways: 21 26
+            labels: BOSQE ONM SJN
+            segments:
+            [
+                JETOK BOSQE WUTUP LAMSE SJN
+                BOSQE DUMMM ONM
+                GZELL JETOK
+            ]
+            restrictions:
+            {
+                JETOK: <9000
+                BOSQE: >10000
+                WUTUP: >16000
+            }
+        }
+        {
+            direction: outbound
+            #South/East departure Rwy 21/26
+            name: DOOKK THREE
+            runways: 21 26
+            labels: DOOKK CME TXO
+            segments:
+            [
+                JETOK BIYEN DOOKK FATTT MOLVE TXO
+                DOOKK DADDY LARLE TACOZ CME
+                GZELL JETOK
+            ]
+            restrictions:
+            {
+                JETOK: <9000 <250
+                BIYEN: >11000
+                DOOKK: >11500
+            }
+        }
+        {
+            direction: outbound
+            #north/east departure Rwy 21/26
+            name: FYSTA THREE
+            runways: 21 26
+            labels: FYSTA JLPNO FTI
+            segments:
+            [
+                BLUUN BURQI FYSTA MACHO FTI
+                FYSTA POYOH JLPNO
+            ]
+            restrictions:
+            {
+                BLUUN: >11000
+                BURQI: >12000 <250
+                FYSTA: >14000
+            }
+        }
+        {
+            direction: outbound
+            #north eastern departure Rwy 03/08
+            name: GRZZZ THREE
+            runways: 03 08
+            labels: GRZZZ TCC FTI
+            segments:
+            [
+                TYILR ROWHO GRZZZ DNIDE FTI
+                DNIDE JLPNO TCC
+                TEENR ROWHO
+            ]
+            restrictions:
+            {
+                TYILR: <230
+            }
+        }
+        {
+            direction: outbound
+            #North departure Rwy 03/08
+            name: JEMEZ THREE
+            runways: 03 08
+            labels: JEMEZ GRREN
+            segments:
+            [
+                TYILR GRREN FIREY JEMEZ
+                TEENR GRREN
+            ]
+            restrictions:
+            {
+                GRREN: >12000 <250
+            }
+        }
+        {
+            direction: outbound
+            #South [East/West] departure Rwy 03/08
+            name: MNZNO THREE
+            runways: 03 08
+            labels: MNZNO TXO CME ONM SJN
+            segments:
+            [
+                DLSOL YUGLU CIANE MNZNO
+                #easter departure
+                MNZNO FATTT MOLVE TXO
+                #south east departure
+                MNZNO DADDY LARLE TACOZ CME
+                #south west departure
+                MNZNO HRDRK DUMMM ONM
+                #west departure
+                MNZNO PEPTE WUTUP LAMSE SJN
+
+                #03 departure Waypoint
+                TEENR
+            ]
+            restrictions:
+            {
+                YUGLU: <9000
+                MNZNO: >11500 <250
+                HRDRK: >16000
+                PEPTE: >15000
+                WUTUP: >16000
+            }
+        }
+        {
+            direction: outbound
+            #western departure Rwy 21/26
+            name: RDRNR THREE
+            runways: 03 08
+            labels: RDRNR GUP ZUN
+            segments:
+            [
+                TYILR
+                TEENR
+                RDRNR SPEDY BABYY BUSLE GUP
+                SPEDY PNYON ZUN
+            ]
+            restrictions:
+            {
+                RDRNR: >10000
+                SPEDY: >12000
+            }
+        }
+    ]
+    options: no-global-labels
+}
