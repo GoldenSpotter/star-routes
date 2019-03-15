@@ -1,0 +1,203 @@
+{
+   airport: LFMN
+   routes:
+   [
+      {
+         direction: Inbound 
+         name: VEVAR BORDI RNAV arrival
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            VEVAR GAPDO
+            GAPDO AMGEL
+            GAPDO MOTUR NIZ MIKRU
+            BORDI AMGEL
+            AMGEL MIKRU
+            MIKRU PIRAM 4323N/0755E NERAS
+         ]
+         restrictions:
+         {
+            NERAS: >12300 <17000 <250
+         }
+         labels: NERAS
+      }
+      {
+         direction: Inbound
+         name: KERIT MERLU SODRI LONSU RNAV arrival 
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            KERIT 4323N/0755E
+            MERLU 4323N/0755E
+            SODRI 4323N/0755E
+            LONSU 4323N/0755E
+            4323N/0755E NERAS
+         ]
+         restrictions:
+         {
+            NERAS: >12300 <17000 <250
+         }
+         labels: NERAS
+      }
+      {
+         direction: Inbound
+         name: LUC AMFOU arrival
+         runways: 04L 04R
+         segments:
+         [
+            AMFOU TIPIK 4323N/0637E
+            LUC 4323N/0637E
+         ]
+         restrictions:
+         {
+            4323N/0637E: >8000 <14000 
+         }
+         labels: 4323N/0637E
+      }
+      {
+         direction: Outbound
+         name: BASIP departure 
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4331N/0703E 4334N/0727E 4339N/0735E USANO BASIP
+            AZR 4331N/0703E 4338N/0701E NIZ USANO
+         ]
+        labels: BASIP
+      }
+      {
+         direction: Outbound
+         name: BODRU departure
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4336N/0721E 4335N/0708E AMIRO BODRU
+            4336N/0721E 4331N/0703E AMIRO
+            4331N/0703E CNM AMIRO
+            LFMN 4332N/0704E 4331N/0703E
+         ]
+         labels: BODRU
+      }
+      {
+         direction: Outbound
+         name: EPOLO departure
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4336N/0721E STP 4312N/0712E LERMA EPOLO
+            4333N/0717E STP 4327N/0707E RESBO EPOLO
+         ]
+        labels: EPOLO
+      }
+      {
+         direction: Outbound
+         name: IRMAR departure
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4334N/0715E 4334N/0725E 4339N/0728E NIZ BARSO IRMAR
+            4334N/0715E 4332N/0711E  4334N/0652E BARSO
+         ]
+        labels: IRMAR
+      }
+      {
+         direction: Outbound
+         name: LONSU departure
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4336N/0721E OMARD MERLU LONSU
+            CGS 4311N/0722E OMARD
+         ]
+        labels: LONSU
+      }
+      {
+         direction: Outbound
+         name: OKTET departure
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4339N/0728E NIZ BARSO OKTET
+            4336N/0721E CNM AMIRO OKTET
+         ]
+         labels: OKTET
+      }
+      {
+         direction: Outbound
+         name: PERUS departure 
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4336N/0721E 4332N/0711E CNM AMIRO PERUS
+            4332N/0711E 4331N/0704E AMIRO
+         ]
+        labels: PERUS
+      }
+      {
+         direction: Outbound
+         name: RUBAS departure
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4336N/0721E 4327N/0707E RUBAS
+            4333N/0717E 4327N/0707E
+         ]
+        labels: RUBAS
+      }
+      {
+         direction: Outbound 
+         name: SODRI departure
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4336N/0721E OMARD MERLU SODRI
+            CGS 4311N/0722E OMARD
+         ]
+        labels: SODRI
+      }
+      {
+         direction: Outbound
+         name: STP departure 
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4336N/0721E STP 4312N/0712E LERMA STP
+            4333N/0717E STP 4327N/0707E 4310N/0704E STP
+         ]
+        labels: STP
+      }
+      {
+         direction: Outbound
+         name: VAREK departure
+         runways: 04L 04R 22L 22R
+         segments:
+         [
+            4336N/0721E OMARD VAREK
+            CGS 4311N/0722E OMARD
+         ]
+         labels: VAREK
+      }
+      {
+         direction: Inbound
+         name: final 04
+         runways: 04L 04R
+         segments:
+         [
+            4323N/0637E 4323N/0709E CGS
+            NERAS 4323N/0709E
+         ]
+        labels: CGS
+      }
+      {
+         direction: Inbound
+         name: final 22
+         runways: 22L 22R
+         segments:
+         [
+            NERAS D117W D093W PETUR DE04R
+         ]
+        labels: PETUR
+      }
+      ]
+   options: no-global-labels
+}
