@@ -1,0 +1,66 @@
+{
+    airport: EPRZ
+    labels: RZE RZ432 RZ574
+    routes:
+    [
+        {
+            direction: Inbound
+            name: STARs
+            runways: 27 09
+            segments:
+            [
+                RZE NIDIP 5007N/2208E
+                RZE DEMIN 5007N/2208E
+                ARSOG EDAXU 5007N/2208E
+                EDAXU RZE
+                VELAX AKETU RZE
+                AKETU 5007N/2208E
+            ]
+            labels: RZE NIDIP DEMIN ARSOG VELAX
+        }
+        {
+            direction: Outbound
+            name: SIDs
+            runways: 27 09
+            segments:
+            [
+                RZ531 AKETU VELAX
+                RZ531 ARSOG
+                RZ621 RZ567 RZE VELAX
+                RZ621 PEXAS GOVRI
+            ]
+            restrictions:
+            {
+                RZE: >6000
+            }
+            labels:
+            '''
+            RZ621 RZ531 RZE
+            PEXAS AKETU ARSOG
+            '''
+        }
+        {
+            direction: Inbound
+            name: 27 Approaches
+            runways: 27
+            segments:
+            [
+                ARSOG EDAXU RZ574
+                TELDU RZ574
+                RZE RZ376 RZ713 RZ574
+            ]
+            labels: ARSOG TELDU RZE RZ713
+        }
+        {
+            direction: Inbound
+            name: 09 Approaches
+            runways: 09
+            segments:
+            [
+                RZE RZ711 RZ442 RZ432
+                LUXAR MAXAM RZ432
+            ]
+            labels: LUXAR RZE RZ711 RZ432
+        }
+    ]
+}
