@@ -1,0 +1,599 @@
+{
+   airport: KLAX
+   labels: ANJLL BASET BAYST BIGBR BOGET BRUEN DIRBY DOWNE GOATZ HLYWD HUULL IRNMN KIMMO MDNYT OLAAA RYDRR SADDE SEAVU SHIVE SNSTT VISTA WAYVE ZUUMA 
+   routes:
+   [
+      {
+         direction: Inbound
+         name: ANJLL FOUR
+         runways: 25L 25R 24L 24R
+         segments:
+         [
+            DNERO SLLRS FLOJO SALYY GLESN ANJLL CAANN BOYEL CRCUS
+            OTOOL BCALL LEMMN ANJLL CAANN BOYEL CRCUS
+            HAKMN SHTNR SMASH SALYY GLESN ANJLL CAANN BOYEL CRCUS
+            CGNEY SLLRS FLOJO SALYY GLESN ANJLL CAANN BOYEL CRCUS
+            AVATR   
+         ]
+         labels: DNERO OTOOL HAKMN CGNEY SALYY GLESN ANJLL BCALL LEMMN CAANN BOYEL CRCUS AVATR
+         restrictions:
+         {
+            BCALL: >24000 <28000 =280
+            LEMMN: >24000
+            GLESN: >24000 <30000 =280
+            ANJLL: >19000 <24000
+            CAANN: >17000
+            BOYEL: >14000
+            CRCUS: >12000 <14000 =270
+         }
+      }
+      {
+         direction: Inbound
+         name: BASET FIVE
+         runways: 6L 6R 7L 7R
+         segments:
+         [
+            PGS BUGGA DIKES EMMEY GRAMM RUSTT CIVET BINDY ARNES BASET DOWNE REEDR SMO 
+            HEC RESOR DAWNA CIVET BINDY ARNES BASET DOWNE REEDR SMO 
+            TNP IPHIW ARRVD KONZL TRTLE PDZ ARNES BASET DOWNE REEDR SMO 
+            JLI RONLD LAADY WYVIL PDZ ARNES BASET DOWNE REEDR SMO 
+            REEDR TANDY  
+         ]
+         labels: HEC PGS TNP JLI TANDY LAADY TRTLE WYVIL PDZ CIVET ARNES BASET DOWNE REEDR SMO
+         restrictions:
+         {
+            CIVET: >15000 <17000
+            ARNES: >13000 <14000
+            LAADY: <19000 =280
+            WYVIL: >17000
+            TRTLE: >17000
+            DOWNE: >10000
+            REEDR: >9000
+            SMO: >8000
+         }
+      }
+      {
+         direction: Inbound
+         name: BAYST ONE
+         runways: 25L 25R 24L 24R
+         segments:
+         [
+            BURGL DOUIT CROWY MUPTT MDOTS GRIPR BIKNG RUNNN IRNMN SYMON BAYST JUUSE CLIFY DWYER AYYYY PETYR 
+            REBRG STADD DOUIT CROWY MUPTT MDOTS GRIPR BIKNG RUNNN IRNMN SYMON BAYST JUUSE CLIFY DWYER AYYYY PETYR 
+            FRASR IRNMN SYMON BAYST JUUSE CLIFY DWYER AYYYY PETYR
+            SNAXX SERCO HUULL GNZZO RYDRR KEVVI BAYST JUUSE CLIFY DWYER AYYYY PETYR
+            CERNL GAASR SERCO HUULL GNZZO RYDRR KEVVI BAYST JUUSE CLIFY DWYER AYYYY PETYR
+         ]
+         labels: BURGL REBRG FRASR SNAXX DOUIT CERNL CROWY MUPTT MDOTS GRIPR BIKNG RUNNN IRNMN SYMON SERCO HUULL GNZZO RYDRR KEVVI BAYST JUUSE CLIFY DWYER AYYYY PETYR 
+         restrictions:
+         {
+            CROWY: >26000 <29000
+            MUPTT: >23000 <27000 =280
+            MDOTS: >20000 <24000
+            GRIPR: >19000 <23000
+            BIKNG: >16000 <20000
+            RUNNN: >14000 <16000
+            SYMON: >12000 <13000 =250
+            BAYST: >9000 =240
+            SERCO: >19000 <21000
+            HUULL: >17000 <20000 =280
+            GNZZO : >13000 <14000
+            RYDRR: =11000 =250
+            KEVVI: >10000
+            JUUSE: >8000 <9000
+            CLIFY: >7000 <8000 =210
+            DWYER: =7000 =210
+            AYYYY: =6000
+            PETYR: =5000
+         }
+      }
+      {
+         direction: Inbound
+         name: BIGBR THREE
+         runways: 6L 6R 7L 7R
+         segments:
+         [
+            DNERO SLLRS FLOJO SALYY GLESN ANJLL KAOSS TOLLA SLACR BIGBR
+            OTOOL BCALL LEMMN ANJLL KAOSS TOLLA SLACR BIGBR
+            HAKMN SHTNR SMASH SALYY GLESN ANJLL KAOSS TOLLA SLACR BIGBR
+            CGNEY SLLRS FLOJO SALYY GLESN ANJLL KAOSS TOLLA SLACR BIGBR
+            BIGBR LADDD JOELZ NORML WNDFL
+            BIGBR DRYSS TOMYS CLIFY HNCHE SASSI
+         ]
+         labels: DNERO OTOOL HAKMN CGNEY BIGBR SLLRS SALYY ANJLL KAOSS TOLLA SLACR DRYSS TOMYS CLIFY SASSI LADDD JOELZ NORML WNDFL GLESN BCALL 
+         restictions:
+         {
+            SALYY: >29000
+            GLESN: >27000 <32000
+            BCALL: >24000 <28000 =280
+            ANJLL: >24000 <29000 =280
+            KAOSS: >19000 <23000
+            TOLLA: >14000 <17000
+            SLACR: <15000
+            BIGBR: >13000 <14000
+            DRYSS: >10000 <12000
+            TOMYS: >9000
+            CLIFY: =7000 =220
+            SASSI: =7000 =210
+            LADDD: >10000 <12000
+            JOELZ: >8000 <9000
+            NORMAL: >6000 =220
+            WNDFL: =6000 =210
+         }
+      }
+      {
+         direction: Inbound
+         name: BOGET TWO
+         runways: 24R 24L 25R 25L
+         segments:
+         [
+            WNCHL GLAZD SNTRA COWWS KOPLE ROPEZ BOGET MEETT WATSS UPDOC
+            PURSE NIPIY KREME DNUTT JOHHN BASAL DYVER CHKNZ KOPLE ROPEZ BOGET MEETT WATSS UPDOC
+            WELUM NIPIY KREME DNUTT JOHHN BASAL DYVER CHKNZ KOPLE ROPEZ BOGET MEETT WATSS UPDOC
+            EED COOOP TAAAP JOEES DNUTT JOHHN BASAL DYVER CHKNZ KOPLE ROPEZ BOGET MEETT WATSS UPDOC
+            BUGGA JOEES DNUTT JOHHN BASAL DYVER CHKNZ KOPLE ROPEZ BOGET MEETT WATSS UPDOC
+         ]
+         labels: PURSE WELUM WNCHL EED BUGGA NIPIY JOEES DNUTT KOPLE KREME JOHHN DYVER SNTRA ROPEZ BOGET MEETT WATSS UPDOC
+         restrictions:
+         {
+            JOEES: =24000
+            KREME: =24000
+            DNUTT: =23000
+            JOHHN: =22000
+            DYVER: <19000
+            SNTRA: <19000
+            KOPLE: =14000
+            ROPEZ: >11000 <13000
+            BOGET: =8000
+            MEETT: >7500
+            WATSS: >6900
+         }
+      }
+      {
+         direction: Inbound
+         name: BRUEN TWO 
+         runways: 6R 6L 7R 7L
+         segments:
+         [
+            FNNDA MDLER MNROE HLYWD BRUEN AVATR TRUBL EMMMY WHDDN 
+            GABBL CHPLN NWMAN MDLER MNROE HLYWD BRUEN AVATR TRUBL EMMMY WHDDN 
+            ESTWD MCQWN MDLER MNROE HLYWD BRUEN AVATR TRUBL EMMMY WHDDN 
+            SHRTZ LADDD JOELZ NORML WNDFL NIKEY
+            SHRTZ DRYSS TOMYS CLIFY HNCHE SASSI SHIPM
+         ]
+         labels: FNNDA GABBL ESTWD SHRTZ MDLER BRUEN AVATR TRUBL EMMMY WHDDN DRYSS TOMYS CLIFY SASSI
+         restrictions:
+         {
+            BRUEN: <32000
+            AVATR: >24000 <29000 =280
+            TRUBL: >19000 <23000
+            EMMMY: >14000 <17000
+            WHDDN: <15000
+            SHRTZ: >13000 <14000
+            DRYSS: >10000 <12000
+            TOMYS: >9000
+            CLIFY: =7000 =220
+            SASSI: =7000 =210
+            LADDD: >10000 <12000
+            JOELZ: >8000 <9000
+            NORMAL: >6000 =220
+            WNDFL: =6000 =210
+         }
+      }
+      {
+         direction: Inbound
+         name: DIRBY ONE
+         runways: 25R 25L 24R 24L
+         segments:
+         [
+            TILLT ZIPRR WURLL TCUPS RUKKI BAUBB DIRBY PHUNN SHHOW ZAPPP BUFIE SLI TRNDO
+            RDHOT WURLL TCUPS RUKKI BAUBB DIRBY PHUNN SHHOW ZAPPP BUFIE SLI TRNDO
+         ]
+         labels: TILLT RDHOT WURLL TCUPS RUKKI BAUBB DIRBY PHUNN SHHOW ZAPPP BUFIE SLI TRNDO
+         restrictions:
+         {
+            TCUPS: >26000
+            RUKKI: >21000
+            BAUBB: >19000 <21000 =280
+            DIRBY: >16000 <19000 =280
+            PHUNN: <14000
+            SHHOW: <12000
+            ZAPPP: >9000
+            BUFIE: <8000
+            SLI: =7000 =210
+            TRNDO: =5000 =210
+         }
+      }
+      {
+         direction: Inbound
+         name: DOWNE FOUR
+         runways: 6R 6L 7R 7L
+         segments: 
+         [
+            HEC RESOR CIVET BINDY BASET DOWNE SMO WAKER
+            PGS BUGGA DIKES EMMEY RUSTT CIVET BINDY BASET DOWNE SMO WAKER
+            TNP PIONE RUSTT CIVET BINDY BASET DOWNE SMO WAKER
+         ]
+         labels: HEC PGS RUSTT TNP CIVET BINDY BASET DOWNE 
+         restrictions:
+         {
+            BINDY: >12000
+            BASET: =10000
+         }
+      }
+      {
+         direction: Inbound
+         name: GOATZ ONE
+         runways: 25L 25R 24L 24R
+         segments:
+         [
+            FICKY ROSIN MALIT GOATZ DIRBY PHUNN SHHOW ZAPPP BUFIE SLI TRNDO
+         ]
+         labels: FICKY GOATZ DIRBY PHUNN SHHOW ZAPPP BUFIE SLI TRNDO
+         restrictions:
+         {
+            DIRBY: >16000 <19000 =280
+            PHUNN: <14000
+            SHHOW: <12000
+            ZAPPP: >9000
+            BUFIE: <8000
+            SLI: =7000 =210
+            TRNDO: =5000 =210
+         }
+      }
+      {
+         direction: Inbound
+         name: HLYWD ONE
+         runways: 25L 25R 24L 24R
+         segments:
+         [
+            FNNDA MDLER MNROE HLYWD BRUEN AVATR DAAAY WADUP NEILE SEAVU
+            GABBL CHPLN NWMAN MDLER MNROE HLYWD BRUEN AVATR DAAAY WADUP NEILE SEAVU
+            ESTWD MCQWN MDLER MNROE HLYWD BRUEN AVATR DAAAY WADUP NEILE SEAVU
+         ]
+         labels: FNNDA GABBL ESTWD MDLER HLYWD BRUEN AVATR DAAAY WADUP NEILE SEAVU
+         restrictions:
+         {
+            HLYWD: <32000
+            BRUEN: >24000 <30000 =280
+            AVATR: >19000 <24000
+            DAAAY: >17000
+            WADUP: >15000
+            NEILE: >14000
+            SEAVU: >12000 <14000 =270
+         }
+      }
+      {
+         direction: Inbound
+         name: HUULL TWO
+         runways: 24L 24R 25R 25L
+         segments:
+         [
+            TOKIO MANZZ RBOTO LLEVI BRUKY HUULL GNZZO RYDRR KEVVI BAYST JUUSE CLIFY DAHJR GADDO
+         ]
+         labels: TOKIO BRUKY HUULL GNZZO RYDRR KEVVI BAYST JUUSE CLIFY DAHJR GADDO
+         restrictions: 
+         {
+            BRUKY: >25000
+            HUULL: <23000 =280
+            GNZZO: >13000 <14000
+            RYDRR: =11000 =250
+            KEVVI: >10000
+            BAYST: >9000 =240
+            JUUSE: >8000 <9000
+            CLIFY: >7000 <8000 =210
+            DAHJR: =6000 =210
+            GADDO: =6000
+         }
+      }
+      {
+         direction: Inbound
+         name: IRNMN TWO
+         runways: 24L 24R 25L 25R
+         segments:
+         [
+            BURGL DOUIT CROWY MUPTT MDOTS GRIPR BIKNG RUNNN IRNMN SYMON BAYST JUUSE CLIFY DAHJR GADDO 
+            REBRG STADD DOUIT CROWY MUPTT MDOTS GRIPR BIKNG RUNNN IRNMN SYMON BAYST JUUSE CLIFY DAHJR GADDO 
+            FRASR RNMN SYMON BAYST JUUSE CLIFY DAHJR GADDO 
+         ]
+         labels: BURGL DOUIT REBRG CROWY MUPTT MDOTS GRIPR BIKNG RUNNN FRASR IRNMN SYMON BAYST JUUSE CLIFY DAHJR GADDO
+         restrictions: 
+         {
+            CROWY: >26000 <29000
+            MUPTT: >23000 <27000 =280
+            MDOTS: >20000 <24000
+            GRIPR: >19000 <23000
+            BIKNG: >16000 <20000
+            RUNNN: >14000 <17000
+            IRNMN: >12000 <16000
+            SYMON: >12000 <13000 =250
+            BAYST: >9000 =240 
+            JUUSE: >8000 <9000
+            CLIFY: >7000 <8000 =210
+            DAHJR: =6000 =210
+            GADDO: =6000
+         }
+      }
+      {
+         direction: Inbound
+         name: KIMMO THREE 
+         runways: 24L 24R 25L 25R
+         segments:
+         [
+            TTE WRING AMONT LOPES LHS SAUGS KIMMO DARTS 
+            EHF ARVIN AMONT LOPES LHS SAUGS KIMMO DARTS 
+            PMD BOGET KIMMO DARTS 
+         ]
+         labels: TTE EHF PMD AMONT KIMMO BOGET 
+         restrictions:
+         {
+            BOGET: =8000
+         }
+      }
+      {
+         direction: Inbound
+         name: LEENA SEVEN 
+         runways: 25L 25R 24L 24R
+         segments:
+         [
+            MCKEY DAISY BENET SXC CFBZK CWARD BAYER MADOW TOZEK SLI
+            FICKY ROSIN MALIT GOATZ SXC CFBZK CWARD BAYER MADOW TOZEK SLI
+         ]
+         labels: MCKEY FICKY SXC BAYER BENET GOATZ MADOW 
+         restrictions: 
+         {
+            MADOW: =7000
+            GOATZ: =12000
+            BENET: =11000
+            BAYER: =10000
+            SXC: =250
+         }
+      }
+      {
+         direction: Inbound
+         name: MDNYT TWO
+         runways: 6R 6L 7R 7L
+         segments:
+         [
+            OTOOL BCALL LEMMN ANJLL KAOSS TOLLA SLACR BIGBR MDNYT DOWNE DOYRS CLIFY HNCHE SASSI SHIPM
+            HAKMN SHTNR SALYY GLESN ANJLL KAOSS TOLLA SLACR BIGBR MDNYT DOWNE DOYRS CLIFY HNCHE SASSI SHIPM
+            DNERO SLLRS SALYY GLESN ANJLL KAOSS TOLLA SLACR BIGBR MDNYT DOWNE DOYRS CLIFY HNCHE SASSI SHIPM
+            CGNEY SLLRS SALYY GLESN ANJLL KAOSS TOLLA SLACR BIGBR MDNYT DOWNE DOYRS CLIFY HNCHE SASSI SHIPM
+            FNNDA MDLER MNROE HLYWD BRUEN AVATR TRUBL EMMMY WHDDN SHRTZ MDNYT DOWNE DOYRS CLIFY HNCHE SASSI SHIPM
+            GABBL CHPLN NWMAN MDLER MNROE HLYWD BRUEN AVATR TRUBL EMMMY WHDDN SHRTZ MDNYT DOWNE DOYRS CLIFY HNCHE SASSI SHIPM
+            ESTWD MCQWN MDLER MNROE HLYWD BRUEN AVATR TRUBL EMMMY WHDDN SHRTZ MDNYT DOWNE DOYRS CLIFY HNCHE SASSI SHIPM
+            AMMOR RNCHO SNSTT SOLAY LAHVA LAAMP SNDDR SHRTZ MDNYT DOWNE DOYRS CLIFY HNCHE SASSI SHIPM
+         ]
+         labels: OTOOL HAKMN DNERO CGNEY FNNDA GABBL ESTWD AMMOR SALYY BCALL ANJLL KAOSS TOLLA SLACR BIGBR MDNYT MDLER BRUEN AVATR TRUBL EMMMY WHDDN SHRTZ RNCHO SNSTT SOLAY LAHVA LAAMP SNDDR DOYRS CLIFY SASSI 
+         restrictions:
+         {
+            BCALL: >24000 <28000 =280
+            SALYY: >29000
+            GLESN: >27000 <32000
+            ANJLL: >24000 <29000
+            KAOSS: >19000 <23000
+            TOLLA: >14000 <17000
+            SLACR: <15000
+            BIGBR: >13000 <14000
+            MDNYT: >10000 <13000
+            BRUEN: <32000
+            AVATR: >24000 <29000 =280
+            TRUBL: >19000 <23000
+            EMMMY: >14000 <17000
+            WHDDN: <15000
+            SHRTZ: >13000 <14000
+            SNDDR: =15000
+            LAAMP: >15000 <17000 =280
+            LAHVA: =17000
+            SOLAY: <19000
+            SNSTT: >24000 <26000 =280
+            RNCHO: >26000
+            DOYRS: >10000
+            CLIFY: >8000 <10000 =230
+            SASSI: =7000 =210 
+         }
+      }
+      {
+         direction: Inbound
+         name: MOORPARK FOUR 
+         runways: 6R 6L 7R 7L
+         segments:
+         [
+            AVE DERBB REYES PIRUE FIM PAULA ILEAN WAKER 
+            DINTY RZS FIM PAULA ILEAN WAKER 
+         ]
+         labels: AVE DINTY PAULA FIM ILEAN WAKER
+         restrictions:
+         {
+            PAULA: =11000 =250
+            ILEAN: =10000 =230
+            WAKER: =6000
+         }
+      }
+      {
+         direction: Inbound
+         name: OCEAN THREE
+         runways: 6R 6L 7R 7L
+         segments:
+        [
+            JLI VISTA CYNDE OCN BIGJO SHILY DOYLE EXERT MERMA 
+        ]
+        labels: JLI CYNDE 
+        restrictions:
+        {
+            JLI: =24000
+            CYNDE: =14000
+        }
+      }
+      {
+         direction: Inbound
+         name: OLAAA ONE
+         runways: 25L 25R 24R 24L
+         segments:
+         [
+            AMMOR RNCHO REGGO CYNDE OLAAA PESOZ MADOW TOZEK SLI TRNDO
+         ]
+         labels: AMMOR RNCHO REGGO CYNDE OLAAA MADOW TOZEK SLI TRNDO
+         restrictions:
+         {
+            RNCHO: >26000
+            REGGO: >24000
+            CYNDE: <14000
+            OLAAA: >12000 <13000
+            MADOW: <8000
+            TOZEK: =7000
+            SLI: =7000 =210
+            TRNDO: =5000 =210 
+         }
+      }
+      {
+         direction: Inbound
+         name: RYDRR TWO
+         runways: 24R 24L 25R 25L
+         segments:
+         [
+            CERNL GAASR SERCO HUULL GNZZO RYDRR KEVVI BAYST JUUSE CLIFY DAHJR GADDO 
+            SNAXX SERCO HUULL GNZZO RYDRR KEVVI BAYST JUUSE CLIFY DAHJR GADDO 
+            ELKEY EESSA GKNEE RYDRR KEVVI BAYST JUUSE CLIFY DAHJR GADDO 
+         ]
+         labels: CERNL SNAXX SERCO ELKEY RYDRR HUULL GNZZO EESSA KEVVI BAYST JUUSE CLIFY DAHJR GADDO 
+         restrictions: 
+         {
+            SERCO: >19000 <23000 
+            HUULL: >17000 <20000 =280 
+            GNZZO: >13000 <14000
+            RYDRR: =11000 =250
+            GKNEE: >12000 <13000
+            EESSA: >17000 <20000 =280
+            KEVVI: >10000
+            BAYST: >9000 =240
+            JUUSE: >8000 <9000
+            CLIFY: >7000 <8000 =210 
+            DAHJR: =6000 =210
+            GADDO: =6000
+         }
+      }
+      {
+         direction: Inbound
+         name: SADDE EIGHT 
+         runways: 25L 25R 24L 24R
+         segments:
+         [
+            AVE DERBB REYES FIM SYMON SADDE BAYST SMO 
+            PMD IWMIB FIM SYMON SADDE BAYST SMO 
+            DINTY RZS VTU SADDE BAYST SMO 
+            ELKEY VTU SADDE BAYST SMO
+         ]
+         labels: AVE FIM DINTY ELKEY SADDE SYMON BAYST SMO VTU
+         restrictions:
+         {
+            SYMON: =12000 =250
+            VTU: =250
+            SADDE: =250
+            BAYST: =10000
+            SMO: >7000
+         }
+      }
+      {
+         direction: Inbound
+         name: SEAVU TWO 
+         runways: 25R 25L 24R 24L
+         segments:
+         [
+            TNP PAUMA ARRVD KONZL ENGLI PECOX CATAW SEAVU 
+         ]
+         labels: TNP KONZL ENGLI PECOX SEAVU
+         restrictions:
+         {
+            KONZL: =17000 =280
+            ENGLI: >16000
+            PECOZ: >14000
+            SEAVU: >12000 <14000
+         }
+      }
+      {
+         direction: Inbound
+         name: SHIVE ONE
+         runways: 24R 24L 25R 25L
+         segments:
+         [
+            PEBLE HARBR SHIVE CWARD BAYER MADOW TOZEK SLI 
+            LNSAY HARBR SHIVE CWARD BAYER MADOW TOZEK SLI 
+         ]
+         labels: PEBLE LNSAY HARBR SHIVE BAYER MADOW 
+         restrictions: 
+         {
+            BAYER: =10000
+            MADOW: =7000
+         }
+      }
+      {
+         direction: Inbound
+         name: SNSTT TWO 
+         runways: 25R 25L 24R 24L
+         segments:
+         [
+            AMMOR RNCHO SNSTT SOLAY LAHVA LAAMP SNDRR SEAVU 
+         ]
+         labels: AMMOR RNCHO SNSTT SOLAY LAHVA LAAMP SNDRR SEAVU
+         restrictions:
+         {
+            RNCHO: >26000
+            SNSTT: >24000 <26000 =280
+            SOLAY: <19000
+            LAHVA: =17000
+            LAAMP: >15000
+            SNDRR: >14000
+            SEAVU: >12000 <14000 =270
+         }
+      }
+      {
+         direction: Inbound
+         name: VISTA THREE 
+         runways: 24R 24L 25R 25L
+         segments:
+         [
+            JLI VISTA CYNDE OCN SHIVE CWARD BAYER MADOW TOZEK SLI 
+         ]
+         labels: JLI VISTA CYNDE BAYER MADOW SLI
+         restrictions:
+         {
+            JLI: <24000
+            CYNDE: =14000
+            BAYER: =10000
+            MADOW: =7000
+         }
+      }
+      {
+         direction: Inbound
+         name: WAYVE ONE 
+         runways: 24R 25L 24L 25R
+         segments:
+         [
+            TTE WRING AMONT LOPES PAIDD JEFFY LHS WAYVE SAUGS KIMMO UPDOC 
+            EHF LOPES PAIDD JEFFY LHS WAYVE SAUGS KIMMO UPDOC
+         ]
+         labels: TTE EHF LOPES WAYVE
+      }
+      {
+         direction: Inbound 
+         name: ZUUMA TWO 
+         runways: 6L 6R 7L 7R
+         segments:
+         [
+            REBRG STADD DOUIT UCANN ALMST DANYY ZUUMA WAKER
+            BURGL DOUIT UCANN ALMST DANYY ZUUMA WAKER
+         ]
+         labels: REBRG BURGL DOUIT UCANN ALMST DANYY ZUUMA WAKER
+         restrictions:
+         {
+            UCANN: <29000
+            ALMST: >17000 <21000 =280
+            DANYY: >13000 <17000
+            ZUUMA: >9000 <11000
+            WAKER: =6000 =210
+         }
+      }
+   ]
+}
+      
